@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Orpheus';
+    src: url(./Fonts/Fontspring-DEMO-orpheuspro-regular.otf);
+}
+
+
+h1 {
+    font-family: 'Orpheus';
+}
