@@ -53,22 +53,22 @@ function Header() {
 
 
         {<nav className="icons">
-                <a href={socials[0].url}>
+                <a href={socials[0].url} target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={socials[0].icon} size="1x" />
                 </a>
-                <a href={socials[1].url}>
+                <a href={socials[1].url} target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={socials[1].icon} size="1x" />
                 </a>
-                <a href={socials[2].url}>
+                <a href={socials[2].url} target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={socials[2].icon} size="1x" />
                 </a>
-                <a href={socials[3].url}>
+                <a href={socials[3].url} target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={socials[3].icon} size="1x" />
                 </a>
-                <a href={socials[4].url}>
+                <a href={socials[4].url} target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={socials[4].icon} size="1x" />
                 </a>
-                <a href={socials[5].url}>
+                <a href={socials[5].url} target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={socials[5].icon} size="1x" />
                 </a>
         </nav>}
