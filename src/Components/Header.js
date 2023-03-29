@@ -45,9 +45,9 @@ function Header() {
 
         <nav className="pages">
             <ul>
-                <li><a href="#hero">Current Issue</a></li>
-                <li><a href="#archive">Archive</a></li>
-                <li><a href="#donate">Donate</a></li>
+                <li><a href="#hero">CURRENT ISSUE</a></li>
+                <li><a href="#archive">ARCHIVE</a></li>
+                <li><a href="#donate">DONATE</a></li>
             </ul>
         </nav>
 

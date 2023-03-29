@@ -7,8 +7,12 @@
     src: url(./Fonts/Fontspring-DEMO-orpheuspro-medium.otf);
 }
 @font-face {
-    font-family: 'FranklinGothic';
-    src: url(./Fonts/KeplerStd-BoldScnDisp.woff);
+    font-family: 'Lato';
+    src: url(./Fonts/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: 'Lato Bold';
+    src: url(./Fonts/Lato-Bold.ttf);
 }
 @font-face {
     font-family: 'Gopher';
@@ -19,6 +23,8 @@
 }
 
 
+
+/* Header/Navbar CSS Styling */
 header {
     font-family: 'Orpheus';
 }
@@ -31,6 +37,11 @@ header a {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+}
+/* Moving social icons closer to the contact button */
+.navbar > *:nth-child(3) {
+    margin-right: -10rem;
 }
 #title {
     font-size: 3.5rem;
@@ -39,7 +50,7 @@ header a {
     display: flex;
     flex-direction: row;
     gap: 2.5rem;
-    font-family: 'Gopher';
+    font-family: 'Lato Bold';
 }
 .pages li {
     list-style: none;
@@ -47,9 +58,9 @@ header a {
 .icons {
     display: flex;
     height: auto;
-    width:0rem;
-    gap: 1rem;
+    gap: 1.5rem;
 }
+/* Button styling; contact button has click animation and inverts colors when hoverd over and clicked. */
 .navButton {
     border: .15rem black solid;
     border-top-left-radius: 1rem;
@@ -72,3 +83,6 @@ header a {
     color: black;
     transform: scale(0.85);
 }
+
+
+/* CSS Syling for Latest Release/hero section */

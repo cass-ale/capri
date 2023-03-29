@@ -1,11 +1,11 @@
 import React from "react";
 
-function Hero() {
+function Archive() {
     return(
         <div>
-            Our Latest Release:
+            
         </div>
     )
 }
 
-export default Hero;
+export default Archive;
