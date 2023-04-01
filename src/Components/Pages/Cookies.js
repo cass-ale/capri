@@ -1,9 +1,16 @@
 import React from "react";
+import Header from "../Header";
+import Footer from "../Footer";
 
 function Cookies() {
     return (
-        <div>
-            <p>
+        <>
+        <header>
+            <Header />
+        </header>
+
+
+        <main>
             For more information about how we may use personal data, please read our privacy policy or email admin@caprimag.com.
 
 Cookie Policy
@@ -108,8 +115,12 @@ All About Cookies
 The Information Commissioner’s Office
 
 If you would like to contact us about cookies please email admin@caprimag.com.
-            </p>
-        </div>
+            </main>
+
+            <footer>
+            <Footer />
+            </footer>
+        </>
     )
 }
 

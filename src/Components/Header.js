@@ -8,6 +8,8 @@ import {
     faFacebook,
     faSoundcloud
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from 'react-router-dom';
+
 
 const socials = [
     {
@@ -40,14 +42,14 @@ function Header() {
     return(
         <nav className="navbar">
 
-        <a href="/"><p id="title">CAPRI</p></a>
+        <Link to="/"><p id="title">CAPRI</p></Link>
 
 
         <nav className="pages">
             <ul>
-                <li><a href="#hero">CURRENT ISSUE</a></li>
-                <li><a href="#archive">ARCHIVE</a></li>
-                <li><a href="#donate">DONATE</a></li>
+                <li><Link to="/">CURRENT ISSUE</Link></li>
+                <li><Link to="/archive">ARCHIVE</Link></li>
+                <li><Link to="/donate">DONATE</Link></li>
             </ul>
         </nav>
 
@@ -73,11 +75,11 @@ function Header() {
                 </a>
         </nav>}
 
-        <a href="#contact">
+        <Link to="/contact">
         <button className="navButton">
             Get In Touch
         </button>
-        </a>
+        </Link>
         </nav>
     )
 }

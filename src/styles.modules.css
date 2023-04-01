@@ -91,28 +91,37 @@ header a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    height: 100vh;
+    background-color: #ffb9e5 ;
+}
+.heroContainer:hover {
     animation-name: pic-cycle;
-    animation-duration: 2s;
-    animation-timing-function: step-start;
+    animation-duration: 1s;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 @keyframes pic-cycle {
-    33% {background-color: black}
-    66% {background-color: royalblue}
-    100% {background-color: bisque}
+    10% {background-color: #ffb9e5}
+    20% {background-color: #d9b4eb}
+    30% {background-color: #aeafe8}
+    40% {background-color: #83aadd}
+    50% {background-color: #5da3c8}
+    60% {background-color: #3c8dbc}
+    70% {background-color: #83aadd}
+    80% {background-color: #aeafe8}
+    90% {background-color: #d9b4eb}
+    100% {background-color: #ffb9e5}
 }
-/* Shows that pictures can be quickly cycled through to have a slideshow type effect */
+/* Shows that pictures can be quickly cycled through to have a looping slideshow type effect. End goal to have stills of a rendered video that loops through to give slideshow/stopmotion type effect */
 
 
 .heroText {
     font-size: 10rem;
     font-family: 'Orpheus';
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: url('../src/Images/malcolmwantedthistobethecover.jpg');
-    background-size: cover;
-    z-index: 1;
+    background-image: url('../src/Images/PLACEHOLDER.jpg');
+    background-size: cover; */
 }
 
 footer {

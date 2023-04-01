@@ -1,15 +1,22 @@
 import React from "react";
+import Header from "../Header";
+import Footer from "../Footer";
+import { Link } from 'react-router-dom';
 
 function Privacy() {
     return (
-        <div>
-            <p>
+        <>
+        <header>
+            <Header />
+        </header>
+
+            <main>
             Privacy Policy
 Last updated: 12 October 2022.
 
 Introduction and contents
 
-This is the privacy policy for Capri Mag (“Capri”, “we”, “us”), our sites such as caprimag.com (“our sites”), and our associated apps.
+This is the privacy policy for CAPRI Media (“Capri”, “we”, “us”), our sites such as caprimag.com (“our sites”), and our associated apps.
 
 We think carefully about our use of personal data, and below you can find the details of what we do to protect your privacy. This policy covers, among other topics:
 
@@ -209,9 +216,13 @@ We may need to request specific information from you to help us confirm your ide
 
 We and our partners use cookies and similar technologies to collect information about your use of the website to help create reports and statistics on the performance of the website. Analytics cookies such as Google Analytics collect information such as your IP address, device type and operating system, referring URLs, location and pages visited. If you don’t want Google Analytics to be used in your browser, you can install the ‘Google Analytics Opt-Out Browser Add-On’, provided by Google.
 
-For a complete description of our use of cookies and similar technologies globally, please see our cookie policy.
-            </p>
-        </div>
+For a complete description of our use of cookies and similar technologies globally, please see our <Link to ='/cookies'>cookie policy.</Link>
+            </main>
+
+            <footer>
+                <Footer />
+            </footer>
+        </>
     )
 }
 
