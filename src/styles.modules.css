@@ -86,3 +86,38 @@ header a {
 
 
 /* CSS Syling for Latest Release/hero section */
+.heroContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation-name: pic-cycle;
+    animation-duration: 2s;
+    animation-timing-function: step-start;
+    animation-iteration-count: infinite;
+}
+@keyframes pic-cycle {
+    33% {background-color: black}
+    66% {background-color: royalblue}
+    100% {background-color: bisque}
+}
+/* Shows that pictures can be quickly cycled through to have a slideshow type effect */
+
+
+.heroText {
+    font-size: 10rem;
+    font-family: 'Orpheus';
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: url('../src/Images/malcolmwantedthistobethecover.jpg');
+    background-size: cover;
+    z-index: 1;
+}
+
+footer {
+    font-family: 'Gopher';
+}
+footer a {
+    color: black !important;
+}
