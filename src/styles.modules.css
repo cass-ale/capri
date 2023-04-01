@@ -11,6 +11,10 @@
     src: url(./Fonts/Lato-Regular.ttf);
 }
 @font-face {
+    font-family: 'Lato-Light';
+    src: url(./Fonts/Lato-Thin.ttf);
+}
+@font-face {
     font-family: 'Lato Bold';
     src: url(./Fonts/Lato-Bold.ttf);
 }
@@ -37,6 +41,7 @@ header a {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    background-color: white;
     flex-wrap: wrap;
 }
 /* Moving social icons closer to the contact button */
@@ -128,5 +133,76 @@ footer {
     font-family: 'Gopher';
 }
 footer a {
-    color: black !important;
+    color: white !important;
+}
+.footerContainer {
+    background-color: black !important;
+    color: white;
+}
+.footerTop {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5rem;
+}
+#capri{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Orpheus';
+    font-size: 3rem;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+#capri:hover {
+    font-family: 'Lato-Light';
+    font-size: 2.95rem;
+}
+.footerLinks a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+.footerLinks a:active {
+    transform: scale(0.85);
+}
+.footerForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1.2rem;
+}
+#footerForm input{
+    width: 25rem;
+    margin-right: 1.625rem;
+    height: 2rem;
+}
+.footerButton {
+    border: .15rem white solid;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: black;
+    color: white;
+    font-family: 'Orpheus';
+    font-size: 1.25rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    padding: 1.25rem 2.5rem;
+    margin-left: 1.625rem;
+}
+.footerButton:hover {
+    background-color: white;
+    color: black;
+}
+.footerButton:active {
+    background-color:black;
+    color: white;
+    transform: scale(0.85);
+}
+#copyright {
+    padding: 1.5rem;
 }
