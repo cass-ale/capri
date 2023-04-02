@@ -1,10 +1,14 @@
 import React from "react";
 import Header from "../Header";
 import Footer from "../Footer";
-
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 function Cookies() {
     return (
         <>
+        <Helmet>
+        <title>CAPRI Media | Cookie Policy</title>
+      </Helmet>
         <header>
             <Header />
         </header>

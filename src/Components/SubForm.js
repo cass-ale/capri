@@ -25,7 +25,7 @@ function SubForm() {
             <div className="footerForm">
             <label htmlFor="email">Subscribe To The CAPRI Catalogue For Occasional Updates From Us.</label>
             <section id="footerForm">
-            <Field type="email" name="email" />
+            <Field type="email" name="email" style={{fontFamily: 'Gopher'}} placeholder='Enter Your Email . . .'/>
             <ErrorMessage name="email" />
             <button className='footerButton' type="submit" disabled={isSubmitting}>
               Keep In Touch

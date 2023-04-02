@@ -1,16 +1,31 @@
 import React from "react";
 import Header from "../Header";
 import Footer from "../Footer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLock } from "@fortawesome/free-solid-svg-icons";
+import { Helmet } from "react-helmet";
+
 
 function Archive() {
     return(
         <>
+        <Helmet>
+        <title>CAPRI Media | Archive</title>
+      </Helmet>
         <header>
             <Header />
         </header>
 
         <main>
+            <div className="archiveContainer">
 
+                <p>The Archive Of Canonical CAPRI Works</p>
+
+                <FontAwesomeIcon icon={faLock} size="10x" />
+
+                <h2>We're Quite Sorry, But You've Not Unlocked The Contents Of This Page Just Yet. We Appreciate Your Patience As We Get Things Squared Away Behind The Scenes. We Will Let You Know When We Are Ready For You. </h2>
+
+            </div>
         </main>
 
         <footer>

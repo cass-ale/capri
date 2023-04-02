@@ -31,7 +31,7 @@ function Footer() {
 
         <div className="footerLinks">
             <Link to='/Donate'>DONATE</Link>
-            <Link to='/Transparency'>TRANSPARENCY</Link>
+            <Link to='/Contact'>CONTACT</Link>
         </div>
 
 

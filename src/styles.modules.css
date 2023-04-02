@@ -22,6 +22,10 @@
     font-family: 'Gopher';
     src: url(./Fonts/Gopher-Medium.ttf);
 }
+@font-face {
+    font-family: 'Gopher-Light';
+    src: url(./Fonts/Gopher-Light.ttf);
+}
 :root {
     font-size: 100%;
 }
@@ -104,6 +108,7 @@ header a {
     animation-duration: 1s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    cursor: pointer;
 }
 @keyframes pic-cycle {
     10% {background-color: #ffb9e5}
@@ -118,8 +123,6 @@ header a {
     100% {background-color: #ffb9e5}
 }
 /* Shows that pictures can be quickly cycled through to have a looping slideshow type effect. End goal to have stills of a rendered video that loops through to give slideshow/stopmotion type effect */
-
-
 .heroText {
     font-size: 10rem;
     font-family: 'Orpheus';
@@ -129,6 +132,137 @@ header a {
     background-size: cover; */
 }
 
+
+/* Archive Page Styling */
+.archiveContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+    padding-bottom: 2.75rem;
+    margin-left: 10.85rem;
+    margin-right: 20rem;
+    gap: 1.55rem;
+}
+.archiveContainer p {
+    font-family: 'Orpheus';
+    font-size: 4rem;
+}
+.archiveContainer h2 {
+    font-family: 'Gopher-Light';
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+/* Donation Page CSS Styling */
+main a {
+    color: black;
+}
+.donoContainer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+    padding-bottom: 2.75rem;
+    margin-left: 10.85rem;
+    margin-right: 20rem;
+    font-family: 'Lato';
+}
+.donoContainer section {
+    width: 9rem;
+}
+#h1 {
+    font-size: 4rem;
+    font-family: 'Orpheus';
+    margin-bottom: 2rem;
+}
+#sig {
+    font-family: 'Orpheus';
+    font-size: 2.25rem;
+}
+
+
+/* Contact Page CSS Styling */
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+    padding-bottom: 2.75rem;
+    margin-left: 10.85rem;
+    margin-right: 20rem;
+    font-family: 'Lato';
+}
+#conHeader {
+    font-size: 4rem;
+    font-family: 'Orpheus';
+}
+.contactContainer p {
+    font-size: 1.15rem;
+    width: 75rem;
+    line-height: 2rem;
+}
+.contactContainer button {
+    width: 15rem;
+    margin-bottom: 8rem;
+}
+.contactForm {
+    height: 100%;
+    width: 100%;
+}
+.contactForm form{
+    z-index: 100;
+    border: ghostwhite solid;
+    background-color: whitesmoke;;
+    position: relative;
+    height: 50rem;
+    bottom: 42rem;
+    opacity: 0.99;
+    transition: all 0.4s;
+    box-shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.25);
+}
+.formContents {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gopher';
+}
+#contactForm input {
+    width: 25rem;
+    height: 2rem;
+}
+#messageForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-grow: 1;
+    margin: 2rem;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gopher';
+    text-align: start;
+}
+.formClose {
+    cursor: pointer;
+    display: flex;
+    justify-content: right;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+
+/* Footer section CSS styling */
 footer {
     font-family: 'Gopher';
 }
