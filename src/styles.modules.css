@@ -262,6 +262,24 @@ main a {
     margin-right: 2rem;
 }
 
+.privacy {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+    padding-bottom: 2.75rem;
+    margin-left: 10.85rem;
+    margin-right: 20rem;
+    font-family: 'Lato';
+}
+.privacyContainer i {
+    font-family: 'Gopher-Light';
+}
+.privacyContainer h1 {
+    font-family: 'Orpheus';
+    font-size: 2.5rem;
+}
+.privacyContainer h4 {
+    font-size: 1.15rem;
+}
 /* Footer section CSS styling */
 footer {
     font-family: 'Gopher';
