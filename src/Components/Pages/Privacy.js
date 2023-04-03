@@ -16,7 +16,7 @@ function Privacy() {
 
             <main className="privacy">
 <div className="privacyContainer">
-<h1>Privacy Policy</h1>
+<p id="h1">Privacy Policy</p>
 <i>Last Updated: 1 April 2023.</i>
 
 <h4>Introduction and contents</h4>
