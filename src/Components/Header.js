@@ -10,6 +10,12 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from 'react-router-dom';
 
+const handleClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
 
 const socials = [
     {
@@ -47,9 +53,9 @@ function Header() {
 
         <nav className="pages">
             <ul>
-                <li><Link to="/">CURRENT ISSUE</Link></li>
-                <li><Link to="/archive">ARCHIVE</Link></li>
-                <li><Link to="/donate">DONATE</Link></li>
+                <li><Link to="/" onClick={handleClick}>CURRENT ISSUE</Link></li>
+                <li><Link to="/archive" onClick={handleClick}>ARCHIVE</Link></li>
+                <li><Link to="/donate" onClick={handleClick}>DONATE</Link></li>
             </ul>
         </nav>
 
@@ -75,7 +81,7 @@ function Header() {
                 </a>
         </nav>}
 
-        <Link to="/contact">
+        <Link to="/contact" onClick={handleClick}>
         <button className="navButton">
             Get In Touch
         </button>
