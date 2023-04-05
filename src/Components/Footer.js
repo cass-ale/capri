@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import SubForm from "./SubForm";
+import Sub from "./Sub";
 
 const handleClick = () => {
     window.scrollTo({
@@ -17,7 +18,12 @@ const handleMouseOut = () => {
         text.innerHTML = 'CAPRI';
 }
 function Footer() {
-    return (
+  const [formSubmitted, setFormSubmitted] = React.useState(false);
+  const handleFormSubmit = () => {
+    setFormSubmitted(true);
+  };
+
+  return (
         <div className="footerContainer">
 
 
@@ -27,7 +33,12 @@ function Footer() {
         <section id="capri" onClick={handleClick} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>CAPRI</section>
 
         {/* Email Submission Form */}
-        <SubForm />
+        {formSubmitted ? (
+          <Sub />
+        ) : (
+          <SubForm formSubmit={handleFormSubmit} />
+        )}
+
 
         <div className="footerLinks">
             <Link to='/Donate'>DONATE</Link>

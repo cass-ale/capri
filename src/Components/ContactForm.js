@@ -5,6 +5,31 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClose } from '@fortawesome/free-solid-svg-icons';
 
 function ContactForm(props) {
+    const formRef = React.useRef(null);
+
+    React.useEffect(() => {
+      const form = formRef.current;
+      form.addEventListener("submit", handleSubmit);
+
+      return () => {
+        form.removeEventListener("submit", handleSubmit);
+      };
+    },);
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      const data = new FormData(e.target);
+      const action = e.target.action;
+      fetch(action, {
+        method: "POST",
+        body: data,
+      }).then(() => {
+        alert("Success! We Have Received Your Message And Will Get Back To You Shortly.");
+      });
+      props.closeForm();
+    }
+
+
     return(
         <>
         <Formik
@@ -15,24 +40,19 @@ function ContactForm(props) {
             message: "" }}
         validationSchema={
             Yup.object({
-                firstName: Yup.string().required(""),
-                lastName: Yup.string().required(""),
-                email: Yup.string().email("Invalid Email Address").required(""),
-                message: Yup.string().required(""),
+                firstName: Yup.string().min(1, "Please Fill Out This Field").max(100).required(""),
+                lastName: Yup.string().min(1, "Please Fill Out This Field").max(100).required(""),
+                email: Yup.string().min(1, "Please Fill Out This Field").max(100).email("Invalid Email Address").required(""),
+                message: Yup.string().min(10, "Messages Must Be At Least 10 Characters").max(750, "Please Shorten Your Message").required(""),
               })
         }
-        onSubmit={(values, { setSubmitting }) => {
-            setTimeout(() => {
-              alert(JSON.stringify(values, null, 2));
-              setSubmitting(false);
-            }, 400);
-          }}
         >
-            {({ isSubmitting }) => (
+            {({ errors, isValid, dirty }) => (
         <Form>
             <div className="contactForm">
 
-            <form className='formContents'>
+            <form ref={formRef} className='formContents'
+            action="https://script.google.com/macros/s/AKfycbyCArEL1T5IRmV7JMAGxuG1VBIP-HZDrFps7FO4yl9vcvRQTOw9K0Ae0RaYFRj_XVAV/exec" method="post" id="my-form">
 
             <div className='formClose'><FontAwesomeIcon icon={faClose} onClick={props.closeForm} size='3x'/></div>
 
@@ -60,14 +80,13 @@ function ContactForm(props) {
 
             <section id="messageForm">
             <label htmlFor="message">Message*</label>
-            <Field as="textarea" name="message" style={{ width: '25rem', height: '10rem', flexGrow: '1', textAlign: 'left', fontFamily: 'Gopher' }} placeholder='What Would You Like To Let Us Know?' />
+            <Field as="textarea" name="message" style={{ width: '25rem', height: '10rem', flexGrow: '1', resize: 'none', textAlign: 'left', fontFamily: 'Gopher' }} placeholder='What Would You Like To Let Us Know?' />
             <ErrorMessage name="message" />
             </section>
 
             <section id="contactForm">
-            <button className='navButton' type="submit" disabled={isSubmitting}>
-            Send
-            </button>
+            {dirty && (
+            <input className='navButton' type="submit" value='Send' style={{paddingBottom: '2.5rem',paddingTop:'1rem'}} disabled={isValid === false || Object.keys(errors).length > 0} />)}
             </section>
 
 
