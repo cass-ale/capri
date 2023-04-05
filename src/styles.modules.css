@@ -220,8 +220,8 @@ main a {
     background-color: whitesmoke;;
     position: relative;
     height: 50rem;
-    bottom: 42rem;
-    opacity: 0.99;
+    bottom: 45rem;
+    opacity: 0.96;
     transition: all 0.4s;
     box-shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.25);
 }
@@ -258,9 +258,12 @@ main a {
     cursor: pointer;
     display: flex;
     justify-content: right;
+    align-items: flex-end;
     margin-top: 1rem;
     margin-right: 2rem;
 }
+
+
 
 .privacy {
     padding-left: 2.75rem;

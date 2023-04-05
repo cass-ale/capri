@@ -3,6 +3,8 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClose } from '@fortawesome/free-solid-svg-icons';
+import { Tooltip as ReactTooltip } from 'react-tooltip';
+import 'react-tooltip/dist/react-tooltip.css';
 
 function ContactForm(props) {
     const formRef = React.useRef(null);
@@ -54,8 +56,8 @@ function ContactForm(props) {
             <form ref={formRef} className='formContents'
             action="https://script.google.com/macros/s/AKfycbyCArEL1T5IRmV7JMAGxuG1VBIP-HZDrFps7FO4yl9vcvRQTOw9K0Ae0RaYFRj_XVAV/exec" method="post" id="my-form">
 
-            <div className='formClose'><FontAwesomeIcon icon={faClose} onClick={props.closeForm} size='3x'/></div>
-
+            <div className='formClose'><FontAwesomeIcon data-tooltip-id='close' data-tooltip-content="Close Form" icon={faClose} onClick={props.closeForm} size='3x'/></div>
+            <ReactTooltip id="close" />
 
             <section id="contactForm">
             <label htmlFor='firstName'>First Name*</label>
