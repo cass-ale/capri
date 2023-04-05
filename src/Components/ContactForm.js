@@ -42,7 +42,7 @@ function ContactForm(props) {
             Yup.object({
                 firstName: Yup.string().min(1, "Please Fill Out This Field").max(100).required(""),
                 lastName: Yup.string().min(1, "Please Fill Out This Field").max(100).required(""),
-                email: Yup.string().min(1, "Please Fill Out This Field").max(100).email("Invalid Email Address").required(""),
+                email: Yup.string().min(3, "Please Complete This Field").max(100).email("Invalid Email Address").required(""),
                 message: Yup.string().min(10, "Messages Must Be At Least 10 Characters").max(750, "Please Shorten Your Message").required(""),
               })
         }
