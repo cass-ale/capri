@@ -22,6 +22,9 @@ function Footer() {
   const handleFormSubmit = () => {
     setFormSubmitted(true);
   };
+  const handleFormReset = () => {
+    setFormSubmitted(false);
+  };
 
   return (
         <div className="footerContainer">
@@ -34,22 +37,22 @@ function Footer() {
 
         {/* Email Submission Form */}
         {formSubmitted ? (
-          <Sub />
+          <Sub formReset={handleFormReset}/>
         ) : (
           <SubForm formSubmit={handleFormSubmit} />
         )}
 
 
         <div className="footerLinks">
-            <Link to='/Donate'>DONATE</Link>
-            <Link to='/Contact'>CONTACT</Link>
+            <Link to='/Donate' onClick={handleClick}>DONATE</Link>
+            <Link to='/Contact' onClick={handleClick}>CONTACT</Link>
         </div>
 
 
         </div>
 
         <hr />
-        <section id='copyright'>© CAPRI Media {new Date().getFullYear().toString()}. All Rights Reserved. Use of this site constitutes acceptance of our <Link to="/privacy">Privacy</Link> and <Link to="/cookies">Cookie</Link> policies. The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written permission of CAPRI Media.</section>
+        <section id='copyright'>© CAPRI Media {new Date().getFullYear().toString()}. All Rights Reserved. Use of this site constitutes acceptance of our <Link to="/privacy" onClick={handleClick}>Privacy</Link> and <Link to="/cookies" onClick={handleClick}>Cookie</Link> policies. The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written permission of CAPRI Media.</section>
         </div>
     )
 }

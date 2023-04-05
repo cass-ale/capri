@@ -35,8 +35,8 @@ function SubForm(props) {
         initialValues={{ email: "" }}
         validationSchema={Yup.object({
           email: Yup.string()
+            .min(3, "Please Complete This Field").max(100)
             .email("Invalid Email Address")
-            .min(3, "Please Complete This Field")
             .required(""),
         })}
       >
