@@ -21,7 +21,7 @@ function Archive() {
 
                 <p>The Archive Of Canonical CAPRI Works</p>
 
-                <FontAwesomeIcon icon={faLock} size="10x" />
+                <FontAwesomeIcon icon={faLock} size="10x" id='lock' />
 
                 <h2>We're Quite Sorry, But You've Not Unlocked The Contents Of This Page Just Yet. We Appreciate Your Patience As We Get Things Squared Away Behind The Scenes. We Will Let You Know When We Are Ready For You. </h2>
 

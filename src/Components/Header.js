@@ -8,6 +8,7 @@ import {
     faFacebook,
     faSoundcloud
 } from "@fortawesome/free-brands-svg-icons";
+import { faGripLines } from "@fortawesome/free-solid-svg-icons";
 import { Link } from 'react-router-dom';
 
 const handleClick = () => {
@@ -47,6 +48,7 @@ const socials = [
 function Header() {
     return(
         <nav className="navbar">
+            <section id="mobile"><FontAwesomeIcon icon={faGripLines} onClick={handleClick} size="2x" /></section>
 
         <Link to="/"><p id="title">CAPRI</p></Link>
 

@@ -269,13 +269,16 @@ main a {
 
 
 
-.privacy {
+.privacyContainer {
+    display: flex;
+    flex-direction: column;
     padding-left: 2.75rem;
     padding-right: 2.75rem;
     padding-bottom: 2.75rem;
     margin-left: 10.85rem;
     margin-right: 20rem;
     font-family: 'Lato';
+    background-color: white;
 }
 .privacyContainer i {
     font-family: 'Gopher-Light';
@@ -283,6 +286,9 @@ main a {
 .privacyContainer h4 {
     font-size: 1.15rem;
 }
+
+
+
 /* Footer section CSS styling */
 footer {
     font-family: 'Gopher';
@@ -360,4 +366,120 @@ footer a {
 }
 #copyright {
     padding: 1.5rem;
+}
+
+@media screen and (min-width: 1601px) {
+    #mobile {
+        display: none;
+    }
+}
+
+/* Mobile/Tablet styling Below */
+@media screen and (max-width: 1600px) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .icons {
+        display: none;
+    }
+    .pages {
+        display: none;
+    }
+    .navButton {
+        display: none;
+    }
+    .footerTop {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    #footerForm input {
+        width: 100%;
+    }
+    .heroContainer {
+        width: 100%;
+    }
+    .heroText {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    main {
+        width: 100%;
+    }
+    .archiveContainer {
+        flex-wrap: wrap;
+        gap: 1rem;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .archiveContainer p {
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: center;
+    }
+    #lock {
+        width: 5rem;
+        height: 5rem;
+    }
+    .contactContainer {
+        flex-wrap: wrap;
+        gap: 1rem;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .contactContainer p {
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: center;
+    }
+    #conHeader {
+        font-size: 2rem;
+    }
+    .donoContainer {
+        flex-wrap: wrap;
+        gap: 1rem;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .donoContainer p {
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: center;
+    }
+    .privacyContainer {
+        flex-wrap: wrap;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        max-width: 100%;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .privacyContainer h4 {
+        font-size: 1rem;
+    }
+    .privacyContainer p {
+        font-size: 0.85rem;
+        width: 100%;
+        text-align: center;
+    }
+    #h1 {
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width:1600px) and (max-width: 1700px) {
+    .heroText {
+        font-size: 7.5rem;
+        text-align: center;
+    }
 }

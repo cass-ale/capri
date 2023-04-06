@@ -21,7 +21,7 @@ function Privacy() {
             <Header />
         </header>
 
-            <main className="privacy">
+            <main>
 <div className="privacyContainer">
 <p id="h1">Privacy Policy</p>
 <i>Last Updated: 1 April 2023.</i>
