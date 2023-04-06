@@ -28,6 +28,10 @@
 }
 :root {
     font-size: 100%;
+    background-color: black;
+}
+main {
+    background-color: white;
 }
 
 
