@@ -34,15 +34,15 @@ function MobileMenu(props) {
             <section className="formClose"><FontAwesomeIcon icon={faClose} onClick={onClick} size="2x"/></section>
           <nav className="mobileNav">
             <ul>
-                <li><Link to="/" onClick={handleClick}>CURRENT ISSUE</Link></li><br />
-                <li><Link to="/archive" onClick={handleClick}>ARCHIVE</Link></li><br />
-                <li><Link to="/donate" onClick={handleClick}>DONATE</Link></li><br />
+                <li><a href="/" onClick={handleClick}>CURRENT ISSUE</a></li><br />
+                <li><a href="/archive" onClick={handleClick}>ARCHIVE</a></li><br />
+                <li><a href="/donate" onClick={handleClick}>DONATE</a></li><br />
             </ul>
-            <Link to="/contact" onClick={handleClick}>
+            <a href="/contact" onClick={handleClick}>
                 <button className="conButton" id="mobileButton">
                 Get In Touch
                 </button>
-            </Link>
+            </a>
         </nav>
         </div>
     );
