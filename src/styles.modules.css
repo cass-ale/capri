@@ -237,6 +237,7 @@ main a {
     display: flex;
     flex-direction: column;
     height: 100%;
+    align-items: center;
 }
 #contactForm {
     display: flex;
@@ -291,7 +292,7 @@ main a {
     justify-content: right;
     align-items: flex-end;
     margin-top: 1rem;
-    margin-right: 2rem;
+    margin-left: 50rem;
 }
 
 
@@ -508,6 +509,9 @@ footer a {
         height: 5rem;
         margin-left: 1rem;
         align-items: center;
+    }
+    .formClose {
+        margin-left: 20rem;
     }
     #conHeader {
         font-size: 2rem;

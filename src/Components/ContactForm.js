@@ -82,7 +82,7 @@ function ContactForm(props) {
 
             <section id="messageForm">
             <label htmlFor="message">Message*</label>
-            <Field as="textarea" name="message" style={{ height: '10rem', flexGrow: '1', resize: 'none', textAlign: 'left', fontFamily: 'Gopher' }} placeholder='What Would You Like To Let Us Know?' />
+            <Field as="textarea" name="message" style={{ width:'25rem', height: '10rem', flexGrow: '1', resize: 'none', textAlign: 'left', fontFamily: 'Gopher' }} placeholder='What Would You Like To Let Us Know?' />
             <ErrorMessage name="message" />
             </section>
 
