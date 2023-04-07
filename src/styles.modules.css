@@ -476,8 +476,14 @@ footer a {
         width: 100%;
         text-align: center;
     }
+    .contactForm {
+        height: 100%;
+        width: 100%;
+    }
     .contactForm form {
         opacity: 1;
+        width: 100%;
+        bottom: 31rem;
     }
     #conHeader {
         font-size: 2rem;
