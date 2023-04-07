@@ -37,7 +37,7 @@ function Contact() {
 
             <p>If You Are Interested In Our Work, Interested In Working With Us, Or Eager To Talk With Us About Our Work, Feel Free To Fill Out Our Contact Form, And Our Team Will Be In Touch With You Shortly After.<br /><br /> Please Note That Our Administrative Team Only Monitors Our Inbox During U.S. Business Hours (9:00-17:00) On Monday Through Friday. We Look Forward To Hearing From You!</p>
 
-            <button className="navButton" onClick={openForm}>Are You Ready?</button>
+            <button className="conButton" onClick={openForm}>Are You Ready?</button>
             {showForm && <Form closeForm={closeForm} />}
         </div>
         </main>

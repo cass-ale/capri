@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useState} from "react";
+import MobileMenu from "./MobileMenu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faInstagram,
@@ -46,9 +47,18 @@ const socials = [
 ]
 
 function Header() {
+const [showMenu, setShowMenu] = useState(false);
+const openMenu = () => {
+    setShowMenu(true);
+}
+const closeMenu = () => {
+    setShowMenu(false);
+}
+
     return(
         <nav className="navbar">
-            <section id="mobile"><FontAwesomeIcon icon={faGripLines} onClick={handleClick} size="2x" /></section>
+            <section id="mobile"><FontAwesomeIcon icon={faGripLines} onClick={openMenu} size="3x" /></section>
+            {showMenu && <MobileMenu closeMenu={closeMenu} showMenu={showMenu} />}
 
         <Link to="/"><p id="title">CAPRI</p></Link>
 

@@ -42,10 +42,10 @@ function ContactForm(props) {
             message: "" }}
         validationSchema={
             Yup.object({
-                firstName: Yup.string().min(1, "Please Fill Out This Field").max(100).required(""),
-                lastName: Yup.string().min(1, "Please Fill Out This Field").max(100).required(""),
-                email: Yup.string().min(3, "Please Complete This Field").max(100).email("Invalid Email Address").required(""),
-                message: Yup.string().min(10, "Messages Must Be At Least 10 Characters").max(750, "Please Shorten Your Message").required(""),
+                firstName: Yup.string().min(1, "Please Fill Out This Field").max(100).required("Please Fill Out This Field"),
+                lastName: Yup.string().min(1, "Please Fill Out This Field").max(100).required("Please Fill Out This Field"),
+                email: Yup.string().min(3, "Please Complete This Field").max(100).email("Invalid Email Address").required("Please Fill Out This Field"),
+                message: Yup.string().min(10, "Messages Must Be At Least 10 Characters").max(750, "Please Shorten Your Message").required("Please Fill Out This Field"),
               })
         }
         >
@@ -88,7 +88,7 @@ function ContactForm(props) {
 
             <section id="contactForm">
             {dirty && (
-            <input className='navButton' type="submit" value='Send' style={{paddingBottom: '2.5rem',paddingTop:'1rem'}} disabled={isValid === false || Object.keys(errors).length > 0} />)}
+            <input className='conButton' type="submit" value='Send' style={{paddingBottom: '2.5rem',paddingTop:'1rem'}} disabled={isValid === false || Object.keys(errors).length > 0} />)}
             </section>
 
 
