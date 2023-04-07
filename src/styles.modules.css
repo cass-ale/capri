@@ -580,6 +580,8 @@ footer a {
 #mobile {
     cursor: pointer;
     transition: all 0.2s;
+    color: black;
+    margin-top: 1rem;
 }
 #mobile:active {
     transform: scale(0.85);
