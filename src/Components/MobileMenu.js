@@ -25,7 +25,7 @@ function MobileMenu(props) {
     
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
-      }, [props.showMenu]);
+      });
   
 
 
