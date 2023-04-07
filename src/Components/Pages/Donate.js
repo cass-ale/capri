@@ -51,8 +51,8 @@ function Donate() {
 
             <section id="sig" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>— CAPRI</section>
         <br />
-
-        {<nav className="icons">
+        
+        {<nav className="mobileIcons">
                 <a href={dono[0].url} target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={dono[0].icon} size="3x" />
                 </a>

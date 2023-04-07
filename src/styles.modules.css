@@ -487,7 +487,7 @@ footer a {
     .contactForm form {
         opacity: 1;
         width: 100%;
-        bottom: 31rem;
+        bottom: 33rem;
     }
     #conHeader {
         font-size: 2rem;
@@ -588,9 +588,18 @@ footer a {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 2rem;
 }
 #menuClose {
     cursor: pointer;
     display: flex;
     justify-content: left;
+}
+.mobileIcons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    gap: 1.5rem;
 }

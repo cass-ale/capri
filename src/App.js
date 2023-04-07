@@ -13,7 +13,7 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 function App() {
 
   return (
-    <div>
+    <>
     <Router>
       <Routes>
       <Route exact path="/" element={<Home />} />
@@ -24,7 +24,7 @@ function App() {
       <Route exact path="/cookies" element={<Cookies />} />
       </Routes>
     </Router>
-    </div>
+    </>
   );
 }
 
