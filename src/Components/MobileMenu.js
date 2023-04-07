@@ -16,16 +16,16 @@ function MobileMenu(props) {
     }
 
 
-    useEffect((props) => {
-      function handleResize() {
-        if (window.innerWidth > 1600 && props.showMenu) {
-          props.closeMenu(false);
+    useEffect(() => {
+        function handleResize() {
+          if (window.innerWidth > 768 && props.showMenu) {
+            props.closeMenu();
+          }
         }
-      }
-  
-      window.addEventListener('resize', handleResize);
-      return () => window.removeEventListener('resize', handleResize);
-    }, [props.showMenu]);
+    
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+      }, [props.showMenu]);
   
 
 
