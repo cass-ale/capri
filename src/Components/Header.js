@@ -60,7 +60,7 @@ const closeMenu = () => {
             <section id="mobile"><FontAwesomeIcon icon={faBars} onClick={openMenu} size="3x" /></section>
             {showMenu && <MobileMenu closeMenu={closeMenu} showMenu={showMenu} />}
 
-        <Link to="/"><p id="title">CAPRI</p></Link>
+        <p id="title"><Link to="/">CAPRI</Link></p>
 
 
         <nav className="pages">

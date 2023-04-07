@@ -550,11 +550,37 @@ footer a {
     #h1 {
         font-size: 2rem;
     }
+
 }
 @media screen and (min-width:1021px) and (max-width: 1700px) {
     .heroText {
         font-size: 5rem;
         text-align: center;
+    }
+    .archiveContainer p {
+        font-size: 1.75rem;
+    }
+    #h1 {
+        font-size: 2rem;
+    }
+    #conHeader {
+        font-size: 3.25rem;
+    }
+    .contactContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        padding-top: 1rem;
+    }
+    .contactContainer p {
+        text-align: center;
+        flex-wrap: wrap;
+        max-width: 100%;
     }
 }
 
