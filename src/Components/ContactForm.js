@@ -82,13 +82,15 @@ function ContactForm(props) {
 
             <section id="messageForm">
             <label htmlFor="message">Message*</label>
-            <Field as="textarea" name="message" style={{ width:'20rem', height: '10rem', flexGrow: '1', resize: 'none', textAlign: 'left', fontFamily: 'Gopher' }} placeholder='What Would You Like To Let Us Know?' />
+            <Field as="textarea" name="message" id="messageForm" style={{ height: '10rem', flexGrow: '1', resize: 'none', textAlign: 'left', fontFamily: 'Gopher' }} placeholder='What Would You Like To Let Us Know?' />
             <ErrorMessage name="message" />
             </section>
 
             <section id="contactForm">
             {dirty && (
             <input className='conButton' type="submit" value='Send' style={{paddingBottom: '2.5rem',paddingTop:'1rem'}} disabled={isValid === false || Object.keys(errors).length > 0} />)}
+                        {dirty && (
+            <input className='mobileCon' type="submit" value='Send' style={{paddingBottom: '2.5rem',paddingTop:'1rem'}} disabled={isValid === false || Object.keys(errors).length > 0} />)}
             </section>
 
 
