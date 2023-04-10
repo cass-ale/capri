@@ -467,7 +467,7 @@ footer a {
         width: 100%;
     }
     .heroText {
-        font-size: 3.5rem;
+        font-size: 4rem;
         text-align: center;
     }
     main {
@@ -587,7 +587,7 @@ footer a {
 }
 @media screen and (min-width:1021px) and (max-width: 1700px) {
     .heroText {
-        font-size: 5rem;
+        font-size: 6.5rem;
         text-align: center;
     }
     .archiveContainer p {
