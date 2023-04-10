@@ -55,7 +55,7 @@ When we refer to “personal data” in this policy, we are also referencing “
 CAPRI Media is the data controller in respect of your personal data. This means that we are responsible for deciding how and why we hold and use your personal data.
 </p>
 <h4>The types of personal data we collect about you</h4>
-
+<p>
 We collect your personal data when you visit our sites and apps or when you subscribe to the CAPRI newsletter. We will only collect your personal data in line with applicable laws:
 <ul>
 <li>directly from you, when you sign up for our services and when you browse our sites or use our apps</li>
@@ -81,9 +81,10 @@ When you use our sites or apps we may also use cookies or similar technology to 
 <li>details of your computer, mobile, TV, tablet or other devices, for example, the unique device ID, unique vendor or advertising ID and browsers used to access our content</li>
 </ul>
 We will not collect special categories of data from you - such as personal data concerning your race, political opinions, religion, health or sexual orientation - unless you have chosen to provide that type of personal data to us.
+</p>
 <br />
 <h4>How we collect personal data</h4>
-
+<p>
 We collect personal data when you:
 <ul>
 <li>sign up for our editorial emails</li>
@@ -93,6 +94,7 @@ We collect personal data when you:
 <li>through cookies and other similar technology</li>
 <li>when you contact us via email, social media, our apps or similar technologies or when you mention us on social media</li>
 </ul>
+</p>
 <h4>How we use your personal data</h4>
 
 We use personal data collected through our sites and apps only when we have a valid reason and the legal grounds to do so. We determine the legal grounds based on the purposes for which we have collected your personal data.<br />
@@ -176,13 +178,13 @@ You can decide not to receive these emails at any time and will be able to “un
 If you have raised a query or a complaint with us, we may contact you to answer your query or to resolve your complaint.
 
 <h4>Cookies and similar technologies</h4>
-
+<p>
 When you visit our sites or when you use our apps, we may collect personal data from you automatically using cookies or similar technologies.
 
 This privacy policy includes our <Link to ='/cookies' onClick={handleClick}>cookie policy</Link>, where you can find more information about our use of cookies.
-
+</p>
 <h4>Your privacy and data protection rights with regard to the personal data that we hold about you</h4>
-
+<p>
 You have a number of rights with regard to the personal data that we hold about you and you can contact us with regard to the following rights in relation to your personal data:
 <ul>
 <li>You have the right to receive a copy of the personal data we hold about you</li>
@@ -199,6 +201,7 @@ We may need to request specific information from you to help us confirm your ide
 We and our partners use cookies and similar technologies to collect information about your use of the website to help create reports and statistics on the performance of the website. Analytics cookies such as Google Analytics collect information such as your IP address, device type and operating system, referring URLs, location and pages visited. If you don’t want Google Analytics to be used in your browser, you can install the ‘Google Analytics Opt-Out Browser Add-On’, provided by Google.
 <br /><br />
 For a complete description of our use of cookies and similar technologies globally, please see our <Link to ='/cookies' onClick={handleClick}>cookie policy.</Link>
+</p><br />
 </div>
             </main>
 

@@ -98,7 +98,7 @@ For more information on Google Analytics cookies, see the official <Link to='htt
 <li>From time to time we test new features and make subtle changes to the way that the site is delivered. When we are still testing new features these cookies may be used to ensure that you receive a consistent experience whilst on the site whilst ensuring we understand which optimisations our users appreciate the most.</li>
 </ul>
 <h4>How to manage cookies</h4>
-
+<p>
 You are able to decline our use of cookies by clicking the “Decline” button located in the pop-up at the bottom right of every page.
 
 You can switch some cookies off through the <Link to='http://www.youronlinechoices.com/uk'>Your Online Choices site</Link>. You may need to do this again each time you use a different IP address, device, or virtual private network. You can also adjust the global privacy setting or plug-in which should be communicated to use via your browser.
@@ -110,8 +110,9 @@ It is also possible to stop your browser from accepting cookies altogether by ch
 <li><Link to='https://support.google.com/chrome/answer/95647?hl=en&ref_topic=14666'>Cookie settings in Chrome</Link></li>
 <li><Link to='https://support.apple.com/kb/PH17191?locale=en_US'>Cookie settings in Safari web</Link> and <Link to='http://support.apple.com/kb/HT1677'>iOS</Link></li>
 </ul>
+</p>
 <h4>Useful links</h4>
-
+<p>
 If you would like to find out more about privacy, cookies and their use on the internet, you may find the following links useful:
 <ul>
 <li><Link to='https://support.microsoft.com/en-us/help/260971/description-of-cookies'>Microsoft cookies guide</Link></li>
@@ -119,6 +120,7 @@ If you would like to find out more about privacy, cookies and their use on the i
 <li><Link to='https://ico.org.uk/'>The Information Commissioner’s Office</Link></li>
 </ul>
 If you would like to contact us about cookies please email <Link to='mailto:admin@caprimag.com'>admin@caprimag.com</Link>.
+</p>
 </div>
             </main>
 
