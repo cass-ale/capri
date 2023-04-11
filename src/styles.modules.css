@@ -441,6 +441,12 @@ footer a {
     .mobileCon {
         display: none;
     }
+    #mobileCapri {
+        display: none;
+    }
+    #mobileSig {
+        display: none;
+    }
 }
 
 
@@ -617,6 +623,13 @@ footer a {
         width: 100%;
         text-align: center;
     }
+    #sig {
+        display: none;
+    }
+    #mobileSig {
+        font-family: 'Orpheus';
+        font-size: 2.25rem;
+    }
 
 
     .privacyContainer {
@@ -650,8 +663,17 @@ footer a {
     #footerForm input {
         width: 100%;
     }
-    #capri:hover {
-        font-size: 3.09rem;
+    #mobileCapri{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Orpheus';
+        font-size: 3rem;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+    }
+    #capri {
+        display: none;
     }
 }
 

@@ -50,6 +50,7 @@ function Donate() {
             You can find links for our PayPal and Venmo below, and thank you for supporting CAPRI Media.</p> <br /><br/>
 
             <section id="sig" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>— CAPRI</section>
+            <section id="mobileSig">— CAPRI</section>
         <br />
         
         {<nav className="mobileIcons">

@@ -34,7 +34,7 @@ function Footer() {
 
         {/* Logo that doubles as a back to top scroll button */}
         <section id="capri" onClick={handleClick} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>CAPRI</section>
-
+        <section id="mobileCapri" onClick={handleClick}>CAPRI</section>
         {/* Email Submission Form */}
         {formSubmitted ? (
           <Sub formReset={handleFormReset}/>
