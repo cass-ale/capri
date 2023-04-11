@@ -57,16 +57,16 @@ function MobileMenu(props) {
             props.closeMenu();
           }
         }
-    
+
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
       });
-  
+
 
 
     return (
         <div className="mobileMenu">
-            <section className="formClose" style={{marginLeft: '0rem'}}><FontAwesomeIcon icon={faClose} onClick={onClick} size="2x"/></section>
+            <section className="formClose" style={{marginLeft: '1rem'}}><FontAwesomeIcon icon={faClose} onClick={onClick} size="2x"/></section>
           <nav className="mobileNav">
             <ul>
                 <li><a href="/" onClick={handleClick}>CURRENT ISSUE</a></li><br />
