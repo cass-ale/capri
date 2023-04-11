@@ -456,6 +456,10 @@ footer a {
         font-size: 6.5rem;
         text-align: center;
     }
+    .archiveContainer {
+        margin-left: 0;
+        margin-right: 0;
+    }
     .archiveContainer p {
         font-size: 1.75rem;
     }
