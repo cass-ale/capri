@@ -14,7 +14,7 @@ const dono = [
     },
     {
         icon: faMoneyBills,
-        url: 'https://account.venmo.com/u/caprimag',
+        url: 'https://account.venmo.com/u/capricatalogue',
     }
 ]
 const handleMouseOver = () => {
