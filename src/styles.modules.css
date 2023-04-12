@@ -310,7 +310,7 @@ main a {
     flex-direction: column;
     flex-grow: 1;
     width: 25rem;
-    margin: 2rem;
+    margin: 1rem;
     justify-content: center;
     align-items: center;
     font-family: 'Gopher';
@@ -603,11 +603,11 @@ footer a {
         width: 100%;
     }
     #messageForm {
-        width: 10rem;
+        width: 11rem;
         height: 3rem;
         font-size: 1rem;
         align-items: center;
-        margin-top: 0;
+        margin: 0;
     }
     .formClose {
         margin-left: 15rem;
