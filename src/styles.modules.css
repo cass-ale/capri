@@ -35,7 +35,6 @@ main {
 }
 
 
-
 /* Header/Navbar CSS Styling */
 header {
     font-family: 'Orpheus';
@@ -608,6 +607,7 @@ footer a {
         height: 3rem;
         font-size: 1rem;
         align-items: center;
+        margin-top: 0;
     }
     .formClose {
         margin-left: 15rem;
@@ -710,9 +710,12 @@ footer a {
 }
 .mobileMenu li {
     list-style: none;
+    font-family: 'Orpheus-medium';
     text-align: center;
     padding-right: 3.5rem;
     transition: all 0.2s;
+    text-align: center;
+    padding: 0;
 }
 .mobileMenu li:active {
     transform: scale(0.85);
@@ -727,6 +730,7 @@ footer a {
 }
 .mobileNav ul{
     margin-bottom: 0;
+    padding: 0;
 }
 #mobile {
     cursor: pointer;
@@ -742,6 +746,7 @@ footer a {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 2rem;
 }
 #menuClose {
     cursor: pointer;
