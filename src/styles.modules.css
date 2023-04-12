@@ -726,7 +726,6 @@ footer a {
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    overflow: scroll;
 }
 .mobileNav ul{
     margin-bottom: 0;
