@@ -523,6 +523,10 @@ footer a {
     .heroContainer {
         width: 100%;
     }
+    .heroContainer:hover {
+        animation-duration: 0s;
+    }
+    /* Disables cycling effect on mobile */
     .heroText {
         font-size: 4rem;
         text-align: center;
@@ -688,7 +692,6 @@ footer a {
     flex-direction: column;
     align-items: flex-start;
     background-color: whitesmoke;
-    border: ghostwhite solid;
     gap: 1.5rem;
     position: absolute;
     top: 0;
@@ -704,26 +707,26 @@ footer a {
 .mobileMenu a {
     list-style: none;
     text-align: center;
-    transition: all 0.2s;
 }
 .mobileMenu li {
     list-style: none;
     text-align: center;
     padding-right: 3.5rem;
+    transition: all 0.2s;
 }
-.mobileMenu a:hover {
-    text-decoration: underline;
-}
-.mobileMenu a:active{
+.mobileMenu li:active {
     transform: scale(0.85);
 }
 .mobileNav{
-        display: flex;
+    display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    margin: 1rem;
     justify-content: center;
     align-items: center;
+    gap: 5rem;
+    overflow: scroll;
+}
+.mobileNav ul{
+    margin-bottom: 0;
 }
 #mobile {
     cursor: pointer;
@@ -739,7 +742,6 @@ footer a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem;
 }
 #menuClose {
     cursor: pointer;
