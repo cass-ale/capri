@@ -96,7 +96,7 @@ We collect personal data when you:
 </ul>
 </p>
 <h4>How we use your personal data</h4>
-
+<p>
 We use personal data collected through our sites and apps only when we have a valid reason and the legal grounds to do so. We determine the legal grounds based on the purposes for which we have collected your personal data.<br />
 <br />
 <i>Legal grounds for using your personal data</i><br />
@@ -127,7 +127,7 @@ The legal ground may be one of the following:
 Where we rely on cookies to collect any personal data please see our <Link to ='/cookies' onClick={handleClick}>cookie policy</Link> for more information and how to manage your cookie choices through your Privacy settings.<br />
 <br />
 CAPRI is a media organisation and publisher. Data protection law includes certain exemptions when personal data is processed for the purposes of journalism. Those exemptions apply to some of the ways CAPRI uses personal data. This Privacy Policy does not cover personal data that CAPRI processes for the purposes of journalism.
-
+</p>
 <h4>Using children’s personal data</h4>
 
 We do not aim any of our products or services directly at children under the age of 13 and we do not knowingly collect personal data about children under 13. Some of our services may have a higher age restriction and this will be shown at the point of registration. We also note that California law prohibits sale of personal data of consumers between 13-16 years of age unless the guardian has authorised the sale. We comply with this requirement.

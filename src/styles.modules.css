@@ -280,6 +280,14 @@ main a {
     color: black;
     transform: scale(0.85);
 }
+.conButton:disabled {
+    background-color: grey;
+    color: ghostwhite;
+    border: whitesmoke dotted;
+    cursor: not-allowed;
+    border-top-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+}
 
 
 /* Mobile version of the contact button; different screens render a scroll-less version of the button */
@@ -305,6 +313,13 @@ main a {
     color: black;
     transform: scale(0.85);
 }
+.mobileCon:disabled{
+    background-color: grey;
+    color: ghostwhite;
+    border: whitesmoke dotted;
+    cursor: not-allowed;
+    border-top-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;}
 #messageForm {
     display: flex;
     flex-direction: column;
@@ -323,6 +338,10 @@ main a {
     align-items: flex-end;
     margin-top: 1rem;
     margin-left: 50rem;
+    transition: all 0.2s;
+}
+.formClose:active{
+    transform: scale(0.85);
 }
 
 
@@ -376,7 +395,7 @@ footer a {
 }
 #capri:hover {
     font-family: 'Lato-Light';
-    font-size: 2.95rem;
+    font-size: 2.96rem;
 }
 .footerLinks a {
     display: flex;
@@ -426,6 +445,13 @@ footer a {
     color: white;
     transform: scale(0.85);
 }
+.footerButton:disabled {
+    background-color: grey;
+    color: ghostwhite;
+    border: whitesmoke dotted;
+    cursor: not-allowed;
+    border-top-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;}
 #copyright {
     padding: 1.5rem;
 }
@@ -462,6 +488,11 @@ footer a {
     .archiveContainer p {
         font-size: 1.75rem;
     }
+    .donoContainer {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
     #h1 {
         font-size: 2rem;
     }
@@ -474,10 +505,8 @@ footer a {
         align-items: center;
         gap: 1rem;
         max-width: 100%;
-        padding: 0;
+        padding: 2rem;
         margin: 0;
-        width: 100%;
-        padding-top: 1rem;
     }
     .contactContainer p {
         text-align: center;
@@ -520,7 +549,8 @@ footer a {
         display: none;
     }
     .heroContainer {
-        width: 100%;
+        max-width: 100%;
+        flex-wrap: wrap;
     }
     .heroContainer:hover {
         animation-duration: 0s;
@@ -529,6 +559,7 @@ footer a {
     .heroText {
         font-size: 4rem;
         text-align: center;
+        width: 100%;
     }
 
 
@@ -542,9 +573,11 @@ footer a {
         flex-wrap: wrap;
         gap: 1rem;
         max-width: 100%;
-        padding: 0;
+        padding: 1rem;
         margin: 0;
-        width: 100%;
+    }
+    .archiveContainer h2 {
+        font-size: 1rem;
     }
     .archiveContainer p {
         font-size: 1.5rem;
@@ -563,13 +596,11 @@ footer a {
         align-items: center;
         gap: 1rem;
         max-width: 100%;
-        padding: 0;
+        padding: 1rem;
         margin: 0;
-        width: 100%;
-        padding-top: 1rem;
     }
     .contactContainer p {
-        font-size: 1.25rem;
+        font-size: 0.8rem;
         width: 100%;
         text-align: center;
     }
@@ -613,7 +644,7 @@ footer a {
         margin-left: 15rem;
     }
     #conHeader {
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-align: center;
     }
 
@@ -622,12 +653,11 @@ footer a {
         flex-wrap: wrap;
         gap: 1rem;
         max-width: 100%;
-        padding: 0;
+        padding: 1rem;
         margin: 0;
-        width: 100%;
     }
     .donoContainer p {
-        font-size: 1.25rem;
+        font-size: 1rem;
         width: 100%;
         text-align: center;
     }
@@ -642,19 +672,16 @@ footer a {
 
     .privacyContainer {
         flex-wrap: wrap;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
         max-width: 100%;
-        padding: 0;
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
+        padding: 1rem;
     }
     .privacyContainer h4 {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     .privacyContainer p {
-        font-size: 0.85rem;
+        font-size: 0.75rem;
         width: 100%;
         text-align: center;
     }
@@ -667,6 +694,9 @@ footer a {
         flex-direction: column;
         justify-content: center;
         text-align: center;
+    }
+    .footerForm {
+        font-size: 0.75rem;
     }
     #footerForm input {
         width: 100%;
@@ -684,7 +714,14 @@ footer a {
         display: none;
     }
 }
-
+@media screen and (max-width: 400px) {
+    .heroText {
+        font-size: 2rem;
+    }
+    .formClose {
+        margin-left: 13rem;
+    }
+}
 
 /* Mobile/tablet Menu and Nav CSS Styling */
 .mobileMenu {
@@ -754,9 +791,11 @@ footer a {
 }
 .mobileIcons {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     gap: 1.5rem;
+    padding: 0.5rem;
 }

@@ -43,7 +43,7 @@ function Donate() {
         <p id="h1">Support For CAPRI Media</p>
 
         <p>
-            CAPRI Media would like our values and ethics to be apparent from the very beginning. Therefore, a portion of all revenue earned through CAPRI related projects (50% of all direct donations) will be donated to both <Link to='https://nomore.org/take-action/' target="_blank" rel="noopener noreferrer"><b>NO MORE</b></Link> and <Link to='https://www.amirahinc.org/our-impact' target="_blank" rel="noopener noreferrer"><b>Amirah, Inc.</b></Link>. Donating to CAPRI helps us to fund our creative endeavors and to properly compensate all of our collaborators for their invaluable time and effort.<br/><br />
+            CAPRI Media would like our values and ethics to be apparent from the very beginning. Therefore, a portion of all revenue earned through CAPRI related projects (50% of all direct donations) will be donated to both <Link to='https://nomore.org/take-action/' target="_blank" rel="noopener noreferrer"><b>NO MORE</b></Link> and <Link to='https://www.amirahinc.org/our-impact' target="_blank" rel="noopener noreferrer"><b>Amirah, Inc.</b></Link> Donating to CAPRI helps us to fund our creative endeavors and to properly compensate all of our collaborators for their invaluable time and effort.<br/><br />
 
             We hope that our allyship inspires you to support, believe, and celebrate women and other survivors of sexual violence. <br /><br/>
 
