@@ -231,7 +231,8 @@ main a {
 .contactForm form{
     z-index: 100;
     border: ghostwhite solid;
-    background-color: whitesmoke;;
+    background-color: black;
+    color: white;
     position: relative;
     height: 50rem;
     bottom: 45rem;
@@ -280,7 +281,29 @@ main a {
     color: black;
     transform: scale(0.85);
 }
-.conButton:disabled {
+.formButton {
+    border: .15rem white solid;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: black;
+    color: white;
+    font-family: 'Orpheus';
+    font-size: 1.25rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    padding: 1.25rem 2.5rem;
+}
+.formButton:hover {
+    background-color: white;
+    color: black;
+}
+.formButton:active {
+    background-color: black;
+    color: white;
+    transform: scale(0.85);
+}
+.formButton:disabled {
     background-color: grey;
     color: ghostwhite;
     border: whitesmoke dotted;
@@ -313,7 +336,29 @@ main a {
     color: black;
     transform: scale(0.85);
 }
-.mobileCon:disabled{
+.mobileForm {
+    border: .15rem white solid;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: black;
+    color: white;
+    font-family: 'Orpheus';
+    font-size: 1.25rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    padding: 1.25rem 2.5rem;
+}
+.mobileForm:hover {
+    background-color: white;
+    color: black;
+}
+.mobileForm:active {
+    background-color:black;
+    color: white;
+    transform: scale(0.85);
+}
+.mobileForm:disabled{
     background-color: grey;
     color: ghostwhite;
     border: whitesmoke dotted;
@@ -466,6 +511,9 @@ footer a {
     .mobileCon {
         display: none;
     }
+    .mobileForm {
+        display: none;
+    }
     #mobileCapri {
         display: none;
     }
@@ -611,17 +659,20 @@ footer a {
     .conButton {
         display: none;
     }
+    .formButton {
+        display: none;
+    }
     .contactForm form {
         opacity: 1;
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: whitesmoke;
+        background-color: black;
         border: ghostwhite solid;
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 99.5%;
         height: 100vh;
         font-size: 1.5rem;
         z-index: 9999;
