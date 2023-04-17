@@ -26,6 +26,18 @@
     font-family: 'Gopher-Light';
     src: url(./Fonts/Gopher-Light.ttf);
 }
+@font-face {
+    font-family: "Kristi";
+    src: url(./Fonts/Kristi-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "SpecialElite";
+    src: url(./Fonts/SpecialElite-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 :root {
     font-size: 100%;
     background-color: black;

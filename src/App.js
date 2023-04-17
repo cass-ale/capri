@@ -6,6 +6,7 @@ import Donate from './Components/Pages/Donate';
 import Contact from './Components/Pages/Contact';
 import Privacy from './Components/Pages/Privacy';
 import Cookies from './Components/Pages/Cookies';
+import Cass from './Components/Pages/Cass';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
 
@@ -22,6 +23,7 @@ function App() {
       <Route exact path="/contact" element={<Contact />} />
       <Route exact path="/privacy" element={<Privacy />} />
       <Route exact path="/cookies" element={<Cookies />} />
+      <Route exact path="/cassja_portf_fedev_04172023" element={<Cass />} />
       </Routes>
     </Router>
     </>
