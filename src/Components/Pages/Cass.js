@@ -21,12 +21,12 @@ function Cass() {
     setSimpOpen(!simpOpen);
     };
     const showPopupHandler = () => setShowPopUp(false);
-    
+    const reopen = () => setShowPopUp(true);
     
     useEffect(() => {
         const timer = setTimeout(() => {
         setShowPopUp(false);
-      }, 15000);
+      }, 30000);
      return () => clearTimeout(timer);
      }, [showPopUp]);
      let popup = null;
@@ -42,6 +42,7 @@ function Cass() {
         <main className='cmain'>
             {popup}
             <h1>Cassian J. ALÉRIA | Certified Front-End Developer & UX/UI Designer</h1>
+            <button onClick={reopen}>Need That PopUp Again?</button>
             <section className='projects'>
             <article className="capri-container">
                 {!isOpen ? (

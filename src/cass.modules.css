@@ -32,26 +32,58 @@
 }
 @keyframes shake {
     0% { transform: rotate(0deg); }
-   50% { transform: rotate(0deg); }
-   85% { transform: rotate(25deg) scale(1.05); }
-   90% { transform: scale(1.25)}
-   95% { transform: rotate(-25deg) scale(1.3); }
-  100% { transform: rotate(0deg) scale(1.5); }
+   50% { transform: rotate(0deg);
+        color:#183a37; }
+   85% { transform: rotate(25deg) scale(1.05);
+        color:#183a37; }
+   90% { transform: scale(1.25);
+        color:#183a37;}
+   95% { transform: rotate(-25deg) scale(1.3);
+        color:#183a37; }
+  100% { transform: rotate(0deg) scale(1.5);
+        color:#183a37; }
   }
 
 
 
 
 .cmain {
-    margin-top: 6.75rem;
+    margin-top: 6.5rem;
     background-color: #04151F;
     color: #f4f0e0;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
 }
 .cmain h1 {
     font-family: 'Lato';
     font-size: 3rem;
     text-align: center;
     padding-top: 5rem;
+}
+.cmain button {
+    width: 12rem;
+    height: 3rem;
+    font-family: 'Gopher';
+    background-color: #432534;
+    color: #f4f0e0;
+    border: #C44900 0.1rem solid;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    transform: scale(0.75);
+    transition: all 0.5s;
+}
+.cmain button:hover {
+    background-color: #f4f0e0;
+    border-color: #183a37;
+    color: #432534;
+    transform: scale(1);
+}
+.cmain button:active {
+    background-color: #183a37;
+    color: #f4f0e0;
+    border-color: #432534;
+    transform: scale(0.85);
 }
 .projects {
     display: flex;
@@ -116,15 +148,40 @@
   .popup {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     z-index: 100;
-    border: #C44900;
+    border: #C44900 0.2rem dotted;
     background-color: #432534;
     color: #f4f0e0;
     position: absolute;
-    width: 100%;
-    height: 50rem;
-    opacity: 0.98;
+    max-width: 100%;
+    width: 100%rem;
+    height: 45rem;
     transition: all 0.4s;
     box-shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.25);
+    margin-top: 5rem;
+  }
+  .popupcontents {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-family: 'Lato';
+    font-size: 1.1rem;
+  }
+  .popupcontents h1 {
+    font-family: 'Gopher';
+    font-size: 5rem;
+    margin: 0;
+  }
+  .popupcontents h2 {
+    font-size: 2.75rem;
+  }
+  .popupcontents a {
+    color: #C44900
+  }
+  .popupcontents a:hover {
+    color: #183a37;
+  }
+  .popupcontents a:active {
+    color: #f4f0e0;
   }
