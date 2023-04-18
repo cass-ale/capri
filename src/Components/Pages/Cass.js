@@ -1,9 +1,12 @@
 import React, {useState, useEffect} from 'react'
 import '../../cass.modules.css';
 import Header from './Cheader';
-import Footer from '../Footer';
+import Footer from './Cfooter';
 import PopUp from './Cpopup';
-
+import capri from '../../Images/capri.png';
+import simp from '../../Images/simp.png';
+import { Tooltip as ReactTooltip } from 'react-tooltip';
+import 'react-tooltip/dist/react-tooltip.css';
 
 
 
@@ -16,13 +19,26 @@ function Cass() {
 
     const handleCapriClick = () => {
       setIsOpen(!isOpen);
+      handleClickOne();
     };
     const handleSimpClick = () => {
     setSimpOpen(!simpOpen);
+    handleClickTwo();
     };
     const showPopupHandler = () => setShowPopUp(false);
     const reopen = () => setShowPopUp(true);
-    
+    const handleClickOne = () => {
+      window.scrollTo({
+        top: 497,
+        behavior: "smooth"
+      });
+    };
+    const handleClickTwo = () => {
+      window.scrollTo({
+        top: 1325,
+        behavior: "smooth"
+      });
+    };
     useEffect(() => {
         const timer = setTimeout(() => {
         setShowPopUp(false);
@@ -36,38 +52,57 @@ function Cass() {
     return(
         <>
         <header>
-        <Header />
+        <Header reopen={reopen}/>
         </header>
 
         <main className='cmain'>
             {popup}
             <h1>Cassian J. ALÉRIA | Certified Front-End Developer & UX/UI Designer</h1>
-            <button onClick={reopen}>Need That PopUp Again?</button>
+
+
+
+
+
             <section className='projects'>
+
+            <h2>Front-End Projects</h2>
+
             <article className="capri-container">
-                {!isOpen ? (
-                  <div className="capricircle" onClick={handleCapriClick}>
+
+            {!isOpen ? (
+                  <div className="capricircle"  onClick={handleCapriClick}>
                     <p id='cjacapri'>CAPRI Media Official Website</p>
                   </div>
                 ) : (
-                  <div className="caprirectangle" onClick={handleCapriClick}>
-                    <p>New paragraph</p>
+                  <div className="caprirectangle" onClick={handleCapriClick} data-tooltip-id='closerect' data-tooltip-content="Click To Close.">
+                  <ReactTooltip id="closerect" />
+                  <img src={capri} alt='The Official Website For CAPRI Media Entertainment. Coded From Scratch Using React.Js.' />
+                    <p>The Official Website For CAPRI Media Entertainment. Coded From Scratch Using React.Js, This Website Is Able To Smoothly Transition Between Devices To Present A Modern And Responsive Experience To Users. CAPRI Media Is A Fashion And Art Production Company That Required A Website That Could Be As Sleek And Timeless As Their Works.
+                     Github Repository For The Source Code Is Private At The Moment. Please Reach Out To View The Code Via Email. Click The Site To Enter Or Click Anywhere Else To Close.</p>
                   </div>
                 )}
-            </article>
+
+
+                </article>
 
             <article className='simp-container'>
+
             {!simpOpen ? (
-                  <div className="capricircle" onClick={handleSimpClick}>
+                  <div className="simpcircle" onClick={handleSimpClick}>
                     <p id='simpcxty'><span id='simp'>simpcxty</span> Official Website</p>
                   </div>
                 ) : (
-                  <div className="caprirectangle" onClick={handleSimpClick}>
-                    <p>New paragraph</p>
+                  <div className="simprectangle" onClick={handleSimpClick}>
+                  <a href="https://www.simpcxty.com" target="_blank" rel="noopener noreferrer"><img src={simp} alt='The Official Website For Up And Coming Hip-Hop And R&B Artist, simpcxty. Coded From Scratch Using React.Js.' /></a>
+                    <p>The Official Website For Up And Coming Hip-Hop/R&B Artist, simpcxty. Born And Raised In Bessemer, AL, simpcxty Aims To Challenge Outdated Notions Of Masculinity And 
+                    Encourage Men To Embrace Their Emotions In The Name Of Bettering Mental Health. This Site Is Coded In React.Js And Is Easily Updated To Suit The Changing Styles Of The Musician; The Site Is Also High-Performing And Responsive To Capture The Eyes Of Potential Fans Whether They Be On Desktop Or Mobile. Github Repository For The Source Code Is Private At The Moment. Please Reach Out To View The Code Via Email. Click The Site To Enter Or Click Anywhere Else To Close. </p>
                   </div>
-                )}                
-            </article>
-            </section>
+                )}
+
+
+                </article>
+
+                </section>
         </main>
 
         <footer>

@@ -39,9 +39,10 @@ const handleClick = () => {
     });
   };
 
-function Cheader() {
+function Cheader(props) {
     return(
         <nav className='cheader'>
+        <button onClick={props.reopen}>Need That Pop Up Again?</button>
             <h1 onClick={handleClick}>C. J. ALÉRIA</h1>
 
             {<nav className="cicons">

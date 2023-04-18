@@ -13,10 +13,11 @@
 }
 .cheader h1 {
     font-family: 'Gopher';
-    font-size: 5rem;
+    font-size: 3.75rem;
     color: #432534;
     margin: 0;
     cursor: pointer;
+    margin-left: 5rem;
 }
 .cicons {
     display: flex;
@@ -48,7 +49,7 @@
 
 
 .cmain {
-    margin-top: 6.5rem;
+    padding-top: 6.5rem;
     background-color: #04151F;
     color: #f4f0e0;
     display: flex;  
@@ -61,7 +62,7 @@
     text-align: center;
     padding-top: 5rem;
 }
-.cmain button {
+.cheader button {
     width: 12rem;
     height: 3rem;
     font-family: 'Gopher';
@@ -73,13 +74,13 @@
     transform: scale(0.75);
     transition: all 0.5s;
 }
-.cmain button:hover {
-    background-color: #f4f0e0;
+.cheader button:hover {
+    background-color: #04151F;
     border-color: #183a37;
-    color: #432534;
+    color: #f4f0e0;
     transform: scale(1);
 }
-.cmain button:active {
+.cheader button:active {
     background-color: #183a37;
     color: #f4f0e0;
     border-color: #432534;
@@ -91,6 +92,12 @@
     align-items: center;
     justify-content: space-around;
     width: 100%;
+    gap: 5rem;
+    margin-top: 15rem;
+    margin-bottom: 10rem;
+}
+.projects h2 {
+  margin: 0;
 }
 
 .capri-container {
@@ -111,23 +118,30 @@
     width: 35rem;
     height: 35rem;
     transition: all 0.4s linear;
+    cursor: pointer;
+    overflow: hidden;
   }
   .caprirectangle {
+    flex-direction: column;
     width: 100rem;
-    height: 35rem;
+    height: 60rem;
     border-radius: 0.1rem;
-    cursor: pointer;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    text-align: center;
+    z-index: 150;
+  }
+  .caprirectangle img {
+    width: 75rem;
+    height: auto;
   }
   .capricircle:hover {
     transform: scale(1.1);
   }
-  .caprirectangle:hover {
-    transform: scale(1.05);
-  }
   #cjacapri {
     font-family: 'Orpheus';
   }
-  
+
 
   .simp-container {
     display: flex;
@@ -135,7 +149,38 @@
     align-items: center;
     height: 75vh;
   }
-
+  .simpcircle,
+  .simprectangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: #183a37;
+    color: #f4f0e0;
+    border-radius: 50%;
+    width: 35rem;
+    height: 35rem;
+    transition: all 0.4s linear;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .simprectangle {
+    flex-direction: column;
+    width: 100rem;
+    height: 60rem;
+    border-radius: 0.1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    text-align: center;
+    z-index: 150;
+  }
+  .simprectangle img {
+    width: 75rem;
+    height: auto;
+  }
+  .simpcircle:hover {
+    transform: scale(1.1);
+  }
   #simp {
     font-family: 'Kristi';
     font-size: 2.75rem;
@@ -143,6 +188,7 @@
   #simpcxty {
     font-family: 'SpecialElite';
   }
+
 
 
   .popup {
@@ -179,9 +225,27 @@
   .popupcontents a {
     color: #C44900
   }
-  .popupcontents a:hover {
-    color: #183a37;
-  }
   .popupcontents a:active {
+    color: #f4f0e0;
+  }
+
+
+  .cfooter {
+    background-color: #432534;
+  }
+  .cfooterTop {
+    display: flex;
+    justify-content: center;
+  }
+  #cass {
+    color: #f4f0e0;
+    font-size: 3rem;
+    margin: 0;
+    cursor: pointer;
+  }
+  #ccopyright {
+    color: #f4f0e0;
+  }
+  #copyright a {
     color: #f4f0e0;
   }
