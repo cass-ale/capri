@@ -21,26 +21,32 @@ function Cass() {
       setIsOpen(!isOpen);
       handleClickOne();
     };
+
     const handleSimpClick = () => {
     setSimpOpen(!simpOpen);
     handleClickTwo();
     };
+
     const showPopupHandler = () => setShowPopUp(false);
+
     const reopen = () => setShowPopUp(true);
+
     const handleClickOne = () => {
       window.scrollTo({
         top:725,
         behavior: "smooth"
       });
     };
+
     const handleClickTwo = () => {
       window.scrollTo({
         top: 1570,
         behavior: "smooth"
       });
     };
+
     useEffect(() => {
-        const timer = setTimeout(() => {
+      const timer = setTimeout(() => {
         setShowPopUp(false);
       }, 30000);
      return () => clearTimeout(timer);
@@ -49,7 +55,10 @@ function Cass() {
      if(showPopUp) {
        popup = <PopUp showPopupHandler={showPopupHandler}/>;
       }
-    return(
+  
+  
+  
+      return(
         <>
         <header>
         <Header reopen={reopen}/>
@@ -79,7 +88,7 @@ function Cass() {
                   </div>
                 ) : (
                   <div className="caprirectangle" onClick={handleCapriClick}>
-                  <img src={capri} alt='The Official Website For CAPRI Media Entertainment. Coded From Scratch Using React.Js.' />
+                  <a href="https://www.caprimag.com" target="_blank" rel="noopener noreferrer"><img src={capri} alt='The Official Website For CAPRI Media Entertainment. Coded From Scratch Using React.Js.' /></a>
                     <p>The Official Website For CAPRI Media Entertainment. Coded From Scratch Using React.Js, This Website Is Able To Smoothly Transition Between Devices To Present A Modern And Responsive Experience To Users. CAPRI Media Is A Fashion And Art Production Company That Required A Website That Could Be As Sleek And Timeless As Their Works.
                      Github Repository For The Source Code Is Private At The Moment. Please Reach Out To View The Code Via Email. Click The Site To Enter Or Click Anywhere Else To Close.</p>
                   </div>
