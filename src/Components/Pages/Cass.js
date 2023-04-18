@@ -29,13 +29,13 @@ function Cass() {
     const reopen = () => setShowPopUp(true);
     const handleClickOne = () => {
       window.scrollTo({
-        top: 497,
+        top:725,
         behavior: "smooth"
       });
     };
     const handleClickTwo = () => {
       window.scrollTo({
-        top: 1325,
+        top: 1570,
         behavior: "smooth"
       });
     };
@@ -66,16 +66,19 @@ function Cass() {
             <section className='projects'>
 
             <h2>Front-End Projects</h2>
+            <p id='about'>After Receiving My Front-End Developer Certification Through Meta's Coursera Learning Program In March Of 2023, I Immediately Began Working On Publishing Live Websites Made With React.Js
+            To Solidify My Understanding Of Front End Principles And To Prepare Myself For Entrance Into The Tech Job Market. Below You Will Find Links To The Full Sites I Have Created
+            In React, And You Will See Firsthand That My Drive To Undergo Self Study In Web Development Has Allowed Me To Produce High Quality And Responsive Applications.</p>
 
             <article className="capri-container">
 
             {!isOpen ? (
-                  <div className="capricircle"  onClick={handleCapriClick}>
-                    <p id='cjacapri'>CAPRI Media Official Website</p>
+                  <div className="capricircle"  onClick={handleCapriClick} >
+                    <p id='cjacapri' data-tooltip-id='open' data-tooltip-content="Click To Open.">CAPRI Media Official Website</p>
+                    <ReactTooltip id="open" />
                   </div>
                 ) : (
-                  <div className="caprirectangle" onClick={handleCapriClick} data-tooltip-id='closerect' data-tooltip-content="Click To Close.">
-                  <ReactTooltip id="closerect" />
+                  <div className="caprirectangle" onClick={handleCapriClick}>
                   <img src={capri} alt='The Official Website For CAPRI Media Entertainment. Coded From Scratch Using React.Js.' />
                     <p>The Official Website For CAPRI Media Entertainment. Coded From Scratch Using React.Js, This Website Is Able To Smoothly Transition Between Devices To Present A Modern And Responsive Experience To Users. CAPRI Media Is A Fashion And Art Production Company That Required A Website That Could Be As Sleek And Timeless As Their Works.
                      Github Repository For The Source Code Is Private At The Moment. Please Reach Out To View The Code Via Email. Click The Site To Enter Or Click Anywhere Else To Close.</p>
@@ -89,7 +92,8 @@ function Cass() {
 
             {!simpOpen ? (
                   <div className="simpcircle" onClick={handleSimpClick}>
-                    <p id='simpcxty'><span id='simp'>simpcxty</span> Official Website</p>
+                    <p id='simpcxty' data-tooltip-id='open2' data-tooltip-content="Click To Open."><span id='simp'>simpcxty</span> Official Website</p>
+                    <ReactTooltip id="open2" />
                   </div>
                 ) : (
                   <div className="simprectangle" onClick={handleSimpClick}>
