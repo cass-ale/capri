@@ -137,7 +137,6 @@
   }
   .caprirectangle {
     flex-direction: column;
-    background-color: #020c12;
     width: 100rem;
     height: 60rem;
     border-radius: 0.1rem;
@@ -181,7 +180,6 @@
   }
   .simprectangle {
     flex-direction: column;
-    background-color: #020c12;
     width: 100rem;
     height: 60rem;
     border-radius: 0.1rem;
