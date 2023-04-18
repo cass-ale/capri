@@ -4,9 +4,7 @@ import Header from './Cheader';
 import Footer from './Cfooter';
 import PopUp from './Cpopup';
 import capri from '../../Images/capri.png';
-import simp from '../../Images/simp.png';
-import { Tooltip as ReactTooltip } from 'react-tooltip';
-import 'react-tooltip/dist/react-tooltip.css';
+import simp from '../../Images/simp.png'
 
 
 
@@ -69,22 +67,18 @@ function Cass() {
             <h1>Cassian J. ALÉRIA | Certified Front-End Developer & UX/UI Designer</h1>
 
 
-
-
-
             <section className='projects'>
 
             <h2>Front-End Projects</h2>
-            <p id='about'>After Receiving My Front-End Developer Certification Through Meta's Coursera Learning Program In March Of 2023, I Immediately Began Working On Publishing Live Websites Made With React.Js
-            To Solidify My Understanding Of Front End Principles And To Prepare Myself For Entrance Into The Tech Job Market. Below You Will Find Links To The Full Sites I Have Created
-            In React, And You Will See Firsthand That My Drive To Undergo Self Study In Web Development Has Allowed Me To Produce High Quality And Responsive Applications.</p>
+            <p id='about'>After Receiving My Front-End Developer Certification Through Meta's Coursera Learning Program In March Of 2023, I Immediately Began Working On Publishing Live Websites Made With React.js
+            To Solidify My Understanding Of Front End Development Principles And To Prepare Myself For The Tech Job Market. Below You Will Find Links To Full Sites I Have Created
+            In React. These Projects Showcase My Understanding Of UX/Accessibility Design, Responsive Applications, And Organized Project Management. </p>
 
             <article className="capri-container">
 
             {!isOpen ? (
                   <div className="capricircle"  onClick={handleCapriClick} >
-                    <p id='cjacapri' data-tooltip-id='open' data-tooltip-content="Click To Open.">CAPRI Media Official Website</p>
-                    <ReactTooltip id="open" />
+                    <p id='cjacapri'>CAPRI Media Official Website</p>
                   </div>
                 ) : (
                   <div className="caprirectangle" onClick={handleCapriClick}>
@@ -101,8 +95,7 @@ function Cass() {
 
             {!simpOpen ? (
                   <div className="simpcircle" onClick={handleSimpClick}>
-                    <p id='simpcxty' data-tooltip-id='open2' data-tooltip-content="Click To Open."><span id='simp'>simpcxty</span> Official Website</p>
-                    <ReactTooltip id="open2" />
+                    <p id='simpcxty'><span id='simp'>simpcxty</span> Official Website</p>
                   </div>
                 ) : (
                   <div className="simprectangle" onClick={handleSimpClick}>
