@@ -52,7 +52,7 @@
     padding-top: 6.5rem;
     background-color: #04151F;
     color: #f4f0e0;
-    display: flex;  
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -244,6 +244,33 @@
   .popupcontents a:active {
     color: #f4f0e0;
   }
+
+
+
+
+
+.carousel {
+  width: 75rem;
+  height: auto;
+}
+.img {
+  width: 75rem;
+  height: auto;
+}
+.carobutton {
+  width: 12rem;
+  height: 3rem;
+  font-family: 'Gopher';
+  background-color: #432534;
+  color: #f4f0e0;
+  border: #C44900 0.1rem solid;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  transform: scale(0.75);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
 
 
   .cfooter {

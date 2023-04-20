@@ -1,8 +1,7 @@
 import React, {useState} from 'react'
-import '../../cass.modules.css';
-import capri from '../../Images/capri.png';
-import simp from '../../Images/simp.png';
-import Carousel from 'react-bootstrap/Carousel';
+import '../../../cass.modules.css';
+import capri from '../../../Images/capri.png';
+import simp from '../../../Images/simp.png';
 
 
 
@@ -10,11 +9,6 @@ function Cprojects() {
 
     const [isOpen, setIsOpen] = useState(false);
     const [simpOpen, setSimpOpen] = useState(false);
-    const [index, setIndex] = useState(0);
-
-    const handleSelect = (selectedIndex, e) => {
-      setIndex(selectedIndex);
-    };
 
     const handleCapriClick = () => {
       setIsOpen(!isOpen);
@@ -43,8 +37,6 @@ function Cprojects() {
       return (
         <>
         <section className='projects'>
-        <Carousel activeIndex={index} onSelect={handleSelect} as="article">
-        <Carousel.Item as="artricle">
         <article className="capri-container">
 
         {!isOpen ? (
@@ -61,8 +53,7 @@ function Cprojects() {
 
 
             </article>
-            </Carousel.Item>
-            <Carousel.Item as="artricle">
+
         <article className='simp-container'>
 
         {!simpOpen ? (
@@ -79,8 +70,6 @@ function Cprojects() {
 
 
             </article>
-            </Carousel.Item>
-            </Carousel>
 
             </section>
                 </>

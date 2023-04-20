@@ -6,7 +6,7 @@ import Donate from './Components/Pages/Donate';
 import Contact from './Components/Pages/Contact';
 import Privacy from './Components/Pages/Privacy';
 import Cookies from './Components/Pages/Cookies';
-import Cass from './Components/Pages/Cass';
+import Cass from './Components/Pages/CASS/Cass';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
 
