@@ -31,7 +31,6 @@ function ContactForm(props) {
       props.closeForm();
     }
 
-
     return(
         <>
         <Formik
@@ -42,9 +41,9 @@ function ContactForm(props) {
             message: "" }}
         validationSchema={
             Yup.object({
-                firstName: Yup.string().min(1, "Please Fill Out This Field").max(100).required("Please Fill Out This Field"),
-                lastName: Yup.string().min(1, "Please Fill Out This Field").max(100).required("Please Fill Out This Field"),
-                email: Yup.string().min(3, "Please Complete This Field").max(100).email("Invalid Email Address").required("Please Fill Out This Field"),
+                firstName: Yup.string().matches(/^[a-zA-Z\s]*$/, 'Name can only contain letters and spaces').min(1, "Please Fill Out This Field").max(100).required("Please Fill Out This Field"),
+                lastName: Yup.string().matches(/^[a-zA-Z\s]*$/, 'Name can only contain letters and spaces').min(1, "Please Fill Out This Field").max(100).required("Please Fill Out This Field"),
+                email: Yup.string().matches(/([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,})$/, "Invalid Email").min(3, "Please Complete This Field").max(100).email("Invalid Email Address").required("Please Fill Out This Field"),
                 message: Yup.string().min(10, "Messages Must Be At Least 10 Characters").max(750, "Please Shorten Your Message").required("Please Fill Out This Field"),
               })
         }

@@ -35,7 +35,7 @@ function SubForm(props) {
         initialValues={{ email: "" }}
         validationSchema={Yup.object({
           email: Yup.string()
-            .min(3, "Please Complete This Field").max(100)
+            .min(3, "Please Complete This Field").max(100).matches(/([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,})$/, "Invalid Email Address")
             .email("Invalid Email Address")
             .required(""),
         })}
