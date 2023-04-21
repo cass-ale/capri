@@ -89,7 +89,6 @@
 }
 
 
-
 .projects {
     display: flex;
     flex-direction: column;
@@ -107,15 +106,74 @@
 #about {
   font-family: 'Lato';
   font-size: 1.5rem;
-  text-align: center;
-  margin-left: 25rem;
-  margin-right: 25rem;
-  margin-top: 0;
+  text-align: justify;;
+  margin-left: 18.5rem;
+  margin-right: 18.5rem;
+  margin-top: 1.25rem;
   margin-bottom: 3rem;
   line-height: 2.75rem;
 }
 
-.capri-container {
+
+
+.carousel {
+  width: 75rem;
+  height: auto;
+  font-size: 1.25rem;
+  text-align: justify;
+  font-family: 'Lato';
+}
+.carousel a {
+  color: #C44900
+}
+.img {
+  width: 75rem;
+  height: auto;
+}
+.caro {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.caro button {
+  width: 20rem;
+  height: 6rem;
+  font-size: 2rem;
+  background-color: #432534;
+  color: #f4f0e0;
+  border: #C44900 0.1rem solid;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  transform: scale(0.75);
+  transition: all 0.5s;
+  cursor: pointer;
+  text-align: center;
+}
+.caro button:hover {
+  background-color: #f4f0e0;
+  border-color: #04151F;
+  color: #C44900;
+  transform: scale(1);
+}
+.caro button:active {
+  background-color: #183a37;
+  color: #f4f0e0;
+  border-color: #432534;
+  transform: scale(0.85);
+}
+#cjacapri {
+  font-family: 'Orpheus';
+}
+#simp {
+  font-family: 'Kristi';
+  text-align: center;
+  font-size: 3rem;
+  position: relative;
+  bottom: 0.15rem;
+}
+
+
+/* .capri-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,9 +210,6 @@
   }
   .capricircle:hover {
     transform: scale(1.1);
-  }
-  #cjacapri {
-    font-family: 'Orpheus';
   }
 
 
@@ -196,13 +251,9 @@
   .simpcircle:hover {
     transform: scale(1.1);
   }
-  #simp {
-    font-family: 'Kristi';
-    font-size: 2.75rem;
-  }
   #simpcxty {
     font-family: 'SpecialElite';
-  }
+  } */
 
 
 
@@ -249,27 +300,6 @@
 
 
 
-.carousel {
-  width: 75rem;
-  height: auto;
-}
-.img {
-  width: 75rem;
-  height: auto;
-}
-.carobutton {
-  width: 12rem;
-  height: 3rem;
-  font-family: 'Gopher';
-  background-color: #432534;
-  color: #f4f0e0;
-  border: #C44900 0.1rem solid;
-  border-top-right-radius: 1rem;
-  border-bottom-left-radius: 1rem;
-  transform: scale(0.75);
-  transition: all 0.5s;
-  cursor: pointer;
-}
 
 
 
