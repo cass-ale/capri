@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../../cass.modules.css';
-import capri from '../../../Images/capri.png';
+import capri from '../../../Images/capri.gif';
 import simp from '../../../Images/simp.png';
 import { CarouselProvider, Slider, Slide } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
@@ -13,8 +13,6 @@ function Csites() {
         naturalSlideWidth={999}
         naturalSlideHeight={775}
         totalSlides={2}
-        interval={10000}
-        isPlaying={true}
         dragEnabled={true}
         touchEnabled={true}
         lockOnWindowScroll={true}
