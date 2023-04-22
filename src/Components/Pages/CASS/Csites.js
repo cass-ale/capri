@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../../cass.modules.css';
-import capri from '../../../Images/capri.gif';
+import capri from '../../../Images/capri.png';
 import simp from '../../../Images/simp.png';
 import { CarouselProvider, Slider, Slide } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';

@@ -19,6 +19,31 @@
     cursor: pointer;
     margin-left: 5rem;
 }
+.cheader button {
+    width: 12rem;
+    height: 3rem;
+    font-family: 'Gopher';
+    background-color: #432534;
+    color: #f4f0e0;
+    border: #C44900 0.1rem solid;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    transform: scale(0.75);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.cheader button:hover {
+    background-color: #04151F;
+    border-color: #183a37;
+    color: #f4f0e0;
+    transform: scale(1);
+}
+.cheader button:active {
+    background-color: #183a37;
+    color: #f4f0e0;
+    border-color: #432534;
+    transform: scale(0.85);
+}
 .cicons {
     display: flex;
     gap: 1.5rem;
@@ -49,7 +74,7 @@
 
 
 .cmain {
-    padding-top: 6.5rem;
+    padding-top: 5rem;
     background-color: #04151F;
     color: #f4f0e0;
     display: flex;
@@ -61,31 +86,6 @@
     font-size: 3rem;
     text-align: center;
     padding-top: 5rem;
-}
-.cheader button {
-    width: 12rem;
-    height: 3rem;
-    font-family: 'Gopher';
-    background-color: #432534;
-    color: #f4f0e0;
-    border: #C44900 0.1rem solid;
-    border-top-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-    transform: scale(0.75);
-    transition: all 0.5s;
-    cursor: pointer;
-}
-.cheader button:hover {
-    background-color: #04151F;
-    border-color: #183a37;
-    color: #f4f0e0;
-    transform: scale(1);
-}
-.cheader button:active {
-    background-color: #183a37;
-    color: #f4f0e0;
-    border-color: #432534;
-    transform: scale(0.85);
 }
 
 
