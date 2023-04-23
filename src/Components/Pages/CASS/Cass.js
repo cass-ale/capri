@@ -58,7 +58,8 @@ function Cass() {
         showJumpControls= {false}
         onClickNext= {handleNext}
         layout= "horizontal-reverse"
-        loop ={true} />
+        loop ={true}
+         />
         {popup}
 
             <h1>Cassian J. ALÉRIA | Certified Front-End Developer & UX/UI Designer</h1>
