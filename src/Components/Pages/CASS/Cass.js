@@ -75,7 +75,7 @@ const handleBack = () => {
 
 
             <h2>Front-End Projects</h2>
-            <p id='about'>After Receiving My Front-End Developer Certification Through Meta's Coursera Learning Program In March Of 2023, I Immediately Began Working On Publishing Live Websites Made With React.js
+            <p id='about'>After Receiving My <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/Q3TW5TCE2NN7" target="_blank" rel="noopener noreferrer">Front-End Developer Certification</a> Through Meta's Coursera Learning Program In March Of 2023, I Immediately Began Working On Publishing Live Websites Made With React.js
             To Solidify My Understanding Of Front End Development Principles And To Prepare Myself For The Tech Job Market. Below You Will Find Links To Full Sites I Have Created
             In React. These Projects Showcase My Understanding Of UX/Accessibility Design, Responsive Applications, And Organized Project Management. </p>
             <Csites />
