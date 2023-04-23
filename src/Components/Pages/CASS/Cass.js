@@ -6,7 +6,6 @@ import Csites from './Csites';
 import PopUp from './Cpopup';
 import { Helmet } from 'react-helmet';
 import AudioPlayer from 'react-h5-audio-player';
-import 'react-h5-audio-player/lib/styles.css';
 import songs from './Songs';
 
 
@@ -21,6 +20,12 @@ function Cass() {
     setCurrentSong(currentSong + 1);
     if (currentSong === songs.length - 1) {
       setCurrentSong(0);
+  }
+}
+const handleBack = () => {
+  setCurrentSong(currentSong - 1);
+  if (currentSong === 0) {
+    setCurrentSong(songs.length - 1);
   }
 }
 
@@ -57,9 +62,11 @@ function Cass() {
         showSkipControls= {true}
         showJumpControls= {false}
         onClickNext= {handleNext}
+        onEnded={handleNext}
+        onClickPrevious={handleBack}
         layout= "horizontal-reverse"
-        loop ={true}
-         />
+        autoPlay= {true}
+        loop ={false}/>
         {popup}
 
             <h1>Cassian J. ALÉRIA | Certified Front-End Developer & UX/UI Designer</h1>
