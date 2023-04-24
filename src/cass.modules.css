@@ -86,6 +86,7 @@
     font-size: 3rem;
     text-align: center;
     padding-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 
@@ -102,6 +103,7 @@
 .cmain h2 {
   margin: 0;
   font-size: 3rem;
+  font-family: 'Gopher';
 }
 #about {
   font-family: 'Lato';
@@ -110,12 +112,24 @@
   margin-left: 18.5rem;
   margin-right: 18.5rem;
   margin-top: 1.25rem;
-  margin-bottom: 3rem;
-  line-height: 2.75rem;
+  margin-bottom: 7.5rem;
+  line-height: 3.5rem;
 }
 #about a {
   color: #f4f0e0;
-  transition: all 0.4s;
+}
+#prev {
+  font-size: 2rem;
+}
+#click {
+  transition: all 0.8s;
+  margin-bottom: 2.5rem;
+}
+#mobileClick {
+  display: none;
+}
+#click:hover {
+  transform: scale(1.15);
 }
 
 
@@ -126,18 +140,29 @@
   font-size: 1.25rem;
   text-align: justify;
   font-family: 'Lato';
+  cursor: grab;
+  margin-top: 5rem;
+}
+.carousel__inner-slide p {
+  width: calc(100% - 3rem);
+  margin-left: 1.5rem;
+}
+.carousel:active {
+  cursor: grabbing;
 }
 .carousel a {
   color: #C44900
 }
 .img {
-  width: 75rem;
+  width: 75%;
   height: auto;
+  margin-left: 12.5%;
 }
 .caro {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+  padding-bottom: 10rem;
 }
 .caro button {
   width: 20rem;
@@ -148,21 +173,21 @@
   border: #C44900 0.1rem solid;
   border-top-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
-  transform: scale(0.75);
+  transform: scale(0.85);
   transition: all 0.5s;
   cursor: pointer;
   text-align: center;
 }
 .caro button:hover {
   background-color: #f4f0e0;
-  border-color: #04151F;
+  border-color: #C44900;
   color: #C44900;
   transform: scale(1);
 }
 .caro button:active {
   background-color: #183a37;
   color: #f4f0e0;
-  border-color: #432534;
+  border-color: #C44900;
   transform: scale(0.85);
 }
 #cjacapri {
@@ -192,7 +217,7 @@
     position: absolute;
     max-width: 100%;
     width: 100%rem;
-    height: 200vh;
+    height: 250vh;
     transition: all 0.4s;
     box-shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.25);
     cursor: pointer;
@@ -202,7 +227,7 @@
     margin-left: 5rem;
     margin-right: 5rem;
     font-family: 'Lato';
-    font-size: 1.5rem;
+    font-size: 1.35rem;
   }
   .popupcontents h1 {
     font-family: 'Gopher';
@@ -211,6 +236,7 @@
   }
   .popupcontents h2 {
     font-size: 2.75rem;
+    line-height: 5rem;
   }
   .popupcontents a {
     color: #C44900
@@ -258,7 +284,7 @@
     line-height: 1;
     font-family: 'Gopher';
     width: 100%;
-    padding: 10px 15px;
+    padding: 1px 15px;
     background-color: #432534;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
     z-index: 950;
@@ -323,8 +349,8 @@
     align-self: center;
     margin: 0 calc(10px + 1%);
     cursor: pointer;
-    user-select: none;
     -webkit-user-select: none;
+    user-select: none;
   }
   .rhap_progress-container:focus:not(:focus-visible) {
     outline: 0;
@@ -333,8 +359,8 @@
   .rhap_time {
     color: #f4f0e0;
     font-size: 16px;
-    user-select: none;
     -webkit-user-select: none;
+    user-select: none;
   }
 
   .rhap_progress-bar {
@@ -442,8 +468,8 @@
     display: flex;
     align-items: center;
     flex: 0 1 100px;
-    user-select: none;
     -webkit-user-select: none;
+    user-select: none;
   }
 
   .rhap_volume-bar-area {
@@ -483,7 +509,6 @@
   .rhap_volume-indicator:hover {
     opacity: 0.9;
   }
-
   .rhap_volume-filled {
     height: 100%;
     position: absolute;
@@ -510,3 +535,153 @@
   .rhap_button-clear:focus:not(:focus-visible) {
     outline: 0;
   }
+
+
+
+
+
+  /* Medium/Small Laptop screen formatting for smooth transitions */
+@media screen and (min-width:1021px) and (max-width: 1500px) {
+  .popup {
+    height: 300vh;
+  }
+  .popupcontents {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-family: 'Lato';
+    font-size: 1.15rem;
+  }
+  .popupcontents h1 {
+    font-family: 'Gopher';
+    font-size: 4.5rem;
+    margin: 0;
+    padding: 1rem;
+  }
+  .popupcontents h2 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+  #about {
+    margin-left: 12.5rem;
+    margin-right: 12.5rem;
+    line-height: 3.5rem;
+  }
+  .carousel {
+    margin-top: 0rem;
+    height: 30rem;
+    width: 100%;
+    font-size: 1rem;
+  }
+  .img {
+    width: 45%;
+    margin-left: 28%;
+    height: auto;
+  }
+}
+
+
+/* Mobile/Tablet styling Below */
+@media screen and (max-width: 1020px) {
+  .cheader {
+    width: 100%;
+  }
+  .cheader h1 {
+    font-size: 1rem;
+    margin: 0;
+  }
+  .cheader button {
+    display: none;;
+  }
+  .cicons a {
+    width: 1rem;
+    height: auto;
+    transform: scale(0.75);
+  }
+
+  .cmain {
+    padding-top: 2.2rem;
+  }
+  .cmain h1 {
+    font-size: 2rem;
+  }
+  .cmain h2 {
+    font-size: 1.5rem;
+  }
+  #about {
+    margin: 1rem;
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1.75rem;
+  }
+  #prev {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+  #mobileClick {
+    transition: all 0.8s;
+    margin-bottom: 2.5rem;
+    display: contents;
+  }
+  #click {
+    display: none;
+  }
+
+
+  .carousel {
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    margin-bottom: 5rem;
+  }
+  .carousel p {
+    display: none;
+  }
+  .img {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+  .caro {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .cfooterTop {
+    padding: 1rem;
+  }
+  #ccopyright {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .popupcontents {
+    margin: 1rem;
+    font-size: 1rem;
+  }
+  .popupcontents h1 {
+    font-family: 'Gopher';
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem;
+  }
+  .popupcontents h2 {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  .rhap_progress-indicator {
+    display: none;
+  }
+  .rhap_volume-indicator {
+    display: none;
+  }
+  .rhap_progress-section {
+    display: none;
+  }
+  .rhap_volume-bar-area {
+    display: none;
+  }
+}
