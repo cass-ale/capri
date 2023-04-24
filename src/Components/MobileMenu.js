@@ -39,19 +39,20 @@ const socials = [
   },
 ]
 
-const handleClick = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  };
+
 
 function MobileMenu(props) {
     const onClick = () => {
         props.closeMenu();
     }
 
-
+    const handleClick = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+        props.closeMenu();
+      };
     useEffect(() => {
         function handleResize() {
           if (window.innerWidth > 768 && props.showMenu) {
@@ -70,9 +71,9 @@ function MobileMenu(props) {
             <section className="formClose" style={{marginLeft: '1rem'}}><FontAwesomeIcon icon={faClose} onClick={onClick} size="2x"/></section>
           <nav className="mobileNav">
             <ul>
-                <li><Link to="/" onClick={handleClick} target="_blank" rel="noopener noreferrer">CURRENT ISSUE</Link></li><br />
-                <li><Link to="/archive" onClick={handleClick} target="_blank" rel="noopener noreferrer">ARCHIVE</Link></li><br />
-                <li><Link to="/donate" onClick={handleClick} target="_blank" rel="noopener noreferrer">DONATE</Link></li><br />
+                <li><Link to="/" onClick={handleClick}>CURRENT ISSUE</Link></li><br />
+                <li><Link to="/archive" onClick={handleClick}>ARCHIVE</Link></li><br />
+                <li><Link to="/donate" onClick={handleClick}>DONATE</Link></li><br />
             </ul>
             <Link to="/contact" onClick={handleClick} target="_blank" rel="noopener noreferrer">
                 <button className="conButton" id="mobileButton">
