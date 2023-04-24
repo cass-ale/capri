@@ -9,6 +9,7 @@ import {
   faSoundcloud
 } from "@fortawesome/free-brands-svg-icons";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 
 const socials = [
@@ -69,15 +70,15 @@ function MobileMenu(props) {
             <section className="formClose" style={{marginLeft: '1rem'}}><FontAwesomeIcon icon={faClose} onClick={onClick} size="2x"/></section>
           <nav className="mobileNav">
             <ul>
-                <li><a href="/" onClick={handleClick}>CURRENT ISSUE</a></li><br />
-                <li><a href="/archive" onClick={handleClick}>ARCHIVE</a></li><br />
-                <li><a href="/donate" onClick={handleClick}>DONATE</a></li><br />
+                <li><Link to="/" onClick={handleClick} target="_blank" rel="noopener noreferrer">CURRENT ISSUE</Link></li><br />
+                <li><Link to="/archive" onClick={handleClick} target="_blank" rel="noopener noreferrer">ARCHIVE</Link></li><br />
+                <li><Link to="/donate" onClick={handleClick} target="_blank" rel="noopener noreferrer">DONATE</Link></li><br />
             </ul>
-            <a href="/contact" onClick={handleClick}>
+            <Link to="/contact" onClick={handleClick} target="_blank" rel="noopener noreferrer">
                 <button className="conButton" id="mobileButton">
                 Get In Touch
                 </button>
-            </a>
+            </Link>
             {<nav className="mobileIcons">
                 <a href={socials[0].url} target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={socials[0].icon} size="1x" />
