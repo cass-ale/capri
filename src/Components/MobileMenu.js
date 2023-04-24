@@ -75,7 +75,7 @@ function MobileMenu(props) {
                 <li><Link to="/archive" onClick={handleClick}>ARCHIVE</Link></li><br />
                 <li><Link to="/donate" onClick={handleClick}>DONATE</Link></li><br />
             </ul>
-            <Link to="/contact" onClick={handleClick} target="_blank" rel="noopener noreferrer">
+            <Link to="/contact" onClick={handleClick}>
                 <button className="conButton" id="mobileButton">
                 Get In Touch
                 </button>
