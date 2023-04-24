@@ -597,6 +597,9 @@
     height: auto;
     transform: scale(0.75);
   }
+  .cicons a:hover {
+    animation: none;
+}
 
   .cmain {
     padding-top: 2.2rem;
@@ -682,6 +685,9 @@
     display: none;
   }
   .rhap_volume-bar-area {
+    display: none;
+  }
+  .rhap_volume-container {
     display: none;
   }
 }
