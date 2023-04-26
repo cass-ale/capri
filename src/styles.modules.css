@@ -804,7 +804,6 @@ footer a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: top;
     background-color: white;
     gap: 1.5rem;
     position: absolute;
@@ -813,7 +812,7 @@ footer a {
     left: 0;
     width: 100%;
     height: 100vh;
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     z-index: 100;
 }
 .mobileMenu nav {
@@ -821,15 +820,15 @@ footer a {
 }
 .mobileMenu a {
     list-style: none;
-    text-align: center;
+    text-align: left;
 }
 .mobileMenu li {
     list-style: none;
-    font-family: 'Orpheus-medium';
+    font-family: 'Lato';
     text-align: center;
     padding-right: 3.5rem;
     transition: all 0.2s;
-    text-align: center;
+    text-align: left;
     padding: 0;
 }
 .mobileMenu li:active {
@@ -839,11 +838,12 @@ footer a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin-top: 1rem;
     gap: 5rem;
 }
 .mobileNav ul{
-    margin-bottom: 0;
+    margin-left: 1rem;
     padding: 0;
 }
 .mobileNav li:hover {
@@ -851,6 +851,10 @@ footer a {
 }
 .mobileNav li:active {
     opacity: 0.5;
+}
+#line {
+    color: black;
+    width: 100%;
 }
 #mobile {
     cursor: pointer;
@@ -860,11 +864,33 @@ footer a {
 #mobile:active {
     transform: scale(0.35);
 }
-#mobileButton{
+.mobileButtonContainer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem;
+    width: 100%;
+}
+.mobileButton {
+    border: .15rem black solid;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: white;
+    color: black;
+    font-family: 'Orpheus';
+    font-size: 1.25rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    padding: 1.25rem 2.5rem;
+}
+.mobileButton:hover {
+    background-color: black;
+    color: white;
+}
+.mobileButton:active {
+    background-color:white;
+    color: black;
+    transform: scale(0.85);
 }
 #menuClose {
     cursor: pointer;
@@ -876,8 +902,7 @@ footer a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    max-width: 100%;
+    width: 100%;
     height: auto;
     gap: 1.5rem;
-    padding: 0.5rem;
 }

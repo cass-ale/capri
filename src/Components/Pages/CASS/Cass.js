@@ -70,8 +70,10 @@ const handleBack = () => {
         autoPlay= {true}
         loop ={false}/>
         {popup}
-
+            <div>
             <h1>Cassian J. ALÉRIA | Certified Front-End Developer & UX/UI Designer</h1>
+            </div>
+
 
 
 
@@ -83,7 +85,7 @@ const handleBack = () => {
 
 
 
-            <h2 id="prev">Previews Of Websites I've Made In React</h2>
+            <h2 id="prev">Sample React.js Work</h2>
             <p id='click'>Click And Drag To The Left To Cycle Through!</p>
             <p id='mobileClick'>Swipe To Cycle Through!</p>
             <Csites />

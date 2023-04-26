@@ -660,6 +660,9 @@
     padding-bottom: 0.5rem;
   }
 
+  .popup {
+    border: none;
+  }
   .popupcontents {
     margin: 1rem;
     font-size: 1rem;

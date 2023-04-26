@@ -3,7 +3,16 @@ import { Link } from 'react-router-dom';
 import SubForm from "./SubForm";
 import Sub from "./Sub";
 
-const handleClick = () => {
+
+function Footer() {
+  const [formSubmitted, setFormSubmitted] = React.useState(false);
+  const handleFormSubmit = () => {
+    setFormSubmitted(true);
+  };
+  const handleFormReset = () => {
+    setFormSubmitted(false);
+  };
+  const handleClick = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth"
@@ -17,15 +26,6 @@ const handleMouseOut = () => {
         const text = document.querySelector('#capri');
         text.innerHTML = 'CAPRI';
 }
-function Footer() {
-  const [formSubmitted, setFormSubmitted] = React.useState(false);
-  const handleFormSubmit = () => {
-    setFormSubmitted(true);
-  };
-  const handleFormReset = () => {
-    setFormSubmitted(false);
-  };
-
   return (
         <div className="footerContainer">
 

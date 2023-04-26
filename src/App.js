@@ -23,7 +23,7 @@ function App() {
       <Route exact path="/contact" element={<Contact />} />
       <Route exact path="/privacy" element={<Privacy />} />
       <Route exact path="/cookies" element={<Cookies />} />
-      <Route exact path="/cassja_portf_fedev_04172023" element={<Cass />} />
+      <Route exact path="/cassja_portf_fedev_05012023" element={<Cass />} />
       </Routes>
     </Router>
     </>
