@@ -59,7 +59,7 @@ const handleClick = () => {
 
     return(
         <nav className="navbar">
-        {showMenu ? (<section id="mobile" style={{marginLeft: "0.155rem", marginRight: "0.222rem"}}><FontAwesomeIcon icon={faClose} onClick={toggleMenu} size="3x" /></section>)
+        {showMenu ? (<section id="mobile"><FontAwesomeIcon icon={faClose} onClick={toggleMenu} size="3x" /></section>)
     : (<section id="mobile"><FontAwesomeIcon icon={faBars} onClick={toggleMenu} size="3x" /></section>)}
 
 
