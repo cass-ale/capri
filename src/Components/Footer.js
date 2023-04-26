@@ -44,8 +44,8 @@ function Footer() {
 
 
         <div className="footerLinks">
-            <Link to='/Donate' onClick={handleClick}>DONATE</Link>
-            <Link to='/Contact' onClick={handleClick}>CONTACT</Link>
+            <Link to='/donate' onClick={handleClick}>DONATE</Link>
+            <Link to='/contact' onClick={handleClick}>CONTACT</Link>
         </div>
 
 

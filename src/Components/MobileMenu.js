@@ -68,7 +68,7 @@ function MobileMenu(props) {
 
     return (
         <div className="mobileMenu">
-            <section className="formClose" style={{marginLeft: '1rem'}}><FontAwesomeIcon icon={faClose} onClick={onClick} size="2x"/></section>
+            <section className="formClose" style={{marginLeft: '1.75rem'}}><FontAwesomeIcon icon={faClose} onClick={onClick} size="1x"/></section>
           <nav className="mobileNav">
             <ul>
                 <li><Link to="/" onClick={handleClick}>CURRENT ISSUE</Link></li><br />
