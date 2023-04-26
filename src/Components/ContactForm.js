@@ -55,7 +55,7 @@ function ContactForm(props) {
             <form ref={formRef} className='formContents'
             action="https://script.google.com/macros/s/AKfycbyCArEL1T5IRmV7JMAGxuG1VBIP-HZDrFps7FO4yl9vcvRQTOw9K0Ae0RaYFRj_XVAV/exec" method="post" id="my-form">
 
-            <div className='formClose'><FontAwesomeIcon data-tooltip-id='close' data-tooltip-content="Close Form" icon={faClose} onClick={props.closeForm} size='3x'/></div>
+            <div className='formClose'><FontAwesomeIcon data-tooltip-id='close' data-tooltip-content="Close Form" icon={faClose} onClick={props.closeForm} size='2x'/></div>
             <ReactTooltip id="close" />
 
             <section id="contactForm">

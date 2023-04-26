@@ -9,15 +9,9 @@ import {
     faFacebook,
     faSoundcloud
 } from "@fortawesome/free-brands-svg-icons";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 import { Link } from 'react-router-dom';
 
-const handleClick = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  };
 
 const socials = [
     {
@@ -48,16 +42,27 @@ const socials = [
 
 function Header() {
 const [showMenu, setShowMenu] = useState(false);
-const openMenu = () => {
-    setShowMenu(true);
+const toggleMenu = () => {
+    setShowMenu(!showMenu);
 }
 const closeMenu = () => {
     setShowMenu(false);
 }
+const handleClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+    closeMenu();
+  };
+
 
     return(
         <nav className="navbar">
-            <section id="mobile"><FontAwesomeIcon icon={faBars} onClick={openMenu} size="3x" /></section>
+        {showMenu ? (<section id="mobile" style={{marginLeft: "0.155rem", marginRight: "0.222rem"}}><FontAwesomeIcon icon={faClose} onClick={toggleMenu} size="3x" /></section>)
+    : (<section id="mobile"><FontAwesomeIcon icon={faBars} onClick={toggleMenu} size="3x" /></section>)}
+
+
             {showMenu && <MobileMenu closeMenu={closeMenu} showMenu={showMenu} />}
 
         <p id="title"><Link to="/" onClick={handleClick}>CAPRI</Link></p>
