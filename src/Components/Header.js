@@ -54,7 +54,7 @@ const handleClick = () => {
       top: 0,
       behavior: "smooth"
     });
-    setShowMenu(!showMenu);
+    closeMenu();
   };
 
 
