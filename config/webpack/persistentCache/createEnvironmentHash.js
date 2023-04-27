@@ -1,5 +1,4 @@
-'use strict';
-const { createHash } = require('crypto');
+
 
 module.exports = env => {
   const hash = crypto.createHash('sha512WithRSAEncryption');
