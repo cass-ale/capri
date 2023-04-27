@@ -154,5 +154,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "netlify-plugin-snyk": "^1.3.3"
   }
 }
