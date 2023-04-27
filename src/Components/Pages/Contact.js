@@ -3,6 +3,7 @@ import Header from "../Header";
 import Footer from "../Footer";
 import { Helmet } from "react-helmet";
 import Form from '../ContactForm';
+import ScrollToTopOnMount from "../../Scroll";
 
 function Contact() {
     const targetRef = useRef(null);
@@ -26,6 +27,7 @@ function Contact() {
     }
     return(
         <>
+        <ScrollToTopOnMount />
         <Helmet>
         <title>CAPRI Media | Get In Touch</title>
       </Helmet>

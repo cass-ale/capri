@@ -4,11 +4,13 @@ import Footer from "../Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLock } from "@fortawesome/free-solid-svg-icons";
 import { Helmet } from "react-helmet";
+import ScrollToTopOnMount from "../../Scroll";
 
 
 function Archive() {
     return(
         <>
+        <ScrollToTopOnMount />
         <Helmet>
         <title>CAPRI Media | Archive</title>
       </Helmet>

@@ -54,7 +54,7 @@ const handleClick = () => {
       top: 0,
       behavior: "smooth"
     });
-    closeMenu();
+    setShowMenu(!showMenu);
   };
 
 
@@ -71,9 +71,9 @@ const handleClick = () => {
 
         <nav className="pages">
             <ul>
-                <li><Link to="/" onClick={handleClick}>CURRENT ISSUE</Link></li>
-                <li><Link to="/archive" onClick={handleClick}>ARCHIVE</Link></li>
-                <li><Link to="/donate" onClick={handleClick}>DONATE</Link></li>
+                <li><Link to="/">CURRENT ISSUE</Link></li>
+                <li><Link to="/archive">ARCHIVE</Link></li>
+                <li><Link to="/donate">DONATE</Link></li>
             </ul>
         </nav>
 
@@ -99,7 +99,7 @@ const handleClick = () => {
                 </a>
         </nav>}
 
-        <Link to="/contact" onClick={handleClick}>
+        <Link to="/contact">
         <button className="navButton">
             Get In Touch
         </button>

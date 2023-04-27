@@ -3,17 +3,13 @@ import Header from "../Header";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import ScrollToTopOnMount from "../../Scroll";
 
-const handleClick = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  };
 
 function Cookies() {
     return (
         <>
+        <ScrollToTopOnMount />
         <Helmet>
         <title>CAPRI Media | Cookie Policy</title>
       </Helmet>
@@ -24,7 +20,7 @@ function Cookies() {
 
         <main className="privacy">
             <div className='privacyContainer'>
-            <p>For more information about how we may use personal data, please read our <Link to='/privacy' onClick={handleClick}>privacy policy</Link> or email <Link to='mailto:admin@caprimag.com'>admin@caprimag.com</Link>.</p>
+            <p>For more information about how we may use personal data, please read our <Link to='/privacy'>privacy policy</Link> or email <Link to='mailto:admin@caprimag.com'>admin@caprimag.com</Link>.</p>
 
 <p id="h1">Cookie Policy</p>
 <i>Last Updated: 1 April 2023.</i>

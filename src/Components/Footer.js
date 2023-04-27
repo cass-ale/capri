@@ -44,8 +44,8 @@ const handleMouseOut = () => {
 
 
         <div className="footerLinks">
-            <Link to='/donate' onClick={handleClick}>DONATE</Link>
-            <Link to='/contact' onClick={handleClick}>CONTACT</Link>
+            <Link to='/donate'>DONATE</Link>
+            <Link to='/contact'>CONTACT</Link>
         </div>
 
 

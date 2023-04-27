@@ -43,10 +43,6 @@ const socials = [
 function MobileMenu(props) {
 
     const handleClick = () => {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth"
-        });
         props.closeMenu();
       };
     useEffect(() => {

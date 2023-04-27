@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaypal } from '@fortawesome/free-brands-svg-icons';
 import { faMoneyBills } from "@fortawesome/free-solid-svg-icons";
 import { Helmet } from "react-helmet";
+import ScrollToTopOnMount from "../../Scroll";
 
 const dono = [
     {
@@ -30,6 +31,7 @@ const handleMouseOut = () => {
 function Donate() {
     return(
         <>
+        <ScrollToTopOnMount />
         <Helmet>
         <title>CAPRI Media | Donate</title>
       </Helmet>

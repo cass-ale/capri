@@ -3,17 +3,14 @@ import Header from "../Header";
 import Footer from "../Footer";
 import { Link } from 'react-router-dom';
 import { Helmet } from "react-helmet";
+import ScrollToTopOnMount from "../../Scroll";
 
-const handleClick = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  };
+
 
 function Privacy() {
     return (
         <>
+        <ScrollToTopOnMount />
         <Helmet>
         <title>CAPRI Media | Privacy Policy</title>
       </Helmet>
@@ -124,7 +121,7 @@ The legal ground may be one of the following:
 <li>for security and fraud prevention, and to ensure that our sites and apps are safe and secure.</li>
 </ul>
 </ul>
-Where we rely on cookies to collect any personal data please see our <Link to ='/cookies' onClick={handleClick}>cookie policy</Link> for more information and how to manage your cookie choices through your Privacy settings.<br />
+Where we rely on cookies to collect any personal data please see our <Link to ='/cookies'>cookie policy</Link> for more information and how to manage your cookie choices through your Privacy settings.<br />
 <br />
 CAPRI is a media organisation and publisher. Data protection law includes certain exemptions when personal data is processed for the purposes of journalism. Those exemptions apply to some of the ways CAPRI uses personal data. This Privacy Policy does not cover personal data that CAPRI processes for the purposes of journalism.
 </p>
@@ -181,7 +178,7 @@ If you have raised a query or a complaint with us, we may contact you to answer 
 <p>
 When you visit our sites or when you use our apps, we may collect personal data from you automatically using cookies or similar technologies.
 
-This privacy policy includes our <Link to ='/cookies' onClick={handleClick}>cookie policy</Link>, where you can find more information about our use of cookies.
+This privacy policy includes our <Link to ='/cookies'>cookie policy</Link>, where you can find more information about our use of cookies.
 </p>
 <h4>Your privacy and data protection rights with regard to the personal data that we hold about you</h4>
 <p>
@@ -200,7 +197,7 @@ We may need to request specific information from you to help us confirm your ide
 <br /><br />
 We and our partners use cookies and similar technologies to collect information about your use of the website to help create reports and statistics on the performance of the website. Analytics cookies such as Google Analytics collect information such as your IP address, device type and operating system, referring URLs, location and pages visited. If you don’t want Google Analytics to be used in your browser, you can install the ‘Google Analytics Opt-Out Browser Add-On’, provided by Google.
 <br /><br />
-For a complete description of our use of cookies and similar technologies globally, please see our <Link to ='/cookies' onClick={handleClick}>cookie policy.</Link>
+For a complete description of our use of cookies and similar technologies globally, please see our <Link to ='/cookies'>cookie policy.</Link>
 </p><br />
 </div>
             </main>
