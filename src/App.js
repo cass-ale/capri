@@ -1,6 +1,6 @@
 import React from "react";
 import './styles.modules.css';
-import Home from "./Components/Home";
+import Home from "./Components/Pages/Home";
 import Archive from './Components/Pages/Archive';
 import Donate from './Components/Pages/Donate';
 import Contact from './Components/Pages/Contact';

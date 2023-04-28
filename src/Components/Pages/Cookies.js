@@ -3,7 +3,7 @@ import Header from "../Header";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import ScrollToTopOnMount from "../../Scroll";
+import ScrollToTopOnMount from "../Scroll";
 
 
 function Cookies() {

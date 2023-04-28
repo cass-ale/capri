@@ -224,7 +224,7 @@ main a {
 .contactContainer {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 2rem;
     padding-left: 2.75rem;
     padding-right: 2.75rem;
     padding-bottom: 2.75rem;
@@ -235,9 +235,11 @@ main a {
 #conHeader {
     font-size: 4rem;
     font-family: 'Orpheus';
+    margin-bottom: 2rem;
+    margin-top: 3,25rem;
 }
 .contactContainer p {
-    font-size: 1.15rem;
+    font-size: 1rem;
     width: 75rem;
     line-height: 2rem;
 }
@@ -259,7 +261,7 @@ main a {
     color: white;
     position: relative;
     height: 50rem;
-    bottom: 45rem;
+    bottom: 37rem;
     opacity: 0.96;
     transition: all 0.4s;
     box-shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.25);
@@ -561,12 +563,13 @@ footer a {
         font-size: 1.75rem;
     }
     .donoContainer {
-        margin-left: 0;
-        margin-right: 0;
-        text-align: center;
+        padding: 2rem;
+        text-align: justify;
+        margin-left: 7.75rem;
+        margin-right: 7.75rem;
     }
     #h1 {
-        font-size: 2rem;
+        font-size: 3.25rem;
     }
     #conHeader {
         font-size: 3.25rem;
@@ -581,7 +584,7 @@ footer a {
         margin: 0;
     }
     .contactContainer p {
-        text-align: center;
+        text-align: justify;
         flex-wrap: wrap;
         max-width: 100%;
     }
@@ -675,7 +678,7 @@ footer a {
     .contactContainer p {
         font-size: 0.8rem;
         width: 100%;
-        text-align: center;
+        text-align: justify;
     }
     .contactForm {
         height: 100%;
@@ -720,8 +723,8 @@ footer a {
         margin-left: 15rem;
     }
     #conHeader {
-        font-size: 1.5rem;
-        text-align: center;
+        font-size: 2rem;
+        text-align: justify;
     }
 
 
@@ -735,7 +738,7 @@ footer a {
     .donoContainer p {
         font-size: 1rem;
         width: 100%;
-        text-align: center;
+        text-align: justify;
     }
     #sig {
         display: none;
@@ -759,7 +762,7 @@ footer a {
     .privacyContainer p {
         font-size: 0.75rem;
         width: 100%;
-        text-align: center;
+        text-align: justify;
     }
     #h1 {
         font-size: 2rem;

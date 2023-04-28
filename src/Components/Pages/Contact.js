@@ -3,7 +3,7 @@ import Header from "../Header";
 import Footer from "../Footer";
 import { Helmet } from "react-helmet";
 import Form from '../ContactForm';
-import ScrollToTopOnMount from "../../Scroll";
+import ScrollToTopOnMount from "../Scroll";
 
 function Contact() {
     const targetRef = useRef(null);
@@ -38,7 +38,7 @@ function Contact() {
         <main>
         <div className="contactContainer">
 
-            <section id="conHeader" ref={targetRef}>Get In Touch With CAPRI</section>
+            <p id="conHeader" ref={targetRef}>Get In Touch With CAPRI</p>
 
             <p>If You Are Interested In Our Work, Interested In Working With Us, Or Eager To Talk With Us About Our Work, Feel Free To Fill Out Our Contact Form, And Our Team Will Be In Touch With You Shortly After.<br /><br /> Please Note That Our Administrative Team Only Monitors Our Inbox During U.S. Business Hours (9:00-17:00) On Monday Through Friday. We Look Forward To Hearing From You!</p>
 

@@ -9,7 +9,7 @@ import AudioPlayer from 'react-h5-audio-player';
 import songs from './Songs';
 import { Tooltip as ReactTooltip } from 'react-tooltip';
 import 'react-tooltip/dist/react-tooltip.css';
-import ScrollToTopOnMount from '../../../Scroll';
+import ScrollToTopOnMount from '../../Scroll';
 
 
 

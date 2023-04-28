@@ -4,7 +4,7 @@ import Footer from "../Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLock } from "@fortawesome/free-solid-svg-icons";
 import { Helmet } from "react-helmet";
-import ScrollToTopOnMount from "../../Scroll";
+import ScrollToTopOnMount from "../Scroll";
 
 
 function Archive() {
@@ -21,7 +21,7 @@ function Archive() {
         <main>
             <div className="archiveContainer">
 
-                <p>The Archive Of Canonical CAPRI Works</p>
+                <p id="h1">The Archive Of Canonical CAPRI Works</p>
 
                 <FontAwesomeIcon icon={faLock} size="10x" id='lock' />
 

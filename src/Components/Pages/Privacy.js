@@ -3,7 +3,7 @@ import Header from "../Header";
 import Footer from "../Footer";
 import { Link } from 'react-router-dom';
 import { Helmet } from "react-helmet";
-import ScrollToTopOnMount from "../../Scroll";
+import ScrollToTopOnMount from "../Scroll";
 
 
 
@@ -197,7 +197,7 @@ We may need to request specific information from you to help us confirm your ide
 <br /><br />
 We and our partners use cookies and similar technologies to collect information about your use of the website to help create reports and statistics on the performance of the website. Analytics cookies such as Google Analytics collect information such as your IP address, device type and operating system, referring URLs, location and pages visited. If you don’t want Google Analytics to be used in your browser, you can install the ‘Google Analytics Opt-Out Browser Add-On’, provided by Google.
 <br /><br />
-For a complete description of our use of cookies and similar technologies globally, please see our <Link to ='/cookies'>cookie policy.</Link>
+For a complete description of our use of cookies and similar technologies globally, please see our <Link to='/cookies'>cookie policy.</Link>
 </p><br />
 </div>
             </main>

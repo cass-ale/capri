@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "./Header";
-import Hero from './Hero'
-import Footer from './Footer';
+import Header from "../Header";
+import Hero from '../Hero'
+import Footer from '../Footer';
 import { Helmet } from "react-helmet";
 import ScrollToTopOnMount from "../Scroll";
 

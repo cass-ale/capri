@@ -13,7 +13,6 @@ import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 import { Link } from 'react-router-dom';
 
 
-
 const socials = [
     {
         icon: faInstagram,
@@ -64,7 +63,8 @@ const handleClick = () => {
     : (<section id="mobile"><FontAwesomeIcon icon={faBars} onClick={toggleMenu} size="3x" /></section>)}
 
 
-            {showMenu && <MobileMenu closeMenu={closeMenu} showMenu={showMenu} />}
+
+            {showMenu && <MobileMenu socials={socials} closeMenu={closeMenu} showMenu={showMenu} />}
 
         <p id="title"><Link to="/" onClick={handleClick}>CAPRI</Link></p>
 
