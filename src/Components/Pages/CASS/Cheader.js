@@ -1,5 +1,5 @@
 import React from 'react'
-import { 
+import {
 faGithub,
 faLinkedin,
 faHackerrank,
@@ -28,7 +28,7 @@ const socials = [
     },
     {
         icon: faEnvelope,
-        url: "mailto:cass.ale@outlook.com"
+        url: "mailto:cass@caprimag.com"
     }
 ]
 

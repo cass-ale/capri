@@ -83,123 +83,44 @@
 }
 .cmain h1 {
     font-family: 'Lato';
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-align: center;
     padding-top: 5rem;
-    margin-bottom: 5rem;
-}
-
-
-.projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    gap: 5rem;
-    margin-top: 5rem;
-    margin-bottom: 15rem;
 }
 .cmain h2 {
   margin: 0;
   font-size: 3rem;
   font-family: 'Gopher';
+  text-align: center;
 }
 #about {
   font-family: 'Lato';
-  font-size: 1.5rem;
-  text-align: justify;;
+  font-size: 1.75rem;
+  text-align: justify;
   margin-left: 18.5rem;
   margin-right: 18.5rem;
   margin-top: 1.25rem;
-  margin-bottom: 7.5rem;
-  line-height: 3.5rem;
+  line-height: 3rem;
 }
 #about a {
   color: #f4f0e0;
 }
+.introduction {
+  width: 100%;
+  height: 100vh;
+}
+
+
+
+
+
+
 #prev {
   font-size: 2rem;
 }
-#click {
-  transition: all 0.8s;
-  margin-bottom: 2.5rem;
-}
-#mobileClick {
-  display: none;
-}
-#click:hover {
-  transform: scale(1.15);
-}
 
 
 
-.carousel {
-  width: 75rem;
-  height: auto;
-  font-size: 1.25rem;
-  text-align: justify;
-  font-family: 'Lato';
-  cursor: grab;
-  margin-top: 5rem;
-}
-.carousel__inner-slide p {
-  width: calc(100% - 3rem);
-  margin-left: 1.5rem;
-}
-.carousel:active {
-  cursor: grabbing;
-}
-.carousel a {
-  color: #C44900
-}
-.img {
-  width: 75%;
-  height: auto;
-  margin-left: 12.5%;
-}
-.caro {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  padding-bottom: 10rem;
-}
-.caro button {
-  width: 20rem;
-  height: 6rem;
-  font-size: 2rem;
-  background-color: #432534;
-  color: #f4f0e0;
-  border: #C44900 0.1rem solid;
-  border-top-right-radius: 1rem;
-  border-bottom-left-radius: 1rem;
-  transform: scale(0.85);
-  transition: all 0.5s;
-  cursor: pointer;
-  text-align: center;
-}
-.caro button:hover {
-  background-color: #f4f0e0;
-  border-color: #C44900;
-  color: #C44900;
-  transform: scale(1);
-}
-.caro button:active {
-  background-color: #183a37;
-  color: #f4f0e0;
-  border-color: #C44900;
-  transform: scale(0.85);
-}
-#cjacapri {
-  font-family: 'Orpheus';
-}
-#simp {
-  font-family: 'Kristi';
-  text-align: center;
-  font-size: 3rem;
-  position: relative;
-  bottom: 0.15rem;
-}
 
 
 
@@ -258,7 +179,7 @@
   .cfooterTop {
     display: flex;
     justify-content: center;
-    padding: 5rem;
+    padding: 2rem;
   }
   #cass {
     color: #f4f0e0;
@@ -268,8 +189,10 @@
   }
   #ccopyright {
     color: #f4f0e0;
+    padding: 1rem;
+    text-align: justify;
   }
-  #copyright a {
+  #ccopyright a {
     color: #f4f0e0;
   }
 
