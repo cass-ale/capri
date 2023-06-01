@@ -1,24 +1,25 @@
 import React from 'react';
+import { Button } from '@mui/material';
 
 
 
 
-function Cintro() {
+function Cintro(props) {
     return (
         <>
         <section className='introduction'>
-        <h1>Cassian J. ALÉRIA <br /> Certified Front-End Developer & UX/UI Designer</h1>
+        <h1>Cassian J. ALÉRIA <br /> Front-End Developer & UX/UI Designer</h1>
 
-        <h2>About Me & My Work</h2>
-
+        <h2>Professional & Engaging Work.</h2>
         <p id='about'>
-          After Receiving My <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/Q3TW5TCE2NN7" target="_blank" rel="noopener noreferrer">Front-End Developer Certification</a> Through Meta{"'"}s Coursera Learning Program In March Of 2023, I Immediately Began Working On Publishing Live Websites Made With React.js
-          To Solidify My Understanding Of Front End Development Principles And To Prepare Myself For The Tech Job Market. Please, Stay A While And Enjoy The Music While You Browse Through My Work!
+        Cassian Brings Refreshing Energy To The Workplace, And An Innovative Approach To Web Design Due To His Fresh, Creative Background. Based In Brooklyn, NY, He Is Open To Working With You Either In New York Or Remotely. Please, Stay A While And Enjoy The Music While You Browse Through His Current Work!
         </p>
         <section>
-        <button>My Works</button>
-        <button>Resume</button>
-        <button>Contact</button>
+        <Button sx={{
+          backgroundColor: "#C44900",
+          fontFamily: "Gopher",
+          fontSize: "2rem"
+        }} variant='contained' size='large' onClick={props.openCurrent} className='introButton'>Current Work</Button>
         </section>
       </section>
         </>

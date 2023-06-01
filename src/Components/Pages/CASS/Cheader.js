@@ -11,12 +11,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const socials = [
     {
-        icon: faGithub,
-        url: "https://github.com/cass-ale"
-    },
-    {
         icon: faLinkedin,
         url: "https://www.linkedin.com/in/cass-ale/"
+    },
+    {
+        icon: faGithub,
+        url: "https://github.com/cass-ale"
     },
     {
         icon: faHackerrank,

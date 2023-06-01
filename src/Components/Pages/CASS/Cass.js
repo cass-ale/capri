@@ -4,6 +4,7 @@ import Header from './Cheader';
 import Footer from './Cfooter';
 import PopUp from './Cpopup';
 import Cintro from './Cintro';
+import CurrentWork from './CurrentWork';
 import { Helmet } from 'react-helmet';
 import AudioPlayer from 'react-h5-audio-player';
 import songs from './Songs';
@@ -13,9 +14,15 @@ import ScrollToTopOnMount from '../../Scroll';
 
 
 function Cass() {
+  const [showWork, setShowWork] = useState(false);
+  const openCurrent = () => setShowWork(!showWork);
   const [showPopUp, setShowPopUp] = useState(true);
   const showPopupHandler = () => setShowPopUp(false);
-  const reopen = () => setShowPopUp(true);
+  const reopen = () => {setShowPopUp(true);
+    window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });}
   const [currentSong, setCurrentSong] = useState(0);
   const handleNext = () => {
     setCurrentSong(currentSong + 1);
@@ -30,16 +37,16 @@ const handleBack = () => {
   }
 }
 
-    useEffect(() => {
-      const timer = setTimeout(() => {
-        setShowPopUp(false);
-      }, 30000);
-     return () => clearTimeout(timer);
-     }, [showPopUp]);
-     let popup = null;
-     if(showPopUp) {
-       popup = <PopUp showPopupHandler={showPopupHandler}/>;
-      }
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowPopUp(false);
+    }, 30000);
+   return () => clearTimeout(timer);
+   }, [showPopUp]);
+   let popup = null;
+   if(showPopUp) {
+     popup = <PopUp showPopupHandler={showPopupHandler}/>;
+    }
 
 
 
@@ -70,11 +77,10 @@ const handleBack = () => {
         loop = {false}/>
         {popup}
 
-        <Cintro />
+        <Cintro openCurrent={openCurrent} />
+        {showWork && <CurrentWork />}
 
 
-
-          <h2 id="prev">Sample React.js Work</h2>
 
         </main>
 
