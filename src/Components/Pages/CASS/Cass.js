@@ -15,7 +15,11 @@ import ScrollToTopOnMount from '../../Scroll';
 
 function Cass() {
   const [showWork, setShowWork] = useState(false);
-  const openCurrent = () => setShowWork(!showWork);
+  const openCurrent = () => {setShowWork(true);
+  window.scrollTo({
+    top: 975,
+    behavior: "smooth"
+  })}
   const [showPopUp, setShowPopUp] = useState(true);
   const showPopupHandler = () => setShowPopUp(false);
   const reopen = () => {setShowPopUp(true);

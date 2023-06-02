@@ -167,13 +167,13 @@ header a {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(./Images/IMG_0084.jpeg);
+    background-image: url(./Images/IMG_0084.webp);
     background-size: cover;
     background-attachment: fixed;
     background-position: 50% 70%;
 }
-.heroContainer:hover {
-    /* animation-name: pic-cycle; */
+/* .heroContainer:hover {
+    animation-name: pic-cycle;
     animation-duration: 5s;
     animation-timing-function: step-start;
     animation-iteration-count: 1;
@@ -194,7 +194,7 @@ header a {
         background-position: center;}
     90% {background-image: url(./Images/IMG_0046.jpeg);}
     100% {background-image: url(./Images/IMG_0085.jpeg);}
-}
+} */
 /* Shows that pictures can be quickly cycled through to have a looping slideshow type effect.
 End goal to have stills of a rendered video that loops through to give slideshow/stopmotion type effect */
 .heroText {
@@ -225,6 +225,8 @@ End goal to have stills of a rendered video that loops through to give slideshow
     font-family: 'Gopher-Light';
     font-size: 1.5rem;
     text-align: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
 }
 
 
