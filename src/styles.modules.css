@@ -664,6 +664,9 @@ footer a {
     .Loader h2 {
         font-size: 1rem;
     }
+    .loadContent {
+        justify-content: flex-start;
+    }
     .navbar {
         display: flex;
         flex-direction: row;
