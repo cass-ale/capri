@@ -1,5 +1,6 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import './styles.modules.css';
+import Loader from "./Loader";
 import Home from "./Components/Pages/Home";
 import Archive from './Components/Pages/Archive';
 import Donate from './Components/Pages/Donate';
@@ -12,9 +13,21 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
 
 function App() {
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2500);
+  }, []);
+
 
   return (
     <>
+    {loading ? (
+      <Loader />
+    ) :
+    (
     <Router>
       <Routes>
       <Route exact path="/" element={<Home />} />
@@ -26,6 +39,7 @@ function App() {
       <Route exact path="/cassja_portf_fedev_05012023" element={<Cass />} />
       </Routes>
     </Router>
+    )}
     </>
   );
 }
