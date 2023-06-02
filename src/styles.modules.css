@@ -652,14 +652,16 @@ footer a {
     .heroContainer {
         max-width: 100%;
         flex-wrap: wrap;
+        background-image: url(./Images/IMG_0085.jpeg);
         background-attachment: local;
+        background-position: 58% 50%;
     }
     .heroContainer:hover {
         animation-duration: 0s;
     }
     /* Disables cycling effect on mobile */
     .heroText {
-        font-size: 4rem;
+        font-size: 4.5rem;
         text-align: center;
         width: 100%;
     }
@@ -675,7 +677,6 @@ footer a {
         flex-wrap: wrap;
         gap: 1rem;
         max-width: 100%;
-        padding: 1rem;
         margin: 0;
     }
     .archiveContainer h2 {
@@ -694,17 +695,19 @@ footer a {
 
     .contactContainer {
         flex-wrap: wrap;
-        justify-content: center;
         align-items: center;
         gap: 1rem;
-        max-width: 100%;
-        padding: 1rem;
+        width: 100%;
         margin: 0;
     }
     .contactContainer p {
         font-size: 0.8rem;
-        width: 100%;
+        width: 90%;
         text-align: justify;
+        padding: 0;
+    }
+    .contactContainer button {
+        margin: 0;
     }
     .contactForm {
         height: 100%;
@@ -765,6 +768,7 @@ footer a {
         font-size: 1rem;
         width: 100%;
         text-align: justify;
+        padding: 0;
     }
     #sig {
         display: none;
@@ -822,6 +826,7 @@ footer a {
 @media screen and (max-width: 400px) {
     .heroText {
         font-size: 2rem;
+        margin-bottom: 5rem;
     }
     .formClose {
         margin-left: 13rem;
