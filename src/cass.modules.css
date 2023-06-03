@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: space-around;
     max-width: 100%;
-    width: min(100%, 160rem);
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -13,7 +13,7 @@
 }
 .cheader h1 {
     font-family: 'Gopher';
-    font-size: 3.75rem;
+    font-size: 2rem;
     color: #432534;
     margin: 0;
     cursor: pointer;
@@ -74,7 +74,7 @@
 
 
 .cmain {
-    padding-top: 5rem;
+    padding-top: 3.25rem;
     background-color: #04151F;
     color: #f4f0e0;
     display: flex;
@@ -93,6 +93,20 @@
   font-family: 'Gopher';
   text-align: center;
 }
+
+
+
+
+.introduction {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.introduction h1 {
+  padding: 0;
+  margin-top: 0;
+}
 #about {
   font-family: 'Lato';
   font-size: 1.75rem;
@@ -102,23 +116,8 @@
   margin-top: 1.25rem;
   line-height: 3rem;
 }
-#about a {
-  color: #f4f0e0;
-}
-.introduction {
-  width: 100%;
-  height: 93vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.introduction h1 {
-  padding: 0;
-  margin-top: 0;
-}
 .introduction section {
   display: flex;
-  width: 100vw;
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
@@ -148,7 +147,7 @@
   flex-direction: column;
   align-items: center;
   gap: 5rem;
-  width: 100vw;
+  width: 100%;
   height: 150vh;
   background-image: url(./Images/IMG_0048.jpeg);
   background-size: cover;
@@ -212,7 +211,6 @@
     color: #f4f0e0;
     position: absolute;
     max-width: 100%;
-    width: 100%rem;
     height: 250vh;
     transition: all 0.4s;
     box-shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.25);

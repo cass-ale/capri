@@ -26,10 +26,10 @@ function CurrentWork() {
         </section>
             </section>
             <section className='simpcxty'>
-            <h1>Project Two: simpxty</h1>
+            <h1>Project Two: simpcxty</h1>
             <p>simpcxty is an aspiring R&B Singer/Songwrtier from Bessemer, AL, and we collaborated to build his official website to consolidate his works to create a hub for fans to easily access more of the original content they love and also allows for potential business connections to reach out</p>
             <section className='cardButtons'>
-            <a href='https://www.simpcxty.netlify.app' target="_blank" rel="noopener noreferrer"><Button
+            <a href='https://simpcxty.netlify.app/' target="_blank" rel="noopener noreferrer"><Button
             sx={{
             fontFamily: "Gopher",
             fontSize: "1rem",

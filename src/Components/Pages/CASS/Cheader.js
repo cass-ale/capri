@@ -1,65 +1,31 @@
-import React from 'react'
-import {
-faGithub,
-faLinkedin,
-faHackerrank,
-faFreeCodeCamp,
-} from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
-const socials = [
-    {
-        icon: faLinkedin,
-        url: "https://www.linkedin.com/in/cass-ale/"
-    },
-    {
-        icon: faGithub,
-        url: "https://github.com/cass-ale"
-    },
-    {
-        icon: faHackerrank,
-        url: "https://www.hackerrank.com/cassale"
-    },
-    {
-        icon: faFreeCodeCamp,
-        url: "https://www.freecodecamp.org/cass-ale"
-    },
-    {
-        icon: faEnvelope,
-        url: "mailto:cass@caprimag.com"
-    }
-]
 
-const handleClick = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  };
+
 
 function Cheader(props) {
     return(
         <nav className='cheader'>
         <button onClick={props.reopen}>Need That Pop Up Again?</button>
-            <h1 onClick={handleClick}>C. J. ALÉRIA</h1>
+            <h1 onClick={props.handleClick}>C. J. ALÉRIA</h1>
 
             {<nav className="cicons">
-                <a href={socials[0].url} target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={socials[0].icon} size="2x" />
+                <a href={props.socials[0].url} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={props.socials[0].icon} size="2x" />
                 </a>
-                <a href={socials[1].url} target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={socials[1].icon} size="2x" />
+                <a href={props.socials[1].url} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={props.socials[1].icon} size="2x" />
                 </a>
-                <a href={socials[2].url} target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={socials[2].icon} size="2x" />
+                <a href={props.socials[2].url} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={props.socials[2].icon} size="2x" />
                 </a>
-                <a href={socials[3].url} target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={socials[3].icon} size="2x" />
+                <a href={props.socials[3].url} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={props.socials[3].icon} size="2x" />
                 </a>
-                <a href={socials[4].url} target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={socials[4].icon} size="2x" />
+                <a href={props.socials[4].url} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={props.socials[4].icon} size="2x" />
                 </a>
         </nav>}
         </nav>

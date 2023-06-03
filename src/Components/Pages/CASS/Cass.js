@@ -5,6 +5,13 @@ import Footer from './Cfooter';
 import PopUp from './Cpopup';
 import Cintro from './Cintro';
 import CurrentWork from './CurrentWork';
+import {
+faGithub,
+faLinkedin,
+faHackerrank,
+faFreeCodeCamp,
+} from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { Helmet } from 'react-helmet';
 import AudioPlayer from 'react-h5-audio-player';
 import songs from './Songs';
@@ -13,7 +20,41 @@ import ScrollToTopOnMount from '../../Scroll';
 
 
 
+const socials = [
+  {
+      icon: faLinkedin,
+      url: "https://www.linkedin.com/in/cass-ale/"
+  },
+  {
+      icon: faGithub,
+      url: "https://github.com/cass-ale"
+  },
+  {
+      icon: faHackerrank,
+      url: "https://www.hackerrank.com/cassale"
+  },
+  {
+      icon: faFreeCodeCamp,
+      url: "https://www.freecodecamp.org/cass-ale"
+  },
+  {
+      icon: faEnvelope,
+      url: "mailto:cass@caprimag.com"
+  }
+]
+
+
+
+
+
+
 function Cass() {
+  const handleClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
   const [showWork, setShowWork] = useState(false);
   const openCurrent = () => {setShowWork(true);
   window.scrollTo({
@@ -64,7 +105,7 @@ const handleBack = () => {
 
 
         <header>
-        <Header reopen={reopen}/>
+        <Header reopen={reopen} handleClick={handleClick} socials={socials}/>
         </header>
 
 
