@@ -100,7 +100,7 @@ const handleBack = () => {
         <>
         <ScrollToTopOnMount />
         <Helmet>
-        <title>C. J. ALÉRIA</title>
+        <title>C. J. ALÉRIA | Digital Designer</title>
         </Helmet>
 
 
