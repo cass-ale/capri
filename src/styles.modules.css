@@ -171,13 +171,13 @@ header a {
     background-size: cover;
     background-attachment: fixed;
     background-position: 50% 70%;
+    cursor: pointer;
 }
 /* .heroContainer:hover {
     animation-name: pic-cycle;
     animation-duration: 5s;
     animation-timing-function: step-start;
     animation-iteration-count: 1;
-    cursor: pointer;
 }
 @keyframes pic-cycle {
     15% {background-image: url(./Images/IMG_0068.jpeg);
