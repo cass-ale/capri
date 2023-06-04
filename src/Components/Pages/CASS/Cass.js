@@ -4,6 +4,7 @@ import Header from './Cheader';
 import Footer from './Cfooter';
 import PopUp from './Cpopup';
 import Cintro from './Cintro';
+import Cabout from './Cabout';
 import CurrentWork from './CurrentWork';
 import {
 faGithub,
@@ -11,6 +12,7 @@ faLinkedin,
 faHackerrank,
 faFreeCodeCamp,
 } from '@fortawesome/free-brands-svg-icons';
+import { Button } from '@mui/material';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { Helmet } from 'react-helmet';
 import AudioPlayer from 'react-h5-audio-player';
@@ -122,7 +124,15 @@ const handleBack = () => {
         loop = {false}/>
         {popup}
 
-        <Cintro openCurrent={openCurrent} />
+        <Cintro />
+        <Cabout />
+          <section className='introButton'>
+            <Button sx={{
+              backgroundColor: "#C44900",
+              fontFamily: "Gopher",
+              fontSize: "2rem"
+            }} variant='contained' size='large' onClick={openCurrent} className='introButton'>Read More</Button>
+          </section>
         {showWork && <CurrentWork />}
 
 

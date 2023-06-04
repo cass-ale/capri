@@ -36,7 +36,7 @@
     background-color: #04151F;
     border-color: #183a37;
     color: #f4f0e0;
-    transform: scale(1);
+    transform: scale(0.85);
 }
 .cheader button:active {
     background-color: #183a37;
@@ -121,6 +121,65 @@
   color: #432534;
   border-radius: .11rem;
 }
+.downArrow {
+  margin-top: 5rem;
+  animation: down 1.5s linear infinite;
+}
+@keyframes down {
+  25% {transform: translate(0, 25%) ;}
+  50% {transform: translate(0, 0%) ;}
+  75% {transform: translate(0, -25%) ;}
+  100% {transform: translate(0, 0);}
+}
+
+.cabout {
+  height: 50vh;
+}
+.cabout h1 {
+  text-align: left;
+  padding-top: 0;
+  padding-left: 5rem;
+  padding-bottom: 2.5rem;
+  margin: 0;
+}
+.traits {
+  display: flex;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  gap: 2rem;
+}
+.traits h2 {
+  font-size: 1.75rem;
+}
+.traits article {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.traits aside {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.traits p {
+  text-align: justify;
+  font-size: 1.5rem;
+  max-width: 40rem;
+}
+.skills {
+  height: 50vh;
+}
+.skills h1 {
+  text-align: left;
+  padding-top: 0;
+  padding-left: 5rem;
+  padding-bottom: 2.5rem;
+  margin: 0;
+}
+
+
+
+
 
 
 .currentWork {
@@ -130,7 +189,7 @@
   gap: 5rem;
   width: 100%;
   height: 150vh;
-  background-image: url(./Images/IMG_0048.jpeg);
+  background-image: url(./Images/IMG_0048.webp);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -143,7 +202,7 @@
   align-items: center;
   padding: 2rem;
   margin-top: 5rem;
-  transition: all 2s;
+  transition: all 1s;
 }
 .capriMedia h1 {
   padding: 0;
@@ -159,7 +218,7 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  transition: all 2s;
+  transition: all 1s;
 }
 .simpcxty h1 {
   padding: 0;
