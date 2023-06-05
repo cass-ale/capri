@@ -48,7 +48,7 @@ function SubForm(props) {
             method="POST"
             action='https://script.google.com/macros/s/AKfycbzk5ZRFP_slo22CZe5lTIvKEWMBj9TMBWp3dLaJL2GjcBqkoAkYLahqtasxLhPRmOq7/exec'>
             <div className="footerForm">
-            <label htmlFor="email">Subscribe To The CAPRI Catalogue For Occasional Updates From Us.</label>
+            <label htmlFor="footerForm">Subscribe To The CAPRI Catalogue For Occasional Updates From Us.</label>
             <section id="footerForm">
             <Field type="email" name="email" style={{fontFamily: 'Lato'}} placeholder='Enter Your Email . . .'/>
             <ErrorMessage name="email" />
