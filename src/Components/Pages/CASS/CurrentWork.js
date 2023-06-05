@@ -6,7 +6,7 @@ import { Button } from '@mui/material';
 function CurrentWork() {
     return(
         <>
-        <div className='currentWork'>
+        <div className='currentWork' id='current'>
             <section className='capriMedia'>
             <h1>Project One: CAPRI Media</h1>
             <p>CAPRI Media is an NYC Based Fashion & Photography collective founded in 2022. In this project I built and designed their official website's UI in React.js using modern approaches to responsive and accessible design. Read further into the User Experience case study to see how I iterated on the UI to imrpove the experience for CAPRI's users.</p>

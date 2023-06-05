@@ -132,10 +132,10 @@
   100% {transform: translate(0, 0);}
 }
 
-.cabout {
+.help {
   height: 50vh;
 }
-.cabout h1 {
+.help h1 {
   text-align: left;
   padding-top: 0;
   padding-left: 5rem;
@@ -155,11 +155,12 @@
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  border-bottom: #C44900 0.1rem solid;
 }
 .traits aside {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .traits p {
   text-align: justify;
@@ -176,7 +177,57 @@
   padding-bottom: 2.5rem;
   margin: 0;
 }
+.works {
+  height: 90vh;
+  justify-content: space-between;
+}
+.works h1 {
+  text-align: center;
+}
+.worksCards {
+  width: 80vw;
+  height: 60vh;
+  display: flex;
+  padding: 2rem;
+  justify-content: space-between;
+}
+.worksCards h2 {
+  font-size: 2.5rem;
+}
+.worksCards p {
+  font-size: 1.5rem;
+  max-width: 40rem;
+  text-align: center;
+}
 
+#capriCard, #simpCard {
+  transition: all 0.5s;
+}
+#capriCard:hover, #simpCard:hover {
+  transform: scale(1.05);
+}
+#capriCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+  background-image: url(./Images/IMG_0084.webp);
+  background-size: cover;
+}
+#simpCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
+  background-image: url(./Images/IMG_3612.JPG);
+  background-size: cover;
+  background-position: 50% 83%;
+  color: #04151F;
+}
+#simpCard p{
+  color: #f4f0e0;
+  background-color: rgba(4, 21, 31, 0.15);
+}
 
 
 
@@ -186,6 +237,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 5rem;
   width: 100%;
   height: 150vh;
@@ -195,8 +247,8 @@
 }
 .capriMedia {
   width: 25vw;
+  height: 50vh;
   background-color: rgba(4, 21, 31, 0.85);
-  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -212,8 +264,8 @@
 }
 .simpcxty {
   width: 25vw;
+  height: 50vh;
   background-color: rgba(4, 21, 31, 0.85);
-  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;

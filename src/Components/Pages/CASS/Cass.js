@@ -12,13 +12,11 @@ faLinkedin,
 faHackerrank,
 faFreeCodeCamp,
 } from '@fortawesome/free-brands-svg-icons';
-import { Button } from '@mui/material';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { Helmet } from 'react-helmet';
 import AudioPlayer from 'react-h5-audio-player';
 import songs from './Songs';
 import ScrollToTopOnMount from '../../Scroll';
-
 
 
 
@@ -58,11 +56,14 @@ function Cass() {
     });
   };
   const [showWork, setShowWork] = useState(false);
-  const openCurrent = () => {setShowWork(true);
-  window.scrollTo({
-    top: 975,
-    behavior: "smooth"
-  })}
+  const openCurrent = () => {setShowWork(!showWork);
+    setTimeout(() => {
+      const element = document.getElementById("current");
+    if (element){
+      element.scrollIntoView({behavior: "smooth"});
+    }
+    }, 150)
+    }
   const [showPopUp, setShowPopUp] = useState(true);
   const showPopupHandler = () => setShowPopUp(false);
   const reopen = () => {setShowPopUp(true);
@@ -125,22 +126,15 @@ const handleBack = () => {
         {popup}
 
         <Cintro />
-        <Cabout />
-          <section className='introButton'>
-            <Button sx={{
-              backgroundColor: "#C44900",
-              fontFamily: "Gopher",
-              fontSize: "2rem"
-            }} variant='contained' size='large' onClick={openCurrent} className='introButton'>Read More</Button>
-          </section>
-        {showWork && <CurrentWork />}
+        <Cabout openCurrent={openCurrent}/>
+        {showWork && <CurrentWork/>}
 
 
 
         </main>
 
         <footer>
-        <Footer />
+          <Footer />
         </footer>
         </>
     )
