@@ -13,7 +13,7 @@ function Home() {
         <ScrollToTopOnMount />
         <Helmet>
         <title>CAPRI Media | Official Site</title>
-      </Helmet>
+        </Helmet>
         <header>
             <Header/>
         </header>
