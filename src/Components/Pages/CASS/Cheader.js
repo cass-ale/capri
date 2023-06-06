@@ -24,9 +24,6 @@ function Cheader(props) {
                 <a href={props.socials[3].url} target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={props.socials[3].icon} size="2x" />
                 </a>
-                <a href={props.socials[4].url} target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={props.socials[4].icon} size="2x" />
-                </a>
         </nav>}
         </nav>
     )

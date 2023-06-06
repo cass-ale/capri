@@ -6,11 +6,11 @@ import PopUp from './Cpopup';
 import Cintro from './Cintro';
 import Cabout from './Cabout';
 import CurrentWork from './CurrentWork';
+import Cresume from './Cresume';
 import {
 faGithub,
 faLinkedin,
-faHackerrank,
-faFreeCodeCamp,
+faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { Helmet } from 'react-helmet';
@@ -30,16 +30,12 @@ const socials = [
       url: "https://github.com/cass-ale"
   },
   {
-      icon: faHackerrank,
-      url: "https://www.hackerrank.com/cassale"
-  },
-  {
-      icon: faFreeCodeCamp,
-      url: "https://www.freecodecamp.org/cass-ale"
+      icon: faInstagram,
+      url: "https://www.instagram.com/cass.aleria"
   },
   {
       icon: faEnvelope,
-      url: "mailto:cass@caprimag.com"
+      url: "mailto:cass@caprimag.com?subject=Employment Inquiry (Portfolio Site)&cc=cass.ale@outlook.com&body=Hello, this is a prewritten message to guide you in writing an email regarding employment. Please include your name and contact information, and a brief summary of the role and how you envision me fitting into it. Thanks for visiting my site and considering me!"
   }
 ]
 
@@ -128,6 +124,7 @@ const handleBack = () => {
         <Cintro />
         <Cabout openCurrent={openCurrent}/>
         {showWork && <CurrentWork/>}
+        <Cresume />
 
 
 

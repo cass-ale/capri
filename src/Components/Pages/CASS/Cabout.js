@@ -17,7 +17,7 @@ function Cabout(props) {
         <section className='traits'>
             <article>
                 <aside><FontAwesomeIcon icon={fa1} size='2x'/><h2>Functional & Responsive Sites</h2></aside>
-                <p>Highlight what makes your brand unique, and reach everyone with your message on any device. With a multitude of ways for users to keep in touch, you'll always be able to spread the word about your exciting developments quickly.</p>
+                <p>Highlight what makes your brand unique, and reach everyone with your message on any device. With a multitude of ways for users to keep in touch, you{"'"}ll always be able to spread the word about your exciting developments quickly.</p>
             </article>
 
             <article>
@@ -56,12 +56,12 @@ function Cabout(props) {
 
 
         <div className="works">
-        <h1>Who I'm Helping Now</h1>
+        <h1>Who I{"'"}m Collaborating With Now</h1>
 
         <section className='worksCards'>
         <article id='capriCard'>
             <h2>CAPRI Media</h2>
-            <p>NYC Based Fashion Design & Media Company. I fully designed and built their website for the functionality and memorable design they couldn't get using website building services. Their site now has has the professional and bespoke appearance they wanted, and it also provides a smooth experience to their users regardless of the device they use. </p>
+            <p>NYC Based Fashion Design & Media Company. I fully designed and built their website for the functionality and memorable design they couldn{"'"}t get using website building services. Their site now has has the professional and bespoke appearance they wanted, and it also provides a smooth experience to their users regardless of the device they use. </p>
         </article>
 
         <article id='simpCard'>
