@@ -72,14 +72,14 @@ function Cass() {
     setCurrentSong(currentSong + 1);
     if (currentSong === songs.length - 1) {
       setCurrentSong(0);
+    }
   }
-}
-const handleBack = () => {
-  setCurrentSong(currentSong - 1);
-  if (currentSong === 0) {
-    setCurrentSong(songs.length - 1);
+  const handleBack = () => {
+    setCurrentSong(currentSong - 1);
+    if  (currentSong === 0) {
+      setCurrentSong(songs.length - 1);
+    }
   }
-}
 
   useEffect(() => {
     const timer = setTimeout(() => {

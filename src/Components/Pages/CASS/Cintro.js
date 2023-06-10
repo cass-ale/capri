@@ -15,7 +15,7 @@ function Cintro() {
         </section>
 
         <section className="where">
-        <h1>Currently Based In New York City, And Helping Brands And Creatives Enhance Their Online Presence Through Design.</h1>
+        <h1>Currently Based In New York City, I Help Brands And Creatives Enhance Their Online Presence Through Design.</h1>
         <h2>My Skillset Is Concentrated On Web And Mobile Design. My Favorite Part Of This Whole Process Is To Create Figma Mockups And Work Through Ideas With Clients.</h2>
         </section>
         </>

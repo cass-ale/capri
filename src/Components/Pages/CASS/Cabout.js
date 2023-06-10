@@ -56,7 +56,7 @@ function Cabout(props) {
 
 
         <div className="works">
-        <h1>Who I{"'"}m Collaborating With Now</h1>
+        <h1>My Current Collaborators</h1>
 
         <section className='worksCards'>
         <article id='capriCard'>
@@ -70,6 +70,7 @@ function Cabout(props) {
         </article>
         </section>
         </div>
+        <div className='buttonArea'>
         <section className='introButton'>
             <Button sx={{
               backgroundColor: "#C44900",
@@ -77,6 +78,7 @@ function Cabout(props) {
               fontSize: "2rem"
             }} variant='contained' size='large' onClick={props.openCurrent} className='introButton'>Read More</Button>
           </section>
+          </div>
         </>
     )
 }

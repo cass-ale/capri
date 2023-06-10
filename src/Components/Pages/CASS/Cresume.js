@@ -37,7 +37,7 @@ function Cresume() {
             }}>Contact Me</Button></a>
                 </aside>
                 <aside id='signoff'>
-            <h1>If You Think We Could Make Something Cool Together, Feel Free To Get In Touch.</h1>
+            <h1>If You're Interested, Feel Free To Get In Touch.</h1>
             <h2>I Am But An Email Away!</h2>
             </aside>
         </div>
