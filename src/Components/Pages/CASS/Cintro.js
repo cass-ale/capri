@@ -8,7 +8,7 @@ function Cintro() {
     return (
         <>
         <section className='introduction'>
-        <h1>Hey, I{"'"}m Cass. I Desing & Develop The Web.</h1>
+        <h1>Hey, I{"'"}m Cass. I Design & Develop The Web.</h1>
         <h2>Welcome To My Portfolio! While You Visit, Feel Free To Listen To A Selection Of Some Of My Favorite Songs.</h2>
         <hr style={{width: "80%",}}/>
         <FontAwesomeIcon icon={faAngleDoubleDown} size='3x' className='downArrow' />
