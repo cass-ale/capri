@@ -14,8 +14,6 @@ faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { Helmet } from 'react-helmet';
-import AudioPlayer from 'react-h5-audio-player';
-import songs from './Songs';
 import ScrollToTopOnMount from '../../Scroll';
 
 
@@ -67,19 +65,7 @@ function Cass() {
     top: 0,
     behavior: "smooth"
   });}
-  const [currentSong, setCurrentSong] = useState(0);
-  const handleNext = () => {
-    setCurrentSong(currentSong + 1);
-    if (currentSong === songs.length - 1) {
-      setCurrentSong(0);
-    }
-  }
-  const handleBack = () => {
-    setCurrentSong(currentSong - 1);
-    if  (currentSong === 0) {
-      setCurrentSong(songs.length - 1);
-    }
-  }
+
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -109,16 +95,6 @@ function Cass() {
 
 
         <main className='cmain'>
-        <AudioPlayer
-        src={songs[currentSong].src}
-        showSkipControls={true}
-        showJumpControls={false}
-        onClickNext={handleNext}
-        onEnded={handleNext}
-        onClickPrevious={handleBack}
-        layout = "horizontal-reverse"
-        autoPlay = {true}
-        loop = {false}/>
         {popup}
 
         <Cintro />

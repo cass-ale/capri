@@ -17,7 +17,7 @@ function Cabout(props) {
         <section className='traits'>
             <article>
                 <aside><FontAwesomeIcon icon={fa1} size='2x'/><h2>Functional & Responsive Sites</h2></aside>
-                <p>Highlight what makes your brand unique, and reach everyone with your message on any device. With a multitude of ways for users to keep in touch, you{"'"}ll always be able to spread the word about your exciting developments quickly.</p>
+                <p>Highlight what makes your brand unique, and reach everyone with your message on any device. With a multitude of ways for users to keep in touch, you{"'"}ll always be able to quickly spread the word about your exciting developments.</p>
             </article>
 
             <article>
