@@ -748,6 +748,9 @@
   .cmain h2 {
     font-size: 1.15rem;
   }
+  .introduction {
+    padding: 1.5rem;
+  }
   .where h1 {
     padding-top: 0;
   }
@@ -766,7 +769,7 @@
     text-align: center;
   }
   .traits h2{
-    font-size: 0.9rem;
+    font-size: 0.75rem;
   }
   .traits p {
     font-size: 0.75rem;
