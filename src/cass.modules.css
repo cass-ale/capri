@@ -739,15 +739,104 @@
 }
 
   .cmain {
-    padding-top: 2.2rem;
+    padding-top: 0;
+    padding-bottom: 2.2rem;
   }
   .cmain h1 {
     font-size: 2rem;
   }
   .cmain h2 {
+    font-size: 1.15rem;
+  }
+  .where h1 {
+    padding-top: 0;
+  }
+  .where h2 {
+    text-align: justify;
+  }
+  .traits {
+    flex-direction: column;
+  }
+  .help {
+    margin-bottom: 5rem;
+  }
+  .help h1 {
+    padding-left: 0;
     font-size: 1.5rem;
+    text-align: center;
+  }
+  .traits h2{
+    font-size: 0.9rem;
+  }
+  .traits p {
+    font-size: 0.75rem;
+  }
+  .skills {
+    margin-bottom: 20rem;
+  }
+  .skills h1 {
+    padding-left: 0;
+    font-size: 1.5rem;
+    text-align: center;
   }
 
+  .works {
+    height: 100vh;
+    padding-bottom: 5rem;
+  }
+  .worksCards {
+    flex-direction: column;
+    height: 80vh;
+  }
+  .worksCards p {
+    font-size: 0.75rem;
+  }
+  #capriCard, #simpCard {
+    height: 35vh;
+  }
+
+  .currentWork {
+    background-attachment: local;
+  }
+  .capriMedia, .simpcxty {
+    width: 60%;
+    height: 45vh;
+  }
+  .capriMedia p, .simpcxty p {
+    font-size: 0.75rem;
+  }
+
+
+  .cresume {
+    padding-top: 2rem;
+  }
+  .cresume h1 {
+    width: 100vw;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0;
+  }
+  .cresume section {
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .cresume li {
+    font-size: 0.75rem;
+  }
+  .cresume button {
+    font-size: 1rem;
+  }
+  #signoff {
+    margin-top: 2rem;
+    gap: 0.1rem;
+  }
+  #signoff h1{
+    font-size: 1.25rem;
+    padding: 1rem;
+    text-align: center;
+  }
 
 
 
