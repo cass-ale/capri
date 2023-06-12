@@ -897,6 +897,10 @@ footer a {
     }
 }
 @media screen and (orientation: landscape) {
+    .navbar {
+        position: sticky;
+        height: 0.75rem;
+    }
     .donoContainer {
         flex-direction: row;
     }
