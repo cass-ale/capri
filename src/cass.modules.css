@@ -787,6 +787,11 @@
     height: 100vh;
     padding-bottom: 5rem;
   }
+  .works h1 {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    margin: 0;
+  }
   .worksCards {
     flex-direction: column;
     height: 80vh;
