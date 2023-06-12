@@ -86,6 +86,11 @@ function Cass() {
         <ScrollToTopOnMount />
         <Helmet>
         <title>C. J. ALÉRIA | Digital Designer</title>
+        <meta property="og:site_name" content="C. J. ALÉRIA | Digital Designer" />
+        <meta property="og:title" content="C. J. ALÉRIA | Digital Designer" />
+        <meta name="author" content="C. J. ALÉRIA" />
+        <meta name="description" content="C. J. ALÉRIA's Web Development & Design Portfolio" />
+        <meta property="og:description" content="C. J. ALÉRIA's Web Development & Design Portfolio" />
         </Helmet>
 
 
