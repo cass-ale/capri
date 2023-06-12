@@ -896,6 +896,25 @@ footer a {
         margin-left: 13rem;
     }
 }
+@media screen and (orientation: landscape) {
+    .donoContainer {
+        flex-direction: row;
+    }
+    .donoContainer > #h1 {
+        margin-bottom: 0;
+    }
+    .donoContainer p {
+        margin-top: 0;
+    }
+    .donoButtons {
+        margin-top: 4rem;
+    }
+    .rainn {
+        width: 30vw;
+        height: auto;
+        margin-left: 35vw;
+    }
+}
 
 /* Mobile/tablet Menu and Nav CSS Styling */
 .mobileMenu {
