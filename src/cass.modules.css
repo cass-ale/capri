@@ -901,7 +901,7 @@
 
 @media screen and (orientation: landscape) {
   .cmain {
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
   }
 
   .help {
@@ -916,5 +916,31 @@
   }
   #capriCard, #simpCard {
     height: 65vh;
+  }
+
+  .currentWork {
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+  }
+  .currentWork section {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;}
+  .capriMedia, .simpcxty {
+    height: 70vh;
+  }
+  .capriMedia h1, .simpcxty h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  .capriMedia {
+    margin: 0;
+  }
+  .cardButtons button {
+    font-size: 0.75rem;
+  }
+
+  .cresume section {
+    width: 100%;
   }
 }
