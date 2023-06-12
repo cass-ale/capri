@@ -895,3 +895,26 @@
     display: none;
   }
 }
+
+
+/* landscape orientation below */
+
+@media screen and (orientation: landscape) {
+  .cmain {
+    padding-bottom: 5rem;
+  }
+
+  .help {
+    margin-bottom: 20rem;
+  }
+  .skills {
+    margin-bottom: 25rem;
+  }
+  .worksCards {
+    flex-direction: row;
+    align-items: center;
+  }
+  #capriCard, #simpCard {
+    height: 65vh;
+  }
+}
