@@ -787,6 +787,7 @@
   .worksCards {
     flex-direction: column;
     height: 80vh;
+    gap: 2.5rem;
   }
   .worksCards p {
     font-size: 0.75rem;
