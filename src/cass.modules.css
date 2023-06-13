@@ -287,6 +287,9 @@
 .capriMedia:hover {
   background-color: rgba(4, 21, 31, 1);
 }
+.capriMedia p, .simpcxty p {
+  font-size: 1.25rem;
+}
 .simpcxty {
   width: 35vw;
   height: 50vh;
@@ -307,6 +310,9 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+}
+.cardButtons button {
+  font-size: 1.25rem;
 }
 
 
@@ -662,7 +668,6 @@
     height: 100%;
     position: absolute;
     z-index: 2;
-    background-color: #C44900;
     border-radius: 2px;
   }
 
@@ -895,7 +900,7 @@
 
 /* landscape orientation below */
 
-@media screen and (orientation: landscape) {
+@media screen and  (orientation: landscape) and (max-width: 1020px) {
   .cmain {
     padding-bottom: 10rem;
   }
