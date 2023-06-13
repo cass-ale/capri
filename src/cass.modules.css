@@ -112,9 +112,6 @@
   font-size: 2.75rem;
   transition: all 5s;
 }
-.where h1:hover {
-  transform: scale(1.05);
-}
 .where h2 {
   font-size: 1.5rem;
 }
@@ -130,13 +127,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
-  margin-bottom: 10rem;
+  margin-top: 5rem;
 }
 .buttonArea {
   background-color: #04151F;
   width: 100%;
-  height: 35vh;
+  height: 30vh;
 }
 #root > main > div.buttonArea > section > button:hover {
   color: #f4f0e0;
@@ -202,7 +198,7 @@
 }
 .works {
   width: 100%;
-  height: 95vh;
+  height: 100vh;
   justify-content: space-between;
   background-color: #04151F;
   color: #f4f0e0;
@@ -211,7 +207,7 @@
   text-align: center;
 }
 .worksCards {
-  height: 60vh;
+  height: 70vh;
   display: flex;
   padding: 2rem;
   justify-content: space-evenly;
