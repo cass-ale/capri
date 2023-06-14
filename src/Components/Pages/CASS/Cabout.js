@@ -17,12 +17,12 @@ function Cabout(props) {
         <section className='traits'>
             <article>
                 <aside><FontAwesomeIcon icon={fa1} size='2x'/><h2>Functional & Responsive Sites</h2></aside>
-                <p>Highlight what makes your brand unique, and reach everyone with your message on any device. With a multitude of ways for users to keep in touch, you{"'"}ll always be able to quickly spread the word about your exciting developments.</p>
+                <p>Highlight what makes your brand unique and reach everyone with your message on any device. With a multitude of ways for users to keep in touch, you{"'"}ll always be able to quickly spread the word about your exciting developments.</p>
             </article>
 
             <article>
                 <aside><FontAwesomeIcon icon={fa2} size="2x" /><h2>Visually Engaging UI</h2></aside>
-                <p>Put your best foot forward, and show up to your users exactly how you want to. Simplicity is key to an interface design that is timeless and memorable.</p>
+                <p>Put your best foot forward and show up to your users exactly how you want to. Simplicity is key to an interface design that is timeless and memorable.</p>
             </article>
 
             <article>
@@ -39,7 +39,7 @@ function Cabout(props) {
         <section className='traits'>
         <article>
             <aside><FontAwesomeIcon icon={fa1} size='2x'/><h2>React.js</h2></aside>
-            <p>Exercising skillful use of HTML, CSS, JavaScript/TypeScript, and all of the other Front-End technologies to ensure your site is reaching your users and looking polished 24/7. </p>
+            <p>Exercising skillful use of HTML, CSS, JavaScript/TypeScript, and all the other Front-End technologies to ensure your site is reaching your users and looking polished 24/7. </p>
         </article>
 
         <article>
@@ -61,7 +61,7 @@ function Cabout(props) {
         <section className='worksCards'>
         <article id='capriCard'>
             <h2>CAPRI Media</h2>
-            <p>NYC Based Fashion Design & Media Company. I fully designed and built their website for the functionality and memorable design they couldn{"'"}t get using website building services. Their site now has has the professional and bespoke appearance they wanted, and it also provides a smooth experience to their users regardless of the device they use. </p>
+            <p>NYC Based Fashion Design & Media Company. I fully designed and built their website for the functionality and memorable design they couldn{"'"}t get using website building services. Their site now has the professional and bespoke appearance they wanted, and it also provides a smooth experience to their users regardless of the device they use. </p>
         </article>
 
         <article id='simpCard'>
