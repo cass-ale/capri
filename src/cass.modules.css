@@ -815,6 +815,9 @@
   .capriMedia p, .simpcxty p {
     font-size: 0.75rem;
   }
+  .capriMedia button, .simpcxty button {
+    font-size: 0.8rem;
+  }
 
 
   .cresume {
