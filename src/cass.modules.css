@@ -940,6 +940,9 @@
   .cardButtons button {
     font-size: 0.75rem;
   }
+  .introButton {
+    margin-top: 0;
+  }
 
   .cresume section {
     width: 100%;
