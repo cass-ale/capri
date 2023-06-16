@@ -17,12 +17,12 @@ function CurrentWork() {
             fontSize: "1rem",
             color: "white",
         }}>CAPRI Media</Button></a>
-            <Button
+           {/* <Button
             sx={{
             fontFamily: "Gopher",
             fontSize: "1rem",
             color: "white",
-        }}>CAPRI Media UX Case Study</Button>
+        }}>CAPRI Media UX Case Study</Button>*/}
         </section>
             </section>
             <section className='simpcxty'>
@@ -35,12 +35,12 @@ function CurrentWork() {
             fontSize: "1rem",
             color: "white",
         }}>simpcxty</Button></a>
-        <Button
+{/*        <Button
             sx={{
             fontFamily: "Gopher",
             fontSize: "1rem",
             color: "white",
-        }}>simpcxty UX Case Study</Button>
+        }}>simpcxty UX Case Study</Button>*/}
         </section>
             </section>
         </div>
