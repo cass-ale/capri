@@ -207,7 +207,7 @@
   text-align: center;
 }
 .worksCards {
-  height: 70vh;
+  height: 65vh;
   display: flex;
   padding: 2rem;
   justify-content: space-evenly;
@@ -323,7 +323,6 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding-top: 10rem;
 }
 .cresume h1 {
   text-align: left;
@@ -715,16 +714,31 @@
     font-size: 2.25rem;
     line-height: 2.75rem;
   }
-
+  .help {
+    height: 100vh;
+  }
+  .skills {
+    height: 100vh;
+    margin: 0;
+  }
+  .help h1, .skills h1, .cresume h1 {
+    padding-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .traits {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
   .worksCards {
     flex-direction: column;
     align-items: center;
-    height: 80vh;
+    height: 125vh;
     gap: 2.5rem;
     padding: 0;
   }
   #capriCard, #simpCard {
-    height: 30vh;
+    height: 60vh;
   }
   #capriCard {
     background-position: 50% 60%;
@@ -732,7 +746,12 @@
   #simpCard {
     background-position: 50% 60%;
   }
-
+  .works {
+    height: 150vh;
+  }
+  .works h1 {
+    padding: 0;
+  }
   .currentWork {
     height: 250vh;
   }
@@ -741,6 +760,9 @@
   }
   .capriMedia p, .simpcxty p {
     font-size: 1.05rem;
+  }
+  .cresume {
+    padding-top: 5rem;
   }
 }
 

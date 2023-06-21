@@ -14,6 +14,7 @@ faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { Helmet } from 'react-helmet';
+import { Skeleton } from '@mui/material';
 import ScrollToTopOnMount from '../../Scroll';
 
 
@@ -50,14 +51,28 @@ function Cass() {
     });
   };
   const [showWork, setShowWork] = useState(false);
-  const openCurrent = () => {setShowWork(!showWork);
+  const [loading, setLoading] = useState(false);
+  const openCurrent = () => {
+    setLoading(true);
+
     setTimeout(() => {
-      const element = document.getElementById("current");
+    setShowWork(!showWork);
+    const element = document.getElementById("current");
     if (element){
       element.scrollIntoView({behavior: "smooth"});
     }
-    }, 150)
+    setLoading(false);
+
+    }, 500)
     }
+  const workRender = () => {
+    if (showWork === true && loading === false) {
+      return <CurrentWork />
+    }
+    else if (showWork === false && loading === true) {
+      return <Skeleton id='current' animation='wave' variant='rounded' sx={{width: "100%", height: "150vh", bgcolor: "#C44900"}} />
+    }
+  }
   const [showPopUp, setShowPopUp] = useState(true);
   const showPopupHandler = () => setShowPopUp(false);
   const reopen = () => {setShowPopUp(true);
@@ -104,7 +119,7 @@ function Cass() {
 
         <Cintro />
         <Cabout openCurrent={openCurrent}/>
-        {showWork && <CurrentWork/>}
+        {workRender()}
         <Cresume />
 
 
