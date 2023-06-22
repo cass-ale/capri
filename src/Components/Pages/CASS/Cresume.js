@@ -9,7 +9,7 @@ function Cresume() {
                 <section>
                     <ul>
                         <li>React.js — (HTML, CSS, JavaScript, & TypeScript)</li>
-                        <li>Digital Design — Figma & Adobe Illustrator</li>
+                        <li>Digital Design — (Figma, Adobe Illustrator, & InDesign) </li>
                         <li>Git & Version Control</li>
                     </ul>
 

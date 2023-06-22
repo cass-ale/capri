@@ -63,7 +63,7 @@ function Cass() {
     }
     setLoading(false);
 
-    }, 500)
+    }, 1250)
     }
   const workRender = () => {
     if (showWork === true && loading === false) {

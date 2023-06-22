@@ -949,6 +949,58 @@
   }
 }
 
+@media screen and (max-width: 470px) {
+ header {
+  position: fixed !important;
+  width: 100vw;
+  z-index: 990;
+ }
+  .where {
+  height: 80vh;
+  margin: 0;
+ }
+ .where h1 {
+  font-size: 1.25rem;
+ }
+ .where h2 {
+  font-size: 1rem
+ }
+  .help {
+    height: 90vh;
+  }
+  .skills {
+    height: 50vh;
+  }
+  .traits {
+  padding: 0;
+  }
+  .cresume section {
+    flex-direction: column;
+    gap: 0;
+  }
+  #root > main > div.cresume > section > ul:nth-child(2) {
+    margin: 0;
+  }
+  .cresume {
+    padding: 0;
+  }
+  .cresume li {
+    font-size: 0.65rem;
+    padding-bottom: 0;
+  }
+  .cresume button {
+    font-size: 0.65rem;
+  }
+  .capriMedia, .simpcxty {
+    height: 70vh;
+  }
+  .capriMedia {
+    margin: 0;
+  }
+  #signoff h1, #signoff h2{
+    font-size: 0.85rem;
+  }
+}
 
 /* landscape orientation below */
 
