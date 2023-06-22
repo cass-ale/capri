@@ -30,7 +30,6 @@ function MobileMenu(props) {
           <nav className="mobileNav">
             <ul>
                 <li><Link to="/" onClick={handleClick}>CURRENT ISSUE</Link></li><br />
-                <li><Link to="/archive" onClick={handleClick}>ARCHIVE</Link></li><br />
                 <li><Link to="/donate" onClick={handleClick}>DONATE</Link></li><br />
             </ul>
             <hr id="line" />
