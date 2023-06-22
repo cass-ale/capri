@@ -208,26 +208,6 @@ End goal to have stills of a rendered video that loops through to give slideshow
 
 
 
-/* Archive Page Styling */
-.archiveContainer {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.55rem;
-}
-.archiveContainer p {
-    font-family: 'Orpheus';
-    font-size: 4rem;
-}
-.archiveContainer h2 {
-    font-family: 'Gopher-Light';
-    font-size: 1.5rem;
-    text-align: center;
-    padding-left: 10rem;
-    padding-right: 10rem;
-}
 
 
 
@@ -288,7 +268,6 @@ main a {
 
 /* Contact Page CSS Styling */
 .contactContainer {
-    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -639,24 +618,27 @@ footer a {
     }
     .contactContainer {
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         gap: 1rem;
-        max-width: 100%;
-        padding: 2rem;
+        height: 100vh;
         margin: 0;
     }
     .contactContainer p {
         text-align: justify;
         flex-wrap: wrap;
         max-width: 100%;
+        padding-left: 0;
     }
     .contactForm form {
         bottom: 32rem;
+        height: 100vh;
+        width: 50vw;
+        right: 10vw;
         opacity: 1;
     }
     .formClose {
-        margin-left: 25rem;
+        margin-left: 35rem;
     }
 }
 
