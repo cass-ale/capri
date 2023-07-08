@@ -7,6 +7,7 @@ import Cintro from './Cintro';
 import Cabout from './Cabout';
 import CurrentWork from './CurrentWork';
 import Cresume from './Cresume';
+import Coda from './Coda';
 import {
 faGithub,
 faLinkedin,
@@ -120,6 +121,7 @@ function Cass() {
         <Cintro />
         <Cabout openCurrent={openCurrent}/>
         {workRender()}
+        <Coda />
         <Cresume />
 
 

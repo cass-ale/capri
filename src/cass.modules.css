@@ -316,6 +316,39 @@
 }
 
 
+.coda {
+  display: flex;
+  height: 150vh;
+  width: 100%;
+  justify-content: center;
+  background-color: #011526;
+  color: #f4f0e0;
+}
+.coda section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.coda h1{
+  color: #D90754;
+  font-size: 10rem;
+  padding: 0;
+  margin: 2rem;
+}
+.coda p{
+  padding-left: 5rem;
+  padding-right: 5rem;
+  font-size: 1.5rem;
+  font-family: "Gopher";
+}
+.coda a{
+  text-align: center;
+}
+
+
+
+
+
 .cresume {
   height: 120vh;
   width: 100%;
@@ -868,6 +901,19 @@
     font-size: 0.8rem;
   }
 
+
+  .coda h1{
+    font-size: 4.5rem;
+  }
+  .coda h2{
+    font-size: 1.5rem;
+  }
+  .coda p{
+    font-size: 1rem;
+    text-align: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 
   .cresume {
     padding-top: 2rem;
