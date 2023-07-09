@@ -397,7 +397,7 @@ main a {
     justify-content: right;
     align-items: flex-end;
     margin-top: 1rem;
-    margin-left: 50rem;
+    margin-left: 40rem;
     transition: all 0.2s;
 }
 .formClose:active{
