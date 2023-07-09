@@ -46,7 +46,7 @@ function Donate() {
 
             Please find resources below provided by RAINN (Rape, Abuse & Incest National Network), the nation's largest anti-sexual violence organization. We think the ability to support loved ones who have experienced sexual violence is crucial, and thanks to RAINN, CAPRI is able to share the ability to TALK<sup>1</sup> with family and friends.<br/>
             <blockquote>Whether someone you love has disclosed to you already, or you just want to be prepared for the moment someone does, taking the time to proactively learn how to support a survivor as they disclose can make all the difference.</blockquote>
-            We hope that our allyship inspires you to support, believe, and celebrate women and other survivors of sexual violence.
+            <br />We hope that our allyship inspires you to support, believe, and celebrate women and other survivors of sexual violence.
             You can find links for our PayPal and Venmo below, and thank you for supporting CAPRI Media.</p> <br /><br/>
 
             <section id="sig" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>— CAPRI</section>
