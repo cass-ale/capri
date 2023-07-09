@@ -15,12 +15,14 @@ const dono = [
     }
 ]
 const handleMouseOver = () => {
+    if (window.innerWidth > 1020){
     const text = document.querySelector('#sig');
-    text.innerHTML = '— kæpri';
+    text.innerHTML = '— kæpri';}
 }
 const handleMouseOut = () => {
+    if (window.innerWidth > 1020){
     const text = document.querySelector('#sig');
-    text.innerHTML = '— CAPRI';
+    text.innerHTML = '— CAPRI';}
 }
 
 
@@ -48,7 +50,6 @@ function Donate() {
             You can find links for our PayPal and Venmo below, and thank you for supporting CAPRI Media.</p> <br /><br/>
 
             <section id="sig" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>— CAPRI</section>
-            <section id="mobileSig">— CAPRI</section>
         <br />
         </div>
         <section className="donoButtons">

@@ -198,8 +198,9 @@ header a {
 /* Shows that pictures can be quickly cycled through to have a looping slideshow type effect.
 End goal to have stills of a rendered video that loops through to give slideshow/stopmotion type effect */
 .heroText {
-    font-size: 10rem;
+    font-size: 6.5rem;
     font-family: 'Orpheus';
+    text-align: center;
     /* -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: url(./Images/IMG_0085.jpeg);
@@ -217,10 +218,9 @@ main a {
 }
 .donoContainer {
     width: 100%;
-    height: 60vh;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     font-family: 'Lato';
     font-size: 1.25rem
 }
@@ -271,8 +271,8 @@ main a {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 2rem;
-    font-family: 'Lato';
 }
 #conHeader {
     font-size: 4rem;
@@ -284,12 +284,10 @@ main a {
     font-size: 1rem;
     width: 75rem;
     line-height: 2rem;
-    padding-left: 10rem;
+    font-family: 'Lato';
 }
 .contactContainer button {
     width: 15rem;
-    margin-bottom: 8rem;
-    margin-left: 10rem;
 }
 
 
@@ -298,16 +296,13 @@ main a {
 .contactForm {
     height: 10rem;
     width: 50vw;
-    margin-left: 25vw;
-}
-.contactForm form{
     z-index: 100;
     border: ghostwhite solid;
     background-color: black;
     color: white;
-    position: relative;
+    position: absolute;
     height: 50rem;
-    bottom: 35rem;
+    top: 13.5rem;
     opacity: 0.96;
     transition: all 0.4s;
     box-shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.25);
@@ -385,58 +380,6 @@ main a {
 }
 
 
-/* Mobile version of the contact button; different screens render a scroll-less version of the button */
-.mobileCon {
-    border: .15rem black solid;
-    border-top-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    background-color: white;
-    color: black;
-    font-family: 'Orpheus';
-    font-size: 1.25rem;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.2s;
-    padding: 1.25rem 2.5rem;
-}
-.mobileCon:hover {
-    background-color: black;
-    color: white;
-}
-.mobileCon:active {
-    background-color:white;
-    color: black;
-    transform: scale(0.85);
-}
-.mobileForm {
-    border: .15rem white solid;
-    border-top-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    background-color: black;
-    color: white;
-    font-family: 'Orpheus';
-    font-size: 1.25rem;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.2s;
-    padding: 1.25rem 2.5rem;
-}
-.mobileForm:hover {
-    background-color: white;
-    color: black;
-}
-.mobileForm:active {
-    background-color:black;
-    color: white;
-    transform: scale(0.85);
-}
-.mobileForm:disabled{
-    background-color: grey;
-    color: ghostwhite;
-    border: whitesmoke dotted;
-    cursor: not-allowed;
-    border-top-left-radius: 0rem;
-    border-bottom-right-radius: 0rem;}
 #messageForm {
     display: flex;
     flex-direction: column;
@@ -580,65 +523,12 @@ footer a {
     #mobile {
         display: none;
     }
-    .mobileCon {
-        display: none;
-    }
-    .mobileForm {
-        display: none;
-    }
-    #mobileCapri {
-        display: none;
-    }
-    #mobileSig {
-        display: none;
-    }
 }
 
-
-/* Medium/Small Laptop screen formatting for smooth transitions */
-@media screen and (min-width:1021px) and (max-width: 1700px) {
+@media screen and (min-width:1600px) {
     .heroText {
-        font-size: 6.5rem;
+        font-size: 10rem;
         text-align: center;
-    }
-    .archiveContainer p {
-        font-size: 1.75rem;
-    }
-    .donoContainer {
-        padding: 2rem;
-        text-align: left;
-        max-width: 90%;
-        height: 100vh;
-    }
-    #h1 {
-        font-size: 3.25rem;
-    }
-    #conHeader {
-        font-size: 3.25rem;
-    }
-    .contactContainer {
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 1rem;
-        height: 100vh;
-        margin: 0;
-    }
-    .contactContainer p {
-        text-align: justify;
-        flex-wrap: wrap;
-        max-width: 100%;
-        padding-left: 0;
-    }
-    .contactForm form {
-        bottom: 32rem;
-        height: 100vh;
-        width: 50vw;
-        right: 10vw;
-        opacity: 1;
-    }
-    .formClose {
-        margin-left: 35rem;
     }
 }
 
@@ -699,28 +589,6 @@ footer a {
     }
 
 
-    .archiveContainer {
-        flex-wrap: wrap;
-        gap: 1rem;
-        max-width: 100%;
-        margin: 0;
-    }
-    .archiveContainer h2 {
-        font-size: 1rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-    .archiveContainer p {
-        font-size: 1.5rem;
-        width: 100%;
-        text-align: center;
-    }
-    #lock {
-        width: 5rem;
-        height: 5rem;
-    }
-
-
     .contactContainer {
         flex-wrap: wrap;
         align-items: center;
@@ -741,13 +609,8 @@ footer a {
         height: 100%;
         width: 100%;
     }
-    .conButton {
-        display: none;
-    }
-    .formButton {
-        display: none;
-    }
-    .contactForm form {
+    .contactForm {
+        padding-top: 2rem;
         opacity: 1;
         display: flex;
         flex-direction: column;
@@ -759,7 +622,7 @@ footer a {
         left: 0;
         width: 100%;
         height: 100vh;
-        font-size: 1.5rem;
+        font-size: 1rem;
         z-index: 9999;
     }
     #contactForm {
@@ -767,11 +630,15 @@ footer a {
         font-size: 1rem;
     }
     #contactForm input {
+        font-size: 1rem;
         width: 100%;
     }
-    #messageForm {
-        width: 11rem;
-        height: 3rem;
+    #messageForm{
+        flex-grow: 0;
+        width: 100%;
+    }
+    #messageForm textarea{
+        padding: 0.25rem;
         font-size: 1rem;
         align-items: center;
         margin: 0;
@@ -790,6 +657,10 @@ footer a {
         width: 100%;
         margin: 0;
         height: 100vh;
+    }
+    .donoContainer > #h1 {
+        margin: 0;
+        padding-bottom: 0;
     }
     .donoContainer blockquote {
         display: none;
@@ -811,6 +682,7 @@ footer a {
     #mobileSig {
         font-family: 'Orpheus';
         font-size: 2.25rem;
+        padding: 1rem;
     }
     .rainn{
         width: 80%;
@@ -852,8 +724,9 @@ footer a {
     }
     #footerForm input {
         width: 100%;
+        font-size: 1rem;
     }
-    #mobileCapri{
+    #capri {
         display: flex;
         flex-direction: column;
         font-family: 'Orpheus';
@@ -862,8 +735,9 @@ footer a {
         justify-content: center;
         align-items: center;
     }
-    #capri {
-        display: none;
+    #capri:hover{
+        font-family: 'Orpheus';
+        font-size: 3rem;
     }
 }
 @media screen and (max-width: 400px) {
@@ -874,11 +748,51 @@ footer a {
         font-size: 2rem;
         margin-bottom: 5rem;
     }
+    .contactContainer {
+        gap: 0;
+    }
+    #conHeader {
+        font-size: 1rem;
+    }
+    .contactContainer p {
+        font-size: 0.75rem;
+    }
     .formClose {
         margin-left: 13rem;
     }
+
+    .donoContainer > #h1 {
+        font-size: 1rem;
+    }
+    .donoContainer p{
+        font-size: 0.85rem;
+        margin: 0;
+    }
+    .donoButtons button {
+        font-size: 1.25rem;
+    }
+
+    #capri {
+        font-size: 2rem;
+    }
+    .footerForm input {
+        margin-right: 0 !important;
+        margin-bottom: 0.5rem;
+    }
+    .footerButton {
+        margin: 0;
+    }
+
+    #copyright{
+        font-size: 0.75rem;
+    }
 }
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (max-width: 1020px) {
+    .mobileMenu{
+        overflow-y: auto;
+    }
+
+
     .donoContainer {
         flex-direction: row;
     }
@@ -895,6 +809,21 @@ footer a {
         width: 30vw;
         height: auto;
         margin-left: 35vw;
+    }
+
+
+    .contactContainer {
+        flex-direction: row;
+        justify-content: center;
+        height: 100vh;
+        gap: 0rem;
+    }
+    #conHeader {
+        margin: 0;
+    }
+    .contactForm{
+        height: 200vh;
+        overflow-y: auto;
     }
 }
 

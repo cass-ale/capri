@@ -321,7 +321,7 @@
   height: 150vh;
   width: 100%;
   justify-content: center;
-  background-color: #011526;
+  background-color: #04151F;
   color: #f4f0e0;
 }
 .coda section {
@@ -1045,6 +1045,9 @@
   }
   #signoff h1, #signoff h2{
     font-size: 0.85rem;
+  }
+  #ccopyright {
+    font-size: 0.75rem;
   }
 }
 

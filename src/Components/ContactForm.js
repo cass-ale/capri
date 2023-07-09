@@ -49,32 +49,32 @@ function ContactForm(props) {
         }
         >
             {({ errors, isValid, dirty }) => (
-        <Form>
-            <div className="contactForm">
+        <Form ref={formRef} className='contactForm'
+        action="https://script.google.com/macros/s/AKfycbyCArEL1T5IRmV7JMAGxuG1VBIP-HZDrFps7FO4yl9vcvRQTOw9K0Ae0RaYFRj_XVAV/exec" method="post" id="my-form">
+            <div className="formContents">
 
-            <form ref={formRef} className='formContents'
-            action="https://script.google.com/macros/s/AKfycbyCArEL1T5IRmV7JMAGxuG1VBIP-HZDrFps7FO4yl9vcvRQTOw9K0Ae0RaYFRj_XVAV/exec" method="post" id="my-form">
+
 
             <div className='formClose'><FontAwesomeIcon data-tooltip-id='close' data-tooltip-content="Close Form" icon={faClose} onClick={props.closeForm} size='2x'/></div>
             <ReactTooltip id="close" />
 
             <section id="contactForm">
             <label htmlFor='firstName'>First Name*</label>
-            <Field type="text" name="firstName" style={{fontFamily: 'Gopher'}} placeholder='First Name . . .' />
+            <Field type="text" name="firstName" style={{fontFamily: 'Gopher'}} placeholder='First Name' />
             <ErrorMessage name='firstName' />
             </section>
 
 
             <section id="contactForm">
             <label htmlFor='lastName'>Last Name*</label>
-            <Field type="text" name="lastName" style={{fontFamily: 'Gopher'}} placeholder='Last Name . . .' />
+            <Field type="text" name="lastName" style={{fontFamily: 'Gopher'}} placeholder='Last Name' />
             <ErrorMessage name='lastName' />
             </section>
 
 
             <section id="contactForm">
             <label htmlFor="email">Email Address*</label>
-            <Field type="email" name="email" style={{fontFamily: 'Gopher'}} placeholder='Enter Your Email . . .' />
+            <Field type="email" name="email" style={{fontFamily: 'Gopher'}} placeholder='Enter Your Email' />
             <ErrorMessage name="email" />
             </section>
 
@@ -88,12 +88,10 @@ function ContactForm(props) {
             <section id="contactForm">
             {dirty && (
             <input className='formButton' type="submit" value='Send' style={{paddingBottom: '2.5rem',paddingTop:'1rem'}} disabled={isValid === false || Object.keys(errors).length > 0} />)}
-                        {dirty && (
-            <input className='mobileForm' type="submit" value='Send' style={{paddingBottom: '2.5rem',paddingTop:'1rem'}} disabled={isValid === false || Object.keys(errors).length > 0} />)}
             </section>
 
 
-            </form>
+
 
 
             </div>

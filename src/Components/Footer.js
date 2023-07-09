@@ -19,12 +19,14 @@ function Footer() {
     });
   };
 const handleMouseOver = () => {
+      if (window.innerWidth > 1020){
         const text = document.querySelector('#capri');
-        text.innerHTML = '`kæpri';
+        text.innerHTML = '`kæpri';}
 }
 const handleMouseOut = () => {
+  if (window.innerWidth > 1020){
         const text = document.querySelector('#capri');
-        text.innerHTML = 'CAPRI';
+        text.innerHTML = 'CAPRI';}
 }
   return (
         <div className="footerContainer">
@@ -34,7 +36,6 @@ const handleMouseOut = () => {
 
         {/* Logo that doubles as a back to top scroll button */}
         <section id="capri" onClick={handleClick} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>CAPRI</section>
-        <section id="mobileCapri" onClick={handleClick}>CAPRI</section>
         {/* Email Submission Form */}
         {formSubmitted ? (
           <Sub formReset={handleFormReset}/>
