@@ -14,7 +14,8 @@ const Coda = () => {
     <section>
     <h1>CODA</h1>
     <h2>Connect & Reconnect</h2>
-    <p>CODA is a Discord-style messaging app that lets users message their friends anytime and anywhere. The Frontend UI is developed using Vite, and I am using Firebase to handle the Backend data storage. Not only was this a fun project to get to work on, it is a fun and cute web app that offers a nostalgic chatroom for users to catch up with their close friends!</p>
+    <p>CODA is a Discord-style messaging app that lets users message their friends anytime and anywhere. The Frontend UI is developed using Vite, and I am using Firebase to handle the Backend data storage. Not only was this a fun project to get to work on, it is a fun and cute web app that offers a nostalgic chatroom for users to catch up with their close friends!
+    <br /><br />Click below to read the UX Case Study for CODA!</p>
     <article>
     <a href='https://codamessaging.netlify.app/register' target="_blank" rel="noopener noreferrer"><Button size='large' sx={{
         color: "#D90754",
