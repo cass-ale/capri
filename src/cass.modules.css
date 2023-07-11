@@ -6,6 +6,7 @@
     justify-content: space-around;
     max-width: 100%;
     width: 100%;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     left: 0;
@@ -471,6 +472,7 @@
 
 
   .rhap_container {
+    position: -webkit-sticky;
     position: sticky;
     box-sizing: border-box;
     display: flex;
