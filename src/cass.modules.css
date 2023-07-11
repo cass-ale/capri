@@ -272,7 +272,7 @@
 }
 .capriMedia {
   width: 35vw;
-  height: 70vh;
+  height: 50vh;
   background-color: rgba(4, 21, 31, 0.85);
   display: flex;
   flex-direction: column;
@@ -292,7 +292,7 @@
 }
 .simpcxty {
   width: 35vw;
-  height: 70vh;
+  height: 50vh;
   background-color: rgba(4, 21, 31, 0.85);
   display: flex;
   flex-direction: column;
@@ -309,7 +309,7 @@
 .cardButtons {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
 }
 .cardButtons button {
   font-size: 1.25rem;
@@ -328,6 +328,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2rem;
 }
 .coda h1{
   color: #D90754;
@@ -338,8 +339,14 @@
 .coda p{
   padding-left: 5rem;
   padding-right: 5rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: "Gopher";
+}
+.coda article {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  width: 100%;
 }
 .coda a{
   text-align: center;
@@ -892,13 +899,15 @@
   }
   .capriMedia, .simpcxty {
     width: 60%;
-    height: 45vh;
   }
   .capriMedia p, .simpcxty p {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
   .capriMedia button, .simpcxty button {
     font-size: 0.8rem;
+  }
+  #current > section.capriMedia, #current > section.simpcxty {
+    height: 50vh;
   }
 
 
@@ -913,6 +922,12 @@
     text-align: center;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+  .coda article {
+    gap: 1rem;
+  }
+  .coda button {
+    font-size: 1.5rem;
   }
 
   .cresume {
