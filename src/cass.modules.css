@@ -934,8 +934,27 @@
   #current > section.capriMedia, #current > section.simpcxty {
     height: 50vh;
   }
-
-
+  .coda {
+    height: 300vh;
+  }
+  .coda section{
+    overflow: hidden;
+  }
+  #chats {
+    width: 20rem;
+  }
+  #laptop {
+    width: 25rem;
+  }
+  #logo {
+    width: 50vw;
+  }
+  .phones {
+    width: 25rem;
+    height: 50vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
   .coda h1{
     font-size: 4.5rem;
   }
@@ -1017,7 +1036,9 @@
     font-size: 1rem;
     line-height: 2rem;
   }
-
+  .rhap_container{
+    margin-top: 2.28125rem;
+  }
   .rhap_progress-indicator {
     display: none;
   }
