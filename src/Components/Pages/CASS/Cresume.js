@@ -25,7 +25,7 @@ function Cresume() {
               fontFamily: "Gopher",
               fontSize: "2rem"
             }}>Certification</Button></a>
-                        <a href='CJAResume.pdf' download="CJAResume.pdf"><Button size='large' sx={{
+                        <a href='CJAleriaResume071223.pdf' download="CJAResume.pdf"><Button size='large' sx={{
               color: "#C44900",
               fontFamily: "Gopher",
               fontSize: "2rem"
