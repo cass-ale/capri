@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from '@mui/material';
 import { Tooltip as ReactTooltip } from 'react-tooltip';
 import 'react-tooltip/dist/react-tooltip.css';
 
@@ -23,6 +24,23 @@ function Cpopup(props) {
             <p>If you are here on purpose, then I sincerely hope you enjoy what you see. I am but an email away if you need to reach me. This message will close in 30 seconds, or you can click anywhere in this box to close the popup.</p>
 
             <h2>Godspeed,<br /> C. J. A.</h2>
+            <aside>
+            <a href='https://www.coursera.org/account/accomplishments/specialization/certificate/Q3TW5TCE2NN7' target="_blank" rel="noopener noreferrer"><Button size='large' sx={{
+              color: "#C44900",
+              fontFamily: "Gopher",
+              fontSize: "2rem"
+            }}>Certification</Button></a>
+                        <a href='CJAleriaResume071223.pdf' download="CJAResume.pdf"><Button size='large' sx={{
+              color: "#C44900",
+              fontFamily: "Gopher",
+              fontSize: "2rem"
+            }}>My Resume</Button></a>
+                        <a href="mailto:cass@caprimag.com?subject=Employment Inquiry (Portfolio Site)&cc=cass.ale@outlook.com&body=Hello, this is a prewritten message to guide you in writing an email regarding employment. Please include your name and contact information, and a brief summary of the role and how you envision me fitting into it. Thanks for visiting my site and considering me!" target="_blank" rel="noopener noreferrer"><Button size='large' sx={{
+              color: "#C44900",
+              fontFamily: "Gopher",
+              fontSize: "2rem"
+            }}>Contact Me</Button></a>
+                </aside>
             </section>
         </div>
     )

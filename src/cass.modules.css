@@ -98,22 +98,11 @@
 
 
 .introduction {
+  padding-top: 94.8px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.where {
-  height: 75vh;
-  padding: 1.5rem;
-  margin: 1rem;
-}
-.where h1 {
-  font-size: 2.75rem;
-  transition: all 5s;
-}
-.where h2 {
-  font-size: 1.5rem;
 }
 .introduction h1 {
   padding: 0;
@@ -121,7 +110,27 @@
 }
 .introduction hr {
   margin-top: 5rem;
-  background-color: #C44900;
+}
+.downArrow {
+  margin-top: 5rem;
+  animation: down 1.5s linear infinite;
+}
+@keyframes down {
+  25% {transform: translate(0, 25%) ;}
+  50% {transform: translate(0, 0%) ;}
+  75% {transform: translate(0, -25%) ;}
+  100% {transform: translate(0, 0);}
+}
+.where {
+  height: 100vh;
+  padding: 1.5rem;
+  margin: 1rem;
+}
+.where h1 {
+  font-size: 2.75rem;
+}
+.where h2 {
+  font-size: 1.5rem;
 }
 .introButton {
   display: flex;
@@ -139,19 +148,9 @@
   background-color: #432534;
   border-radius: .2rem;
 }
-.downArrow {
-  margin-top: 5rem;
-  animation: down 1.5s linear infinite;
-}
-@keyframes down {
-  25% {transform: translate(0, 25%) ;}
-  50% {transform: translate(0, 0%) ;}
-  75% {transform: translate(0, -25%) ;}
-  100% {transform: translate(0, 0);}
-}
 
 .help {
-  height: 75vh;
+  height: 90vh;
 }
 .help h1 {
   text-align: left;
@@ -186,7 +185,7 @@
   max-width: 40rem;
 }
 .skills {
-  height: 50vh;
+  height: 65vh;
   margin-bottom: 10rem;
 }
 .skills h1 {
@@ -318,7 +317,7 @@
 
 .coda {
   display: flex;
-  height: 500vh;
+  height: 600vh;
   width: 100%;
   justify-content: center;
   background-color: #04151F;
@@ -339,13 +338,13 @@
   height: auto;
 }
 #logo {
-  width: 30rem;
+  width: 25rem;
   height: auto;
-  margin-top: 5rem;
+  margin: 5rem;
 }
 .phones {
   width: 100%;
-  height: 100vh;
+  height: 200vh;
   background-image: url(./Images/phones.png);
   background-size: cover;
   background-position: center;
@@ -358,6 +357,7 @@
 }
 .coda h2{
   font-size: 3.25rem;
+  margin: 5rem;
 }
 .coda p{
   padding-left: 5rem;
@@ -435,7 +435,6 @@
     top: 0;
     max-width: 100%;
     height: 250vh;
-    transition: all 0.4s;
     cursor: pointer;
     z-index: 1000;
   }
@@ -449,6 +448,7 @@
     font-family: 'Gopher';
     font-size: 5rem;
     margin: 0;
+    padding-top: 1rem;
   }
   .popupcontents h2 {
     font-size: 2.75rem;
@@ -459,6 +459,12 @@
   }
   .popupcontents a:active {
     color: #f4f0e0;
+  }
+  .popupcontents aside {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
   }
 
 
@@ -757,81 +763,6 @@
 
 
 
-
-  /* Medium/Small Laptop screen formatting for smooth transitions */
-@media screen and (min-width:1021px) and (max-width: 1500px) {
-  .popup {
-    height: 300vh;
-  }
-  .popupcontents {
-    margin-left: 5rem;
-    margin-right: 5rem;
-    font-family: 'Lato';
-    font-size: 1.15rem;
-  }
-  .popupcontents h1 {
-    font-family: 'Gopher';
-    font-size: 4.5rem;
-    margin: 0;
-    padding: 1rem;
-  }
-  .popupcontents h2 {
-    font-size: 2.25rem;
-    line-height: 2.75rem;
-  }
-  .help {
-    height: 100vh;
-  }
-  .skills {
-    height: 100vh;
-    margin: 0;
-  }
-  .help h1, .skills h1, .cresume h1 {
-    padding-left: 0;
-    text-align: center;
-    width: 100%;
-  }
-  .traits {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-  .worksCards {
-    flex-direction: column;
-    align-items: center;
-    height: 125vh;
-    gap: 2.5rem;
-    padding: 0;
-  }
-  #capriCard, #simpCard {
-    height: 60vh;
-  }
-  #capriCard {
-    background-position: 50% 60%;
-  }
-  #simpCard {
-    background-position: 50% 60%;
-  }
-  .works {
-    height: 150vh;
-  }
-  .works h1 {
-    padding: 0;
-  }
-  .currentWork {
-    height: 250vh;
-  }
-  .capriMedia, .simpcxty {
-    height: 80vh;
-  }
-  .capriMedia p, .simpcxty p {
-    font-size: 1.05rem;
-  }
-  .cresume {
-    padding-top: 5rem;
-  }
-}
-
-
 /* Mobile/Tablet styling Below */
 @media screen and (max-width: 1020px) {
   .cheader {
@@ -1024,7 +955,10 @@
   }
   .popupcontents {
     margin: 1rem;
+    padding: 1rem;
     font-size: 1rem;
+    flex-wrap: wrap;
+    max-width: 100vw;
   }
   .popupcontents h1 {
     font-family: 'Gopher';
@@ -1036,6 +970,10 @@
     font-size: 1rem;
     line-height: 2rem;
   }
+  #root > main > div.popup > section > aside > a > button {
+    font-size: 0.75rem;
+  }
+
   .rhap_container{
     margin-top: 2.28125rem;
   }
@@ -1116,6 +1054,7 @@
 
 @media screen and  (orientation: landscape) and (max-width: 1020px) {
   .cmain {
+    padding-top: 76.8px;
     padding-bottom: 10rem;
   }
 
@@ -1156,6 +1095,21 @@
   }
   .introButton {
     margin-top: 0;
+  }
+  .coda {
+    height: 650vh;
+  }
+  .coda h2 {
+    margin: 1rem;
+  }
+  .phones {
+    display: none;
+  }
+  #laptop {
+    width: 100vw;
+  }
+  #logo {
+    width: 20rem;
   }
 
   .cresume {
