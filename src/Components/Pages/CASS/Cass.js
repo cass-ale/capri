@@ -107,6 +107,8 @@ function Cass() {
         <meta name="author" content="C. J. ALÉRIA" />
         <meta name="description" content="C. J. ALÉRIA's Web Development & Design Portfolio" />
         <meta property="og:description" content="C. J. ALÉRIA's Web Development & Design Portfolio" />
+        <link rel="canonical" href="https://www.caprimag.com/cassja_portf_fedev_05012023" />
+        <meta name="twitter:title" content="C. J. ALÉRIA | Digital Designer" />
         </Helmet>
 
 
