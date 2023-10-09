@@ -805,8 +805,15 @@
   .introduction {
     padding: 1.5rem;
   }
+  .where {
+    padding: 1.5rem;
+  }
   .where h1 {
     padding-top: 0;
+  }
+  #root > main > section.where > h1 {
+    font-size: 1.75rem;
+    text-align: start;
   }
   .where h2 {
     text-align: justify;
@@ -815,7 +822,7 @@
     flex-direction: column;
   }
   .help {
-    margin-bottom: 5rem;
+    margin-bottom: 0rem;
   }
   .help h1 {
     padding-left: 0;
@@ -965,6 +972,7 @@
     font-size: 1rem;
     flex-wrap: wrap;
     max-width: 100vw;
+    text-align: center;
   }
   .popupcontents h1 {
     font-family: 'Gopher';
