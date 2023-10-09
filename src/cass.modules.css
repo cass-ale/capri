@@ -856,6 +856,7 @@
   }
   #capriCard, #simpCard {
     height: 35vh;
+    width: 75vw;
   }
 
   .currentWork {
