@@ -73,7 +73,6 @@
 
 
 .cmain {
-    padding: 0rem 1rem 3.5rem 1rem;
     color: #04151F;
     background-color: #f4f0e0;
     display: flex;
@@ -97,11 +96,11 @@
 
 
 .introduction {
-  padding-top: 94.8px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 94.8px 1rem 3.5rem 1rem;
 }
 .introduction h1 {
   padding: 0;
@@ -122,7 +121,7 @@
 }
 .where {
   height: 100vh;
-  padding: 1.5rem;
+  padding: 0rem 5.5rem 0rem 5.5rem;
   margin: 1rem;
 }
 .where h1 {
@@ -138,7 +137,6 @@
   margin-top: 5rem;
 }
 .buttonArea {
-  background-color: #04151F;
   width: 100%;
   height: 30vh;
 }
@@ -150,6 +148,7 @@
 
 .help {
   height: 90vh;
+  padding: 0rem 1.5rem 0rem 1.5rem;
 }
 .help h1 {
   text-align: left;
@@ -166,6 +165,7 @@
 }
 .traits h2 {
   font-size: 1.5rem;
+  color: #C44900;
 }
 .traits article {
   display: flex;
@@ -184,6 +184,7 @@
   max-width: 40rem;
 }
 .skills {
+  padding: 0rem 1.5rem 0rem 1.5rem;
   height: 65vh;
   margin-bottom: 10rem;
 }
@@ -198,11 +199,10 @@
   width: 100%;
   height: 100vh;
   justify-content: space-between;
-  background-color: #04151F;
-  color: #f4f0e0;
 }
 .works h1 {
   text-align: center;
+  padding: 0;
 }
 .worksCards {
   height: 65vh;
@@ -212,13 +212,6 @@
 }
 .worksCards h2 {
   font-size: 2.5rem;
-}
-.worksCards p {
-  font-size: 1.25rem;
-  max-width: 40rem;
-  text-align: center;
-  background-color: rgba(4, 21, 31, 0.35);
-  border-top-right-radius: 0.25rem;
 }
 
 #capriCard, #simpCard {
@@ -235,6 +228,7 @@
   background-image: url(./Images/IMG_0084.webp);
   background-size: cover;
   color: #f4f0e0;
+  width: 35rem;
 }
 #simpCard {
   display: flex;
@@ -245,10 +239,7 @@
   background-size: cover;
   background-position: 50% 83%;
   color: #04151F;
-}
-#simpCard p{
-  color: #f4f0e0;
-  background-color: rgba(4, 21, 31, 0.35);
+  width: 35rem;
 }
 
 
@@ -279,8 +270,9 @@
   margin-top: 5rem;
   transition: all 1s;
 }
-.capriMedia h1 {
+.capriMedia h1, .simpcxty h1 {
   padding: 0;
+  color: #f4f0e0;
 }
 .capriMedia:hover {
   background-color: rgba(4, 21, 31, 1);
@@ -297,9 +289,6 @@
   align-items: center;
   padding: 2rem;
   transition: all 1s;
-}
-.simpcxty h1 {
-  padding: 0;
 }
 .simpcxty:hover {
   background-color: rgba(4, 21, 31, 1);
@@ -447,13 +436,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     border: #C44900 0.2rem dotted;
     background-color: #432534;
     color: #f4f0e0;
-    position: absolute;
-    top: 0;
-    max-width: 100%;
-    height: 250vh;
+    position: fixed;
+    height: 100vh;
     cursor: pointer;
     z-index: 1000;
   }
@@ -468,6 +456,7 @@
     font-size: 5rem;
     margin: 0;
     padding-top: 1rem;
+    color: #f4f0e0;
   }
   .popupcontents h2 {
     font-size: 2.75rem;

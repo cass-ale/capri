@@ -16,7 +16,7 @@ function CurrentWork() {
             fontFamily: "Gopher",
             fontSize: "1rem",
             color: "white",
-        }}>CAPRI Media</Button></a>
+        }}>CAPRI Media Official Site</Button></a>
         </section>
             </section>
             <section className='simpcxty'>
@@ -28,7 +28,7 @@ function CurrentWork() {
             fontFamily: "Gopher",
             fontSize: "1rem",
             color: "white",
-        }}>simpcxty</Button></a>
+        }}>simpcxty Official Site</Button></a>
         </section>
             </section>
         </div>

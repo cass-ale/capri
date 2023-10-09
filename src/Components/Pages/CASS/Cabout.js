@@ -61,12 +61,10 @@ function Cabout(props) {
         <section className='worksCards'>
         <article id='capriCard'>
             <h2>CAPRI Media</h2>
-            <p>NYC Based Fashion Design & Media Company. I fully designed and built their website for the functionality and memorable design they couldn{"'"}t get using website building services. Their site now has the professional and bespoke appearance they wanted, and it also provides a smooth experience to their users regardless of the device they use. </p>
         </article>
 
         <article id='simpCard'>
             <h2>simpcxty</h2>
-            <p>R&B Singer/Songwriter from Bessemer, AL. I provided consultation and designed a website for him that would serve as both a press kit for venues and promoters and also a hub for potential fans to see more sides to him than his music.</p>
         </article>
         </section>
         </div>

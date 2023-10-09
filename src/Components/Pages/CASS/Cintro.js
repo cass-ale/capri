@@ -16,7 +16,7 @@ function Cintro() {
 
         <section className="where">
         <h1>Currently Based In New York City, I Help Brands And Creatives Enhance Their Online Presence Through Design.</h1>
-        <h2>My Skillset Is Concentrated On Web And Mobile Design. My Favorite Part Of The Design Process Is Creating Mockups And Working Through Creative Ideas And Challenges With Clients.</h2>
+        <h2>My Skillset Is Concentrated On Web And Mobile Design Using React.js (JavaScript, HTML, CSS). For Me, The Most Exciting Part Of The Design Process Is Creating Mockups And Working Through Creative Ideas And Challenges With Clients.</h2>
         </section>
         </>
     )
