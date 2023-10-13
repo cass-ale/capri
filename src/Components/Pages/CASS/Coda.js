@@ -39,11 +39,11 @@ const Coda = () => {
         fontFamily: "Gopher",
         fontSize: "2rem"
       }}>Try CODA!</Button></a>
-    <a href='https://docs.google.com/document/d/1G6siiypxBhOQj-FTe_qMaGBId36iSwWFDbaxV25hn5Q/edit?usp=sharing' target="_blank" rel="noopener noreferrer"><Button size='large' sx={{
+{/*    <a href='https://docs.google.com/document/d/1G6siiypxBhOQj-FTe_qMaGBId36iSwWFDbaxV25hn5Q/edit?usp=sharing' target="_blank" rel="noopener noreferrer"><Button size='large' sx={{
         color: "#D90754",
         fontFamily: "Gopher",
         fontSize: "2rem"
-      }}>CODA UX Study</Button></a>
+      }}>CODA UX Study</Button></a>*/}
     </article>
 
       <img src={coda} alt='' id='logo' />
