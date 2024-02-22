@@ -72,7 +72,6 @@ const handleClick = () => {
         <nav className="pages">
             <ul>
                 <li><Link to="/">CURRENT ISSUE</Link></li>
-                <li><Link to="/donate">DONATE</Link></li>
             </ul>
         </nav>
 

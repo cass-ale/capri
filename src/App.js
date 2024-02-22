@@ -2,7 +2,6 @@ import React, {useState, useEffect} from "react";
 import './styles.modules.css';
 import Loader from "./Loader";
 import Home from "./Components/Pages/Home";
-import Donate from './Components/Pages/Donate';
 import Contact from './Components/Pages/Contact';
 import Privacy from './Components/Pages/Privacy';
 import Cookies from './Components/Pages/Cookies';
@@ -30,7 +29,6 @@ function App() {
     <Router>
       <Routes>
       <Route exact path="/" element={<Home />} />
-      <Route exact path="/donate" element={<Donate />} />
       <Route exact path="/contact" element={<Contact />} />
       <Route exact path="/privacy" element={<Privacy />} />
       <Route exact path="/cookies" element={<Cookies />} />
