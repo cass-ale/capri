@@ -58,7 +58,7 @@
     "react-dom": "^18.2.0",
     "react-h5-audio-player": "^3.8.6",
     "react-helmet": "^6.1.0",
-    "react-refresh": "^0.11.0",
+    "react-refresh": "^0.14.0",
     "react-router": "^6.10.0",
     "react-router-dom": "^6.10.0",
     "react-tooltip": "^5.10.5",
